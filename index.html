@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff4fa">
+<title>ここあの自動作詞ルーム</title>
+<style>
+:root{--pink:#e98bb8;--ink:#5b4051;--line:#f0dce8}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(160deg,#fff8fc,#fff2f7 50%,#fffaf0);color:var(--ink);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+header{text-align:center;padding:26px 18px 20px;background:linear-gradient(135deg,#ffe6f2,#fff7fb 65%,#fff3d9);border-bottom:1px solid var(--line)}
+.sparkle{color:#d6ad51;letter-spacing:.45em;font-size:13px}h1{font-size:25px;margin:8px 0 5px;letter-spacing:.04em}.subtitle{font-size:12px;color:#99758a}
+main{width:min(100%,620px);margin:0 auto;padding:16px 14px 34px}.panel{background:#ffffffd9;border:1px solid var(--line);border-radius:20px;padding:17px;margin:0 0 14px;box-shadow:0 7px 24px #d98cb51a}
+h2{font-size:16px;margin:0 0 13px}label{display:block;font-size:13px;font-weight:700;margin:12px 0 6px}
+input,select{width:100%;border:1px solid #e9d4e1;background:#fffafd;border-radius:12px;padding:12px;color:var(--ink);font:inherit;font-size:15px;outline-color:var(--pink)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.modes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mode{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fff8fc;cursor:pointer;text-align:center;font-weight:700;color:var(--ink)}
+.mode.active{border-color:var(--pink);background:#ffe8f3;box-shadow:inset 0 0 0 1px var(--pink)}
+button{border:0;border-radius:14px;padding:13px 15px;font:inherit;font-weight:800;cursor:pointer}.primary{width:100%;background:linear-gradient(110deg,#e98bb8,#f3b8d5);color:white;box-shadow:0 5px 14px #e98bb844;margin-top:14px}
+.secondary{background:#fff0f7;color:#985a7b;border:1px solid #f0d3e2}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons button{flex:1;min-width:110px}
+#result{white-space:pre-wrap;line-height:1.9;font-size:15px;overflow-wrap:anywhere}#status{font-size:12px;color:#98758b;margin-top:8px;line-height:1.6}
+footer{text-align:center;color:#b28aa2;font-size:11px;padding:8px 20px 28px}.hidden{display:none!important}.small{font-size:12px;color:#9a7a8d;line-height:1.7}
+@media(min-width:520px){main{padding-top:22px}.panel{padding:20px}}
+</style>
+</head>
+<body>
+<header><div class="sparkle">✧ ♡ ✧ ♡ ✧</div><h1>ここあの自動作詞ルーム</h1><div class="subtitle">あなたの想いを、きらめく歌詞に。 ♡</div></header>
+<main>
+<section class="panel"><h2>🎀 作詞モード</h2><div class="modes"><button id="templateMode" class="mode active" type="button">🌷 定型文モード</button><button id="aiMode" class="mode" type="button">✨ AI作詞モード</button></div>
+<div id="aiSettings" class="hidden"><label for="apiUrl">AI接続先URL（自分で用意した安全なサーバー）</label><input id="apiUrl" type="url" placeholder="https://your-server.example/api/lyrics"><p class="small">AIモードには対応するサーバーが必要です。APIキーをHTMLに書かず、サーバー側で管理してください。</p></div></section>
+<section class="panel"><h2>💗 どんな歌にする？</h2><div class="row"><div><label for="theme">テーマ</label><select id="theme"><option value="恋愛">ときめく恋愛</option><option value="家族">家族への想い</option><option value="青春">きらめく青春</option><option value="友情">大切な友情</option><option value="応援">やさしい応援</option><option value="季節">季節・風景</option><option value="感謝">ありがとうの気持ち</option><option value="切ない">切なくしんみり</option><option value="クリスマス">クリスマス</option><option value="自由">自由テーマ</option></select></div>
+<div><label for="mood">雰囲気</label><select id="mood"><option value="可愛く上品">可愛く上品</option><option value="キラキラ">キラキラ</option><option value="切ない">切ない</option><option value="元気">元気いっぱい</option><option value="幻想的">幻想的</option><option value="感動的">感動的</option></select></div></div>
+<div class="row"><div><label for="length">曲の長さ</label><select id="length"><option value="short">短め（1番）</option><option value="standard" selected>標準（1番＋サビ）</option><option value="full">フル構成</option></select></div><div><label for="voice">歌詞の視点</label><select id="voice"><option value="私">「私」から</option><option value="君">「君」へ</option><option value="二人">ふたりの物語</option><option value="自由">自由に</option></select></div></div>
+<label for="keywords">入れたい言葉（任意）</label><input id="keywords" placeholder="例：星空、ありがとう、また会おう"><label for="titleInput">タイトル案（任意）</label><input id="titleInput" placeholder="空欄なら自動で考えるよ"><button class="primary" id="generate" type="button">✧ 歌詞をつくる ✧</button><div id="status" role="status">定型文モードはオフラインでも使えます。</div></section>
+<section class="panel"><h2>🎼 できあがった歌詞</h2><div id="result">ここに、あなたの想いから生まれた歌詞が表示されるよ♡</div><div class="buttons" style="margin-top:15px"><button class="secondary" id="copy" type="button">📋 コピー</button><button class="secondary" id="again" type="button">🔄 もう一度つくる</button><button class="secondary" id="download" type="button">💾 TXT保存</button></div></section>
+<footer>♡ ここあの自動作詞ルーム ♡<br>生まれた歌詞は自由に編集して、自分らしい一曲に仕上げてね。</footer>
+</main>
+<script>
+const $=id=>document.getElementById(id);let mode="template",lastLyrics="";
+$("templateMode").onclick=()=>setMode("template");$("aiMode").onclick=()=>setMode("ai");
+function setMode(next){mode=next;$("templateMode").classList.toggle("active",mode==="template");$("aiMode").classList.toggle("active",mode==="ai");$("aiSettings").classList.toggle("hidden",mode!=="ai");$("status").textContent=mode==="template"?"定型文モードはオフラインでも使えます。":"AI接続先URLを設定してください。APIキーはブラウザに置かず、サーバー側で管理します。";}
+const library={
+"恋愛":{titles:["恋する星のきらめき","君に届けたいリボン","ときめきの魔法"],a:["君を見つけたあの日から　景色が少し変わったの","いつもの帰り道さえも　宝石みたいに輝くの","小さな笑顔ひとつで　心に花が咲くんだね"],b:["言葉にすると照れちゃうけど　この想いは本物だよ","あと少しだけ近づいて　同じ夢を見ていたい"],c:["きらきら　君が好き　星よりまぶしいその笑顔","ふわふわ　恋の魔法　明日も隣で笑ってね","大好きの気持ちを　リボンに結んで届けるよ"]},
+"家族":{titles:["ぬくもりの帰る場所","ありがとうの灯り","家族の星空"],a:["何気ない毎日の中　守られていたぬくもり","叱ってくれたその声も　今なら愛だとわかるよ","食卓に並ぶ笑顔が　心の奥で光ってる"],b:["言えなかったありがとう　今日はそっと伝えたい","離れていても心には　変わらない場所がある"],c:["ありがとう　大切な人　あなたの愛を忘れない","涙も笑顔も抱きしめて　明日へ歩いていこう","帰る場所があるから　私は強くなれるんだ"]},
+"青春":{titles:["青春ログイン","まぶしい今日の続き","夢色のページ"],a:["放課後の空に描いた　まだ名前のない夢","失敗だって笑い合えば　思い出に変わるね","何でもないこの瞬間が　宝物になる気がした"],b:["迷いながらでいいんだよ　自分らしく進もう","未来のページをめくるのは　今の私たちだから"],c:["きらめけ青春　今しかないこの時間","何度だって夢を描こう　君となら大丈夫","笑顔のしるしを胸に　明日へ駆け出そう"]},
+"友情":{titles:["君と見つけた虹","ふたり分の勇気","ずっと味方だよ"],a:["元気が出ない帰り道　君が隣にいてくれた","くだらない話で笑って　いつの間にか晴れた空","言葉にしなくても伝わる　やさしいそのまなざし"],b:["うまくいかない日が来ても　ひとりぼっちじゃないよ","君がくれた勇気を今度は　私が届ける番だね"],c:["ありがとう　君がいる　それだけで強くなれる","泣きたい夜も笑える日も　大切に重ねていこう","これからもずっと　君の味方でいるからね"]},
+"応援":{titles:["小さな一歩の魔法","明日はきっと晴れる","君だけの花"],a:["思いどおりにならなくて　ため息こぼれる日もある","誰にも見えない努力を　私はちゃんと知ってるよ","ゆっくりでいい　一歩ずつ　君の歩幅で進もう"],b:["頑張りすぎなくていいよ　休むことも大切だから","曇り空の向こう側に　やさしい光が待っている"],c:["大丈夫　君は君のままでいい","小さな一歩が未来を変える","咲かせよう　君だけの花　明日はきっと輝くよ"]},
+"季節":{titles:["季節の宝石箱","風にほどける花びら","四季色メロディー"],a:["やわらかな風が頬をなで　街の色が変わってく","窓辺に差し込む光まで　今日は少し特別ね","季節のページをめくるたび　思い出がそっと香る"],b:["過ぎてゆく時間の中で　大切なものを見つけた","この景色を忘れないように　心にそっとしまおう"],c:["きらり　季節が歌い出す　世界はこんなに美しい","ひらり　願いを風にのせ　明日へ届けていこう","めぐる季節の真ん中で　君と笑えたらいいな"]},
+"感謝":{titles:["ありがとうの花束","心に届くメロディー","感謝のリボン"],a:["何気なくくれた言葉に　何度も救われてきたよ","そばにいてくれた時間が　私の宝物なんだ","うまく伝えられないけど　心いっぱいありがとう"],b:["小さな優しさひとつずつ　今も胸に輝いてる","この歌に想いを込めて　あなたへ届けたい"],c:["ありがとう　出会えてよかった","あなたの笑顔が私の光","心に咲いた花束を　いっぱいの愛で贈るね"]},
+"切ない":{titles:["涙のあとに咲く花","さよならの余白","星降る夜の約束"],a:["窓辺に残る夕焼けが　あの日の声を連れてくる","笑っていた写真の中　戻れない時が揺れている","言えなかった言葉だけが　静かな夜に降り積もる"],b:["忘れたいわけじゃないよ　大切だった証だから","涙が乾くその日まで　思い出を抱いて歩こう"],c:["さよならはまだ言えないけど　あなたの幸せ願ってる","遠く離れた空の下で　同じ星を見ていますか","切なさの向こうにいつか　やさしい朝が来るように"]},
+"クリスマス":{titles:["聖夜のきらめきリボン","雪降る街の恋予報","クリスマスの魔法"],a:["街の灯りが宝石みたい　白い息まできらめく夜","ショーウィンドウに映る夢　赤いリボンが揺れている","鈴の音がそっと響いて　心が弾み出す季節"],b:["大切な人の笑顔を　そっと思い浮かべたら","いつもの街も特別な　物語に変わるんだね"],c:["メリークリスマス　星を飾ろう","小さな願いに魔法をかけて","雪のように舞う幸せを　あなたのもとへ届けたい"]},
+"自由":{titles:["心のきらめき","夢のつづき","私だけのメロディー"],a:["胸の奥で小さな夢が　そっと目を覚ました","まだ見ぬ景色を探しに　新しいドアを開けよう","何気ない毎日だって　物語に変えられる"],b:["自分らしい言葉でいい　想いを歌にしてみよう","心のリズムに合わせて　未来へ歩き出そう"],c:["きらきら輝くこの気持ち　歌にのせて届けよう","世界にひとつのメロディー　私らしく奏でよう","明日がもっと好きになる　そんな歌を歌おう"]}
+};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+function makeTemplate(){const theme=$("theme").value,mood=$("mood").value,len=$("length").value,voice=$("voice").value,d=library[theme]||library["自由"],title=$("titleInput").value.trim()||pick(d.titles),kw=$("keywords").value.split(/[、,，\s]+/).filter(Boolean);let out=`♪ ${title} ♪\nテーマ：${theme} ／ 雰囲気：${mood}${kw.length?"\nキーワード："+kw.join("・"):""}\n\n【Aメロ】\n${pick(d.a)}\n${pick(d.a)}\n\n【Bメロ】\n${pick(d.b)}\n${pick(d.b)}\n\n【サビ】\n${pick(d.c)}\n${pick(d.c)}`;if(len==="short")out=`♪ ${title} ♪\n\n【Aメロ】\n${pick(d.a)}\n\n【サビ】\n${pick(d.c)}`;if(len==="full")out+=`\n\n【2番 Aメロ】\n${pick(d.a)}\n${pick(d.a)}\n\n【2番 Bメロ】\n${pick(d.b)}\n\n【サビ】\n${pick(d.c)}\n${pick(d.c)}\n\n【ラスサビ】\n${pick(d.c)}\n${pick(d.c)}\n大切な想いを胸に　明日へ歌い続けよう`;if(voice==="君")out=out.replace(`♪ ${title} ♪`,`♪ ${title} ♪\n君へ届ける歌`);if(voice==="二人")out=out.replace(`♪ ${title} ♪`,`♪ ${title} ♪\nふたりの物語`);return out;}
+async function generate(){$("generate").disabled=true;$("status").textContent="歌詞を考えています…";try{if(mode==="ai"){const url=$("apiUrl").value.trim();if(!url)throw Error("AI接続先URLを入力してください。対応するサーバーが必要です。");const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({theme:$("theme").value,mood:$("mood").value,length:$("length").value,voice:$("voice").value,keywords:$("keywords").value,title:$("titleInput").value})});if(!r.ok)throw Error("AIサーバーから応答がありません（"+r.status+"）。");const d=await r.json();lastLyrics=typeof d.lyrics==="string"?d.lyrics:"";if(!lastLyrics)throw Error("サーバーの返答に lyrics がありません。");}else lastLyrics=makeTemplate();$("result").textContent=lastLyrics;$("status").textContent="できあがり！気になるところは自由に編集してね。";}catch(e){$("status").textContent=e.message+" 定型文モードならすぐに作詞できます。";}finally{$("generate").disabled=false}}
+$("generate").onclick=generate;$("again").onclick=generate;
+$("copy").onclick=async()=>{try{await navigator.clipboard.writeText($("result").textContent);$("status").textContent="歌詞をコピーしました♡";}catch(e){$("status").textContent="コピーできない場合は、歌詞を長押しして選択・コピーしてください。";}};
+$("download").onclick=()=>{const u=URL.createObjectURL(new Blob([$("result").textContent],{type:"text/plain;charset=utf-8"}));const a=document.createElement("a");a.href=u;a.download="ここあの自動作詞ルーム_歌詞.txt";a.click();URL.revokeObjectURL(u);};
+</script>
+</body>
+</html>
