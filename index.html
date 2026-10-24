@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#ffe6f3"><title>ここあ Music Studio | 作曲ワークステーション</title><style>*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:linear-gradient(145deg,#ffe6f3,#eee4ff);color:#60365e}.wrap{max-width:850px;margin:auto;padding:16px}header{background:#ffffffba;border-radius:22px;padding:20px;text-align:center;box-shadow:0 6px 24px #a96d9c22}h1{margin:0;color:#b43f8c}h2{font-size:1.1rem}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}button{border:0;border-radius:14px;padding:12px 16px;background:#f5b3d7;color:#622e59;font-weight:700;cursor:pointer}button.active,button.primary{background:#b94c9b;color:white}section{display:none;background:#ffffffcf;padding:18px;border-radius:20px;box-shadow:0 4px 16px #a96d9c1a}section.active{display:block}textarea,input,select{width:100%;border:1px solid #e8b6d4;border-radius:12px;padding:12px;font:inherit;margin:7px 0;background:#fff}textarea{min-height:230px;resize:vertical}.keys{display:flex;gap:3px;overflow-x:auto;padding:12px 0}.key{min-width:43px;height:140px;background:white;border:1px solid #c7a5c5;border-radius:0 0 9px 9px;padding:0;color:#765;display:flex;align-items:end;justify-content:center}.key.sharp{background:#65445f;color:white;height:95px;min-width:35px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.steps select{min-width:0}small{color:#805b7b}.auto-panel{padding:14px;margin:12px 0 18px;border:1px solid #efc1e0;border-radius:17px;background:#fff4fc}.auto-panel h3{margin:0 0 9px}.proposal{padding:12px;background:white;border-radius:12px;margin-top:10px}.proposal button{margin-top:7px}.auto-panel small{display:block;margin-top:9px}footer{text-align:center;padding:20px}.lyric-actions{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}.lyric-actions button{flex:1;min-width:130px;background:linear-gradient(120deg,#ffb3d9,#f8c8ee)}.lyric-actions #makeSong{color:#982b72;font-size:1.05rem}.context-note{font-weight:700;color:#a33b80}.auto-panel .primary{background:linear-gradient(120deg,#c53b96,#b34d9b)}#karaokeScreen{min-height:260px;border-radius:22px;padding:24px 15px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;position:relative;background:radial-gradient(circle at 30% 15%,#ffb6dc,#b278bc 65%,#5c3b88);color:white}#karaokeScreen.winter{background:radial-gradient(circle at 30% 10%,#d7f5ff,#7aa4d8 60%,#535eab)}#karaokeScreen.youth{background:radial-gradient(circle at 30% 10%,#ffe6aa,#ffa3b4 60%,#8c77cc)}#karaokeScreen.cheer{background:radial-gradient(circle at 30% 10%,#fff1a8,#f9a4b7 60%,#b45d99)}#karaokeScreen.dream{background:radial-gradient(circle at 30% 10%,#e2c6ff,#a69bee 60%,#6952a0)}#karaokeScreen:before{content:'✦  ♫  ✧  ♡  ✦  ♪  ✧';position:absolute;top:20px;opacity:.55;font-size:26px}#karaokeLine{font-size:clamp(23px,6vw,34px);font-weight:800;line-height:1.6;text-shadow:0 2px 8px #5a316d;z-index:1}#karaokeNext{opacity:.7;margin-top:15px;z-index:1}#karaokeScreen .lit{color:#ffe07d}#karaokeControls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}#karaokeProgress{width:100%;accent-color:#c53b96}button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #a23c91;outline-offset:2px}@media(max-width:390px){.wrap{padding:12px}section{padding:14px}.tabs button{padding:11px 13px}}</style><style>.genre-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.genre-card{background:#fff;border:2px solid #f1c7e2;border-radius:15px;text-align:left;padding:12px}.genre-card.chosen{border-color:#c53b96;background:#fff0fa}.genre-card strong{display:block}.genre-card small{display:block;font-size:12px;margin-top:5px}.music-settings{display:grid;grid-template-columns:1fr 1fr;gap:10px}.music-settings label{font-size:13px}.music-settings input,.music-settings select{margin-top:5px}.song-buttons{display:flex;gap:8px;flex-wrap:wrap}.song-buttons button{flex:1;min-width:120px}.track-list{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.track-list span{border-radius:100px;background:#f9d5eb;padding:5px 10px;font-size:12px}@media(max-width:420px){.music-settings{grid-template-columns:1fr}}</style><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101428"><title>ここあ Music Studio V3.6 | ライバー向け選曲・作曲・カラオケ</title><style>*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:linear-gradient(145deg,#ffe6f3,#eee4ff);color:#60365e}.wrap{max-width:850px;margin:auto;padding:16px}header{background:#ffffffba;border-radius:22px;padding:20px;text-align:center;box-shadow:0 6px 24px #a96d9c22}h1{margin:0;color:#b43f8c}h2{font-size:1.1rem}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}button{border:0;border-radius:14px;padding:12px 16px;background:#f5b3d7;color:#622e59;font-weight:700;cursor:pointer}button.active,button.primary{background:#b94c9b;color:white}section{display:none;background:#ffffffcf;padding:18px;border-radius:20px;box-shadow:0 4px 16px #a96d9c1a}section.active{display:block}textarea,input,select{width:100%;border:1px solid #e8b6d4;border-radius:12px;padding:12px;font:inherit;margin:7px 0;background:#fff}textarea{min-height:230px;resize:vertical}.keys{display:flex;gap:3px;overflow-x:auto;padding:12px 0}.key{min-width:43px;height:140px;background:white;border:1px solid #c7a5c5;border-radius:0 0 9px 9px;padding:0;color:#765;display:flex;align-items:end;justify-content:center}.key.sharp{background:#65445f;color:white;height:95px;min-width:35px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.steps select{min-width:0}small{color:#805b7b}.auto-panel{padding:14px;margin:12px 0 18px;border:1px solid #efc1e0;border-radius:17px;background:#fff4fc}.auto-panel h3{margin:0 0 9px}.proposal{padding:12px;background:white;border-radius:12px;margin-top:10px}.proposal button{margin-top:7px}.auto-panel small{display:block;margin-top:9px}footer{text-align:center;padding:20px}.lyric-actions{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}.lyric-actions button{flex:1;min-width:130px;background:linear-gradient(120deg,#ffb3d9,#f8c8ee)}.lyric-actions #makeSong{color:#982b72;font-size:1.05rem}.context-note{font-weight:700;color:#a33b80}.auto-panel .primary{background:linear-gradient(120deg,#c53b96,#b34d9b)}#karaokeScreen{min-height:260px;border-radius:22px;padding:24px 15px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;position:relative;background:radial-gradient(circle at 30% 15%,#ffb6dc,#b278bc 65%,#5c3b88);color:white}#karaokeScreen.winter{background:radial-gradient(circle at 30% 10%,#d7f5ff,#7aa4d8 60%,#535eab)}#karaokeScreen.youth{background:radial-gradient(circle at 30% 10%,#ffe6aa,#ffa3b4 60%,#8c77cc)}#karaokeScreen.cheer{background:radial-gradient(circle at 30% 10%,#fff1a8,#f9a4b7 60%,#b45d99)}#karaokeScreen.dream{background:radial-gradient(circle at 30% 10%,#e2c6ff,#a69bee 60%,#6952a0)}#karaokeScreen:before{content:'✦  ♫  ✧  ♡  ✦  ♪  ✧';position:absolute;top:20px;opacity:.55;font-size:26px}#karaokeLine{font-size:clamp(23px,6vw,34px);font-weight:800;line-height:1.6;text-shadow:0 2px 8px #5a316d;z-index:1}#karaokeNext{opacity:.7;margin-top:15px;z-index:1}#karaokeScreen .lit{color:#ffe07d}#karaokeControls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}#karaokeProgress{width:100%;accent-color:#c53b96}button:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid #a23c91;outline-offset:2px}@media(max-width:390px){.wrap{padding:12px}section{padding:14px}.tabs button{padding:11px 13px}}</style><style>.genre-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.genre-card{background:#fff;border:2px solid #f1c7e2;border-radius:15px;text-align:left;padding:12px}.genre-card.chosen{border-color:#c53b96;background:#fff0fa}.genre-card strong{display:block}.genre-card small{display:block;font-size:12px;margin-top:5px}.music-settings{display:grid;grid-template-columns:1fr 1fr;gap:10px}.music-settings label{font-size:13px}.music-settings input,.music-settings select{margin-top:5px}.song-buttons{display:flex;gap:8px;flex-wrap:wrap}.song-buttons button{flex:1;min-width:120px}.track-list{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0}.track-list span{border-radius:100px;background:#f9d5eb;padding:5px 10px;font-size:12px}@media(max-width:420px){.music-settings{grid-template-columns:1fr}}</style><style>
 /* ここあ歌姫：画像や外部通信に依存しない軽量アニメーション */
 .idol-stage{position:relative;overflow:hidden;isolation:isolate;margin:15px 0;border-radius:23px;padding:14px 12px 12px;background:radial-gradient(circle at 75% 12%,#fff4fc,#ffd5ef 48%,#d9c0f7);border:2px solid #f2b9df;text-align:center;box-shadow:0 7px 24px #ad569a20}
 .idol-stage:before{content:'✦  ♡  ♪  ✧  ♫  ✦';position:absolute;inset:12px 0 auto;font-size:24px;letter-spacing:14px;color:#bb65a9;opacity:.5;animation:idol-spark 3s ease-in-out infinite;pointer-events:none}
@@ -40,7 +40,7 @@ section{background:#fffafdf2}.idol-stage{max-width:600px;margin:16px auto!import
 @media(prefers-reduced-motion:reduce){.cocoa-princess img,.cocoa-floating-heart{animation:none}.cocoa-menu button{transition:none}}
 </style><style>
 :root{color-scheme:dark}body{background:linear-gradient(145deg,#101827,#1a2340 60%,#111b2e);color:#e5edfa}header,section,.auto-panel,.proposal{background:#1b2840!important;color:#e5edfa!important;border-color:#394e6c!important}header{box-shadow:0 8px 30px #0006}h1,h2,h3,.context-note{color:#d9e9ff!important}button{background:#30496c;color:#f4f8ff}button.active,button.primary{background:#3c79ca;color:white}input,textarea,select{background:#101b2e;color:#eaf2ff;border-color:#4c668a}.tabs button{border:1px solid #526888}.cocoa-princess,.idol-stage,.cocoa-topline,.cocoa-home-note,.cocoa-floating-heart{display:none!important}.cocoa-home{display:none!important}button[data-tab="vocal"],button[data-tab="karaoke"],#vocal,#karaoke{display:none!important}.ai-workspace{background:#1a2941;border:1px solid #3c5577;border-radius:20px;padding:18px;margin:16px 0;box-shadow:0 8px 30px #0004}.ai-workspace h2{margin-top:0}.ai-workspace label{display:block;margin-top:10px;font-size:14px}.ai-workspace textarea{min-height:115px}.ai-workspace .buttons{display:flex;flex-wrap:wrap;gap:8px}.ai-workspace .buttons button{flex:1;min-width:140px}.ai-workspace p,.ai-workspace small{color:#b7c8e0}.ai-workspace audio{width:100%}.ai-workspace .notice{border-left:3px solid #6bafff;padding:8px 12px;background:#122039}.ai-workspace .fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:550px){.ai-workspace .fieldgrid{grid-template-columns:1fr}}.track-list span{background:#294366;color:#e5edfa}footer{color:#afc4dd}
-</style></head><body><div class="wrap"><div class="cocoa-home" id="cocoaHome"><div class="cocoa-topline"><div class="cocoa-brand-new"><span>♛ ここあ ♡</span><strong>Music Studio ♪</strong><small>音楽に想いをのせて、世界にひとつのメロディーを ♡</small></div></div><div class="cocoa-dashboard"><div class="cocoa-main-menu"><h2>🌸 ここあの音楽ルーム ♡</h2><div class="cocoa-menu"><button data-home-tab="lyrics"><span>📝</span><b>作詞</b><small>想いを言葉に♡</small></button><button data-home-tab="compose"><span>🎵</span><b>作曲</b><small>メロディーを創る♡</small></button><button data-home-tab="piano"><span>🎹</span><b>ピアノ・コード</b><small>音を奏でよう♪</small></button><button data-home-tab="vocal"><span>🎤</span><b>歌声</b><small>歌声制作ガイド♡</small></button><button data-home-tab="arrange"><span>🎼</span><b>楽譜</b><small>五線譜・PDF♪</small></button><button data-home-tab="arrange"><span>🎚️</span><b>編曲</b><small>アレンジを楽しむ♡</small></button><button data-home-tab="karaoke"><span>🎶</span><b>カラオケ</b><small>歌詞と一緒に♡</small></button><button data-home-tab="compose"><span>💾</span><b>保存・共有</b><small>WAV・MIDI保存♪</small></button></div><button class="cocoa-enter" data-home-tab="lyrics">① 作詞からはじめる ♡</button></div></div><div class="cocoa-home-note">🌸 メニューをタップすると、今までの制作機能を開けるよ ♡</div></div><header><h1>🎛️ ここあ Music Studio</h1><p>歌詞・イメージから本格インスト曲の制作へ</p></header><div class="idol-stage" id="idolStage" aria-label="動く歌姫ここあ">
+</style></head><body><div class="wrap"><div class="cocoa-home" id="cocoaHome"><div class="cocoa-topline"><div class="cocoa-brand-new"><span>♛ ここあ ♡</span><strong>Music Studio ♪</strong><small>音楽に想いをのせて、世界にひとつのメロディーを ♡</small></div></div><div class="cocoa-dashboard"><div class="cocoa-main-menu"><h2>🌸 ここあの音楽ルーム ♡</h2><div class="cocoa-menu"><button data-home-tab="lyrics"><span>📝</span><b>作詞</b><small>想いを言葉に♡</small></button><button data-home-tab="compose"><span>🎵</span><b>作曲</b><small>メロディーを創る♡</small></button><button data-home-tab="piano"><span>🎹</span><b>ピアノ・コード</b><small>音を奏でよう♪</small></button><button data-home-tab="vocal"><span>🎤</span><b>歌声</b><small>歌声制作ガイド♡</small></button><button data-home-tab="arrange"><span>🎼</span><b>楽譜</b><small>五線譜・PDF♪</small></button><button data-home-tab="arrange"><span>🎚️</span><b>編曲</b><small>アレンジを楽しむ♡</small></button><button data-home-tab="karaoke"><span>🎶</span><b>カラオケ</b><small>歌詞と一緒に♡</small></button><button data-home-tab="vocalfit"><span>🎙️</span><b>ライバー選曲</b><small>声質に合わせて選ぶ</small></button><button data-home-tab="compose"><span>💾</span><b>保存・共有</b><small>WAV・MIDI保存♪</small></button></div><button class="cocoa-enter" data-home-tab="lyrics">① 作詞からはじめる ♡</button></div></div><div class="cocoa-home-note">🌸 メニューをタップすると、今までの制作機能を開けるよ ♡</div></div><header><h1>🎛️ ここあ Music Studio</h1><p>歌詞・イメージから本格インスト曲の制作へ</p></header><div class="idol-stage" id="idolStage" aria-label="動く歌姫ここあ">
 <h2>🎀 ここあの歌姫ステージ ♡</h2><p>まばたき・手振り・歌う仕草で応援するよ♪</p>
 <svg class="idol-art" viewBox="0 0 310 280" role="img" aria-label="ピンクのドレスでマイクを持つアニメ風の歌姫ここあ">
 <defs><linearGradient id="hair" x2="1" y2="1"><stop stop-color="#f8a7d8"/><stop offset="1" stop-color="#bb76c4"/></linearGradient><linearGradient id="dress" x2="0" y2="1"><stop stop-color="#ffebf7"/><stop offset="1" stop-color="#e88ac7"/></linearGradient></defs>
@@ -65,7 +65,7 @@ section{background:#fffafdf2}.idol-stage{max-width:600px;margin:16px auto!import
 <text x="244" y="73" font-size="27" fill="#b66ba5">♫</text><text x="56" y="88" font-size="24" fill="#c57cbd">✧</text>
 </svg>
 <div class="idol-controls"><p class="idol-status" id="idolStatus" aria-live="polite">💕 ここあが応援しているよ♡</p><button type="button" id="idolCheer">♡ ここあに応援してもらう</button><button type="button" id="idolMotion">動きを止める</button></div>
-</div><nav class="tabs"><button class="active" data-tab="lyrics">① 📝 作詞</button><button data-tab="compose">② 🎼 作曲</button><button data-tab="piano">🎹 ピアノ</button><button data-tab="chords">💕 コード</button><button data-tab="karaoke">🎤 カラオケ</button><button data-tab="vocal">🎙️ 歌声</button><button data-tab="arrange" type="button" id="arrangeTab">🎻 編曲・楽譜</button></nav><section id="lyrics" class="active"><h2>🌸 ここあの作詞ルーム</h2><div class="auto-panel"><h3>✨ ここあ作詞アシスタント</h3><label>テーマ<select id="theme"><option value="love">恋愛</option><option value="youth">青春</option><option value="winter">冬の思い出</option><option value="cheer">応援</option><option value="dream">夢と希望</option><option value="spring">春と桜</option><option value="summer">夏と海</option><option value="autumn">秋と紅葉</option><option value="friend">友情</option><option value="family">家族</option><option value="thanks">感謝</option><option value="farewell">別れ</option><option value="reunion">再会</option><option value="firstlove">初恋</option><option value="heartbreak">失恋</option><option value="longdistance">遠距離恋愛</option><option value="birthday">誕生日</option><option value="wedding">結婚と祝福</option><option value="halloween">ハロウィン</option><option value="christmas">クリスマス</option><option value="night">星空と夜</option><option value="rain">雨の日</option><option value="travel">旅と冒険</option><option value="fantasy">ファンタジー</option><option value="anime">アニメヒーロー</option><option value="dance">ダンスとパーティー</option><option value="healing">癒やし</option><option value="nostalgia">懐かしい思い出</option><option value="future">未来と挑戦</option><option value="pets">ペットと動物</option><option value="ore">俺</option><option value="watashi">わたし</option></select></label><label>雰囲気<select id="lyricMood"><option value="sweet">💕 可愛く優しい</option><option value="sad">🥀 切なく</option><option value="bright">☀️ 明るく元気</option><option value="emotional">💧 感動的・泣ける</option><option value="romantic">🌹 ロマンチック</option><option value="cool">🖤 クール・かっこいい</option><option value="powerful">🔥 力強く情熱的</option><option value="dark">🌙 ダーク・ミステリアス</option><option value="dreamy">🦄 夢かわいい</option><option value="nostalgic">🍁 懐かしく</option><option value="healing">🫧 癒やし・穏やか</option><option value="hopeful">🌈 希望に満ちた</option><option value="lonely">🌧️ 孤独・寂しさ</option><option value="dramatic">🎬 ドラマチック</option><option value="funny">🎉 楽しくコミカル</option><option value="mature">🍷 大人っぽく</option></select></label><input id="keyword" placeholder="入れたい言葉（例：星空・ありがとう）"><button class="primary" id="autoLyrics">✨ ここあが歌詞を生成</button><div class="lyric-actions"><button id="makeSong">🎵 曲にする</button><button id="copyLyrics">📄 歌詞をコピー</button></div><small>ここあがフレーズを組み合わせて歌詞を作ります。生成後に自由に編集できます。</small></div><input id="songTitle" placeholder="曲のタイトル"><textarea id="lyricText" placeholder="ここに想いを綴ってね…♡"></textarea><button class="primary" id="saveLyrics">歌詞を保存 ♡</button><button id="exportLyrics">テキストでダウンロード</button><p id="lyricStatus" aria-live="polite"></p></section><div class="ai-workspace" id="aiStudio">
+</div><nav class="tabs"><button class="active" data-tab="lyrics">① 📝 作詞</button><button data-tab="compose">② 🎼 作曲</button><button data-tab="piano">🎹 ピアノ</button><button data-tab="chords">💕 コード</button><button data-tab="karaoke">③ 🎤 カラオケ</button><button data-tab="vocalfit">🎙️ ライバー選曲</button><button data-tab="vocal">🎙️ 歌声</button><button data-tab="arrange" type="button" id="arrangeTab">🎻 編曲・楽譜</button></nav><section id="lyrics" class="active"><h2>🌸 ここあの作詞ルーム</h2><div class="auto-panel"><h3>✨ ここあ作詞アシスタント</h3><label>テーマ<select id="theme"><option value="love">恋愛</option><option value="youth">青春</option><option value="winter">冬の思い出</option><option value="cheer">応援</option><option value="dream">夢と希望</option><option value="spring">春と桜</option><option value="summer">夏と海</option><option value="autumn">秋と紅葉</option><option value="friend">友情</option><option value="family">家族</option><option value="thanks">感謝</option><option value="farewell">別れ</option><option value="reunion">再会</option><option value="firstlove">初恋</option><option value="heartbreak">失恋</option><option value="longdistance">遠距離恋愛</option><option value="birthday">誕生日</option><option value="wedding">結婚と祝福</option><option value="halloween">ハロウィン</option><option value="christmas">クリスマス</option><option value="night">星空と夜</option><option value="rain">雨の日</option><option value="travel">旅と冒険</option><option value="fantasy">ファンタジー</option><option value="anime">アニメヒーロー</option><option value="dance">ダンスとパーティー</option><option value="healing">癒やし</option><option value="nostalgia">懐かしい思い出</option><option value="future">未来と挑戦</option><option value="pets">ペットと動物</option><option value="ore">俺</option><option value="watashi">わたし</option></select></label><label>雰囲気<select id="lyricMood"><option value="sweet">💕 可愛く優しい</option><option value="sad">🥀 切なく</option><option value="bright">☀️ 明るく元気</option><option value="emotional">💧 感動的・泣ける</option><option value="romantic">🌹 ロマンチック</option><option value="cool">🖤 クール・かっこいい</option><option value="powerful">🔥 力強く情熱的</option><option value="dark">🌙 ダーク・ミステリアス</option><option value="dreamy">🦄 夢かわいい</option><option value="nostalgic">🍁 懐かしく</option><option value="healing">🫧 癒やし・穏やか</option><option value="hopeful">🌈 希望に満ちた</option><option value="lonely">🌧️ 孤独・寂しさ</option><option value="dramatic">🎬 ドラマチック</option><option value="funny">🎉 楽しくコミカル</option><option value="mature">🍷 大人っぽく</option></select></label><input id="keyword" placeholder="入れたい言葉（例：星空・ありがとう）"><button class="primary" id="autoLyrics">✨ ここあが歌詞を生成</button><div class="lyric-actions"><button id="makeSong">🎵 曲にする</button><button id="copyLyrics">📄 歌詞をコピー</button></div><small>ここあがフレーズを組み合わせて歌詞を作ります。生成後に自由に編集できます。</small></div><input id="songTitle" placeholder="曲のタイトル"><textarea id="lyricText" placeholder="ここに想いを綴ってね…♡"></textarea><button class="primary" id="saveLyrics">歌詞を保存 ♡</button><button id="exportLyrics">テキストでダウンロード</button><p id="lyricStatus" aria-live="polite"></p></section><div class="ai-workspace" id="aiStudio">
 <h2>② 🎛️ 作曲ワークステーション</h2>
 <p>曲のイメージから編曲プランを作成。アプリ内の自動伴奏を使うか、外部の音楽生成エンジン向けの制作指示をコピーできます。</p>
 <label for="aiIdea">曲のテーマ・イメージ</label><textarea id="aiIdea" placeholder="例：夜明けの高速道路。疾走感のあるシティポップ、透明感のあるピアノ、印象的なサビ。歌声なし。"></textarea>
@@ -76,7 +76,26 @@ section{background:#fffafdf2}.idol-stage{max-width:600px;margin:16px auto!import
 <div class="notice"><strong>品質について：</strong>アプリ内の自動作曲はルールベースの電子音による試作です。市販曲品質の生成AIはこのZIPには内蔵されていません。外部サービスで生成する場合は、そのサービスの利用条件・費用を確認してください。</div>
 <label>外部で完成したインスト音源を読み込んで試聴（端末内のみ）<input id="aiAudio" type="file" accept="audio/*"></label><audio id="aiAudioPlayer" controls></audio><div class="buttons"><button id="aiAudioSave">音源を保存</button><button id="aiPromptSave">制作指示を保存</button></div><p id="aiStatus" aria-live="polite"></p>
 </div>
-<section id="compose"><h2>🎼 メロディーを作ろう</h2><p>8つの音を選んでメロディーを試聴できるよ♪（歌声の生成はまだありません）</p><div class="auto-panel"><h3>🎀 ここあの曲づくり提案</h3><label>曲調<select id="style"><option value="pop">キラキラ J-POP</option><option value="ballad">切ないバラード</option><option value="anime">元気なアニメソング</option><option value="dream">夢かわいいワルツ</option></select></label><button class="primary" id="suggestMusic">🎼 3つの曲案を提案</button><p id="songContext" class="context-note" aria-live="polite"></p><div id="suggestions" aria-live="polite"></div></div><div class="auto-panel" id="fullSongPanel"><h3>🎶 ここあの本格曲づくり ♡</h3><p>曲調を選ぶと、ドラム・ベース・コード・メロディーを重ねて演奏するよ♪</p><div class="genre-grid" id="genreGrid"></div><div class="music-settings"><label>曲の速さ（BPM）<input id="fullBpm" type="number" min="55" max="190" value="112"></label><label>キー<select id="fullKey"><option value="0">C</option><option value="2">D</option><option value="4">E</option><option value="5">F</option><option value="7">G</option><option value="9">A</option><option value="10">B♭</option></select></label></div><div class="track-list"><span>🥁 ドラム</span><span>🎸 ベース</span><span>🎹 コード</span><span>🎶 メロディー</span></div><p id="fullSongInfo" aria-live="polite"></p><div class="song-buttons"><button class="primary" id="fullPreview">▶ 本格アレンジ試聴</button><button id="fullStop">■ 停止</button><button id="fullKaraoke">🎤 カラオケで歌う</button></div><small>端末で楽器風の音を合成する無料版です。実際の歌声やスタジオ録音音源ではありません。</small></div><p>下の音を変更してメロディーを調整できるよ♡</p><div id="notes" class="steps"></div><label>テンポ（BPM）<input id="tempo" type="number" min="40" max="240" value="110"></label><button class="primary" id="playMelody">▶ メロディー再生</button><button id="stopMelody">■ 停止</button><button id="downloadMidi">MIDI保存</button></section><section id="vocal"><h2>🎙️ ここあの歌声スタジオ ♡</h2><p>歌声合成に向けて、歌手のイメージを選び、歌詞と曲の情報を準備できます。</p><div class="auto-panel"><label>歌声のイメージ<select id="vocalType"><option value="cute">💕 可愛い女の子</option><option value="soft">🌸 優しい女の子</option><option value="power">✨ 力強い女の子</option><option value="boy">🔥 爽やかな男の子</option><option value="deep">🌙 落ち着いた男の子</option></select></label><p id="vocalDescription">明るく可愛らしい歌声をイメージ♡</p><button class="primary" id="vocalGuide">📄 歌声制作データを保存</button><p style="font-size:.85rem">歌詞・テンポ・キー・希望する声をテキストにまとめます。実際のAI歌声生成には別途歌声合成エンジンと使用許諾のある音源が必要です。</p></div><div class="auto-panel"><h3>🎧 完成した歌声を聴く</h3><p>外部の歌声合成ソフトで作ったWAV・MP3を読み込んで再生できます。</p><input id="vocalFile" type="file" accept="audio/*" style="max-width:100%"><audio id="vocalPlayer" controls style="width:100%;margin-top:12px"></audio><p id="vocalStatus" aria-live="polite"></p></div></section><section id="karaoke"><h2>🎤 ここあのカラオケルーム ♡</h2><p>歌詞に合わせてピアノ伴奏とメロディーが流れるよ♪</p><div id="karaokeScreen" role="status" aria-live="off"><div id="karaokeLine">歌詞を作って「曲にする」を押してね♡</div><div id="karaokeNext"></div></div><div id="karaokeControls"><button class="primary" id="karaokePlay">▶ カラオケ再生</button><button id="karaokeStop">■ 停止</button><button id="karaokeBack">🎼 曲調を変更</button></div><label>再生位置<input id="karaokeProgress" type="range" min="0" max="100" value="0"></label><p id="karaokeStatus" aria-live="polite"></p><small>音声は端末内で合成しています。歌詞の表示タイミングは目安です。歌声は入りません。</small></section><section id="piano"><h2>🎹 タッチピアノ</h2><p>鍵盤をタップすると音が鳴るよ♪</p><div class="keys" id="keyboard"></div></section><section id="chords"><h2>💕 コード進行ルーム</h2><p>好きな雰囲気を選んでね。</p><select id="mood"><option value="pop">明るい J-POP</option><option value="ballad">切ないバラード</option><option value="dream">夢かわいい</option></select><p id="chordResult"></p><button class="primary" id="playChords">▶ コードを聴く</button></section><footer><small>無料・ブラウザ内で動作 ♡ データは端末に保存されます</small></footer></div><section id="arrange"><h2>🎻 ここあ編曲・楽譜ルーム ♡</h2><p>歌詞のイメージに合わせて楽器とコードを提案。楽譜を作ってPDF保存できるよ♪</p><label>編曲スタイル<select id="arrStyle"><option value="pop">🌸 J-POP</option><option value="ballad">💗 ピアノバラード</option><option value="rock">🔥 バンド・ロック</option><option value="anime">✨ アニメソング</option><option value="city">🌙 シティポップ</option><option value="dance">🎧 ダンスポップ</option><option value="healing">🫧 癒やし</option><option value="fantasy">🎠 ファンタジー</option></select></label><label>曲の速さ（BPM）<input id="arrBpm" type="number" min="50" max="200" value="100"></label><div class="learn-actions"><button class="primary" id="arrMake">✨ ここあが編曲する</button><button id="arrPlay">▶ 編曲を聴く</button><button id="arrStop">■ 停止</button></div><p id="arrDesc" aria-live="polite">スタイルを選んで「ここあが編曲する」を押してね♡</p><h3>🎼 メロディー楽譜（ト音記号）</h3><div id="arrScore" style="overflow-x:auto;background:white;border-radius:12px;padding:8px"></div><div class="learn-actions"><button id="arrPdf" class="primary">📄 楽譜をPDF保存</button><button id="arrMidi">🎹 MIDI保存</button></div><p style="font-size:12px">※ 音符は自動作成したメロディーの簡易譜です。PDFはブラウザの印刷画面から「PDFに保存」を選んでね。歌声生成やAIモデルによる編曲ではなく、音楽理論に基づく自動編曲です。</p></section><script>
+<section id="compose"><h2>🎼 メロディーを作ろう</h2><p>8つの音を選んでメロディーを試聴できるよ♪（歌声の生成はまだありません）</p><div class="auto-panel"><h3>🎀 ここあの曲づくり提案</h3><label>曲調<select id="style"><option value="pop">キラキラ J-POP</option><option value="ballad">切ないバラード</option><option value="anime">元気なアニメソング</option><option value="dream">夢かわいいワルツ</option></select></label><button class="primary" id="suggestMusic">🎼 3つの曲案を提案</button><p id="songContext" class="context-note" aria-live="polite"></p><div id="suggestions" aria-live="polite"></div></div><div class="auto-panel" id="fullSongPanel"><h3>🎶 ここあの本格曲づくり ♡</h3><p>曲調を選ぶと、ドラム・ベース・コード・メロディーを重ねて演奏するよ♪</p><div class="genre-grid" id="genreGrid"></div><div class="music-settings"><label>曲の速さ（BPM）<input id="fullBpm" type="number" min="55" max="190" value="112"></label><label>キー<select id="fullKey"><option value="0">C</option><option value="2">D</option><option value="4">E</option><option value="5">F</option><option value="7">G</option><option value="9">A</option><option value="10">B♭</option></select></label></div><div class="track-list"><span>🥁 ドラム</span><span>🎸 ベース</span><span>🎹 コード</span><span>🎶 メロディー</span></div><p id="fullSongInfo" aria-live="polite"></p><div class="song-buttons"><button class="primary" id="fullPreview">▶ 本格アレンジ試聴</button><button id="fullStop">■ 停止</button><button id="fullKaraoke">🎤 カラオケで歌う</button></div><small>端末で楽器風の音を合成する無料版です。実際の歌声やスタジオ録音音源ではありません。</small></div><p>下の音を変更してメロディーを調整できるよ♡</p><div id="notes" class="steps"></div><label>テンポ（BPM）<input id="tempo" type="number" min="40" max="240" value="110"></label><button class="primary" id="playMelody">▶ メロディー再生</button><button id="stopMelody">■ 停止</button><button id="downloadMidi">MIDI保存</button></section>
+<section id="vocalfit" aria-labelledby="vfTitle">
+<h2 id="vfTitle">🎙️ ライバーさんの声質・選曲スタジオ</h2>
+<p class="vf-sublead">自分の声の雰囲気と<strong>無理なく歌える音域</strong>を入力すると、歌いやすさを考慮したオリジナル曲の方向性を提案するよ。キーを作曲・カラオケへ反映できるよ。</p>
+<div class="vf-control-grid">
+<label>✨ 声の雰囲気（自己申告）<select id="vfVoice"><option value="soft">やさしい・柔らかい声</option><option value="clear">透明感・澄んだ声</option><option value="warm">落ち着いた・低めの声</option><option value="husky">ハスキー・スモーキーな声</option><option value="bright">明るい・元気な声</option><option value="power">力強く芯のある声</option></select></label>
+<label>🎵 歌いたい雰囲気<select id="vfMood"><option value="calm">優しく・ゆったり</option><option value="emotional">感動的・切なく</option><option value="bright">明るく・楽しく</option><option value="cool">大人っぽく・おしゃれ</option><option value="dramatic">ライブで盛り上がる</option></select></label>
+<label>🎤 歌える音域（無理せず出せる範囲）<select id="vfRange"><option value="unknown">まだ分からない（曲調だけ提案）</option><option value="low">低め：A2〜E4</option><option value="lower">中低：C3〜G4</option><option value="middle" selected>中音：G3〜D5</option><option value="upper">中高：C4〜G5</option><option value="high">高め：E4〜C6</option><option value="custom">自分で最低音・最高音を選ぶ</option></select></label>
+<label>🌷 今の声の状態<select id="vfCondition"><option value="fine">無理なく歌える</option><option value="tired">少し疲れている</option><option value="hoarse">かすれ・痛み・強い疲れがある</option></select></label>
+<label>📺 配信の長さ<select id="vfSession"><option value="short">短めの配信</option><option value="normal" selected>通常の配信</option><option value="long">長時間の配信</option></select></label>
+</div>
+<div class="vf-range-edit"><label>無理なく出せる最低音<select id="vfLow"></select></label><button type="button" id="vfHearLow">▶ 低い音を確認</button><label>無理なく出せる最高音<select id="vfHigh"></select></label><button type="button" id="vfHearHigh">▶ 高い音を確認</button></div>
+<p id="vfRangeHint" class="vf-help">※ 音の高さは基準音の参考。つらい高音・低音は試さず、普段から楽に出る範囲を選んでね。</p>
+<div class="vf-actions"><button type="button" class="primary" id="vfSuggest">✨ 声に合う歌を提案する</button><button type="button" id="vfGoCompose">🎹 作曲スタジオへ</button></div>
+<div id="vfAlert" role="status" aria-live="polite" class="vf-alert" hidden></div>
+<div id="vfResults" aria-live="polite"></div>
+<div class="vf-safety"><strong>喉をいたわる目安</strong><p>配信中はこまめに水分を取り、声を休める時間を作ってね。無理に高音・大声を続けず、声がかすれる・痛む・歌うとつらいときは歌唱を控えて休んでね。症状が続くときは耳鼻咽喉科へ相談を。</p><p>この機能は声の録音や医学的診断はしないよ。声質と音域は自己申告で、<strong>喉への負担がなくなる保証はありません。</strong>提案するのはオリジナル曲のスタイルで、既存の楽曲検索ではありません。</p><p><a href="https://www.nidcd.nih.gov/health/taking-care-your-voice" target="_blank" rel="noopener noreferrer">声を守るための参考情報（米国国立聴覚・コミュニケーション障害研究所）</a></p></div>
+<input type="hidden" id="vfComposeLow" value=""><input type="hidden" id="vfComposeHigh" value="">
+</section>
+<section id="vocal"><h2>🎙️ ここあの歌声スタジオ ♡</h2><p>歌声合成に向けて、歌手のイメージを選び、歌詞と曲の情報を準備できます。</p><div class="auto-panel"><label>歌声のイメージ<select id="vocalType"><option value="cute">💕 可愛い女の子</option><option value="soft">🌸 優しい女の子</option><option value="power">✨ 力強い女の子</option><option value="boy">🔥 爽やかな男の子</option><option value="deep">🌙 落ち着いた男の子</option></select></label><p id="vocalDescription">明るく可愛らしい歌声をイメージ♡</p><button class="primary" id="vocalGuide">📄 歌声制作データを保存</button><p style="font-size:.85rem">歌詞・テンポ・キー・希望する声をテキストにまとめます。実際のAI歌声生成には別途歌声合成エンジンと使用許諾のある音源が必要です。</p></div><div class="auto-panel"><h3>🎧 完成した歌声を聴く</h3><p>外部の歌声合成ソフトで作ったWAV・MP3を読み込んで再生できます。</p><input id="vocalFile" type="file" accept="audio/*" style="max-width:100%"><audio id="vocalPlayer" controls style="width:100%;margin-top:12px"></audio><p id="vocalStatus" aria-live="polite"></p></div></section><section id="karaoke"><h2>🎤 ここあのカラオケルーム ♡</h2><p>歌詞に合わせてピアノ伴奏とメロディーが流れるよ♪</p><div id="karaokeScreen" role="status" aria-live="off"><div id="karaokeLine">歌詞を作って「曲にする」を押してね♡</div><div id="karaokeNext"></div></div><div id="karaokeControls"><button class="primary" id="karaokePlay">▶ カラオケ再生</button><button id="karaokeStop">■ 停止</button><button id="karaokeBack">🎼 曲調を変更</button></div><label>再生位置<input id="karaokeProgress" type="range" min="0" max="100" value="0"></label><p id="karaokeStatus" aria-live="polite"></p><small>音声は端末内で合成しています。歌詞の表示タイミングは目安です。歌声は入りません。</small></section><section id="piano"><h2>🎹 タッチピアノ</h2><p>鍵盤をタップすると音が鳴るよ♪</p><div class="keys" id="keyboard"></div></section><section id="chords"><h2>💕 コード進行ルーム</h2><p>好きな雰囲気を選んでね。</p><select id="mood"><option value="pop">明るい J-POP</option><option value="ballad">切ないバラード</option><option value="dream">夢かわいい</option></select><p id="chordResult"></p><button class="primary" id="playChords">▶ コードを聴く</button></section><footer><small>無料・ブラウザ内で動作 ♡ データは端末に保存されます</small></footer></div><section id="arrange"><h2>🎻 ここあ編曲・楽譜ルーム ♡</h2><p>歌詞のイメージに合わせて楽器とコードを提案。楽譜を作ってPDF保存できるよ♪</p><label>編曲スタイル<select id="arrStyle"><option value="pop">🌸 J-POP</option><option value="ballad">💗 ピアノバラード</option><option value="rock">🔥 バンド・ロック</option><option value="anime">✨ アニメソング</option><option value="city">🌙 シティポップ</option><option value="dance">🎧 ダンスポップ</option><option value="healing">🫧 癒やし</option><option value="fantasy">🎠 ファンタジー</option></select></label><label>曲の速さ（BPM）<input id="arrBpm" type="number" min="50" max="200" value="100"></label><div class="learn-actions"><button class="primary" id="arrMake">✨ ここあが編曲する</button><button id="arrPlay">▶ 編曲を聴く</button><button id="arrStop">■ 停止</button></div><p id="arrDesc" aria-live="polite">スタイルを選んで「ここあが編曲する」を押してね♡</p><h3>🎼 メロディー楽譜（ト音記号）</h3><div id="arrScore" style="overflow-x:auto;background:white;border-radius:12px;padding:8px"></div><div class="learn-actions"><button id="arrPdf" class="primary">📄 楽譜をPDF保存</button><button id="arrMidi">🎹 MIDI保存</button></div><p style="font-size:12px">※ 音符は自動作成したメロディーの簡易譜です。PDFはブラウザの印刷画面から「PDFに保存」を選んでね。歌声生成やAIモデルによる編曲ではなく、音楽理論に基づく自動編曲です。</p></section><script>
 let audio,activeTimers=[];function ctx(){audio??=new (window.AudioContext||window.webkitAudioContext)();if(audio.state==='suspended')audio.resume();return audio}function tone(midi,time,duration=.4,volume=.14){const a=ctx(),o=a.createOscillator(),g=a.createGain();o.type='sine';o.frequency.value=440*Math.pow(2,(midi-69)/12);o.connect(g);g.connect(a.destination);g.gain.setValueAtTime(0,time);g.gain.linearRampToValueAtTime(volume,time+.015);g.gain.exponentialRampToValueAtTime(.001,time+duration);o.start(time);o.stop(time+duration+.02)}function stop(){activeTimers.forEach(clearTimeout);activeTimers=[];if(audio){audio.close();audio=null}}document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('section').forEach(s=>s.classList.toggle('active',s.id===b.dataset.tab))});const title=document.getElementById('songTitle'),lyrics=document.getElementById('lyricText');try{title.value=localStorage.getItem('cocoa-title')||'';lyrics.value=localStorage.getItem('cocoa-lyrics')||''}catch{}document.getElementById('saveLyrics').onclick=()=>{try{localStorage.setItem('cocoa-title',title.value);localStorage.setItem('cocoa-lyrics',lyrics.value);document.getElementById('lyricStatus').textContent='保存したよ♡'}catch{document.getElementById('lyricStatus').textContent='このブラウザでは保存できません'}};function download(name,blob){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}document.getElementById('exportLyrics').onclick=()=>download('cocoa-lyrics.txt',new Blob([title.value+'\n\n'+lyrics.value],{type:'text/plain;charset=utf-8'}));const names=['ド4','レ4','ミ4','ファ4','ソ4','ラ4','シ4','ド5','休符'],values=[60,62,64,65,67,69,71,72,-1];for(let i=0;i<8;i++){const s=document.createElement('select');s.setAttribute('aria-label',`${i+1}番目の音`);names.forEach((n,j)=>{let o=document.createElement('option');o.value=values[j];o.textContent=n;s.appendChild(o)});s.value=values[i%8];document.getElementById('notes').appendChild(s)}function sequence(){return [...document.querySelectorAll('#notes select')].map(s=>+s.value)}document.getElementById('playMelody').onclick=()=>{stop();const a=ctx(),beat=60/Math.max(40,Math.min(240,+document.getElementById('tempo').value||110));sequence().forEach((n,i)=>{if(n>=0)tone(n,a.currentTime+.08+i*beat,beat*.85)})};document.getElementById('stopMelody').onclick=stop;['C','C#','D','D#','E','F','F#','G','G#','A','A#','B','C5'].forEach((n,i)=>{let b=document.createElement('button');b.className='key'+(n.includes('#')?' sharp':'');b.textContent=n;b.onclick=()=>tone(60+i,ctx().currentTime,.7);document.getElementById('keyboard').appendChild(b)});const progressions={pop:[[60,64,67],[67,71,74],[69,72,76],[65,69,72]],ballad:[[69,72,76],[65,69,72],[60,64,67],[67,71,74]],dream:[[60,64,67,71],[69,72,76,79],[65,69,72,76],[67,71,74,77]]},labels={pop:'C → G → Am → F',ballad:'Am → F → C → G',dream:'Cmaj7 → Am7 → Fmaj7 → G7'};const mood=document.getElementById('mood');function showChords(){document.getElementById('chordResult').textContent=labels[mood.value]}mood.onchange=showChords;showChords();document.getElementById('playChords').onclick=()=>{stop();const a=ctx();progressions[mood.value].forEach((ch,i)=>ch.forEach(n=>tone(n,a.currentTime+.05+i*.85,.75,.055)))};function vlq(n){let b=[n&127];while(n>>=7)b.unshift((n&127)|128);return b}function chunk(tag,bytes){return [...tag].map(x=>x.charCodeAt(0)).concat([(bytes.length>>>24)&255,(bytes.length>>>16)&255,(bytes.length>>>8)&255,bytes.length&255],bytes)}document.getElementById('downloadMidi').onclick=()=>{const bpm=Math.max(40,Math.min(240,+document.getElementById('tempo').value||110)),tick=480,events=[0,255,81,3,...[(Math.round(60000000/bpm)>>>16)&255,(Math.round(60000000/bpm)>>>8)&255,Math.round(60000000/bpm)&255]],seq=sequence();let delay=0;for(const n of seq){if(n<0){delay+=tick;continue}events.push(...vlq(delay),0x90,n,90,...vlq(tick),0x80,n,0);delay=0}events.push(...vlq(delay),255,47,0);const bytes=[...chunk('MThd',[0,0,0,1,0,1,1,224]),...chunk('MTrk',events)];download('cocoa-melody.mid',new Blob([new Uint8Array(bytes)],{type:'audio/midi'}))};
 
 const themes={love:{title:'君に届けたい',a:['君の笑顔を見つけた朝','ふたり歩いた帰り道','胸の奥に灯るぬくもり'],b:['言えなかった言葉が今','そっと心を照らしてる'],c:['大好きだよ この想い','君の明日へ届けたい']},youth:{title:'青春のページ',a:['走り抜けたあの坂道','夕焼け染まる教室で','笑い合った帰り道'],b:['遠回りした日々さえ','きっと宝物になる'],c:['忘れないよ あの季節','僕らの夢は続いてく']},winter:{title:'雪の約束',a:['白い吐息が空に溶け','秋の記憶を抱きしめた','街に最初の雪が降る'],b:['冷たい風の向こうから','懐かしい声が聞こえる'],c:['冬の星に願いかけ','あの日の君を想ってる']},cheer:{title:'君ならできる',a:['小さな一歩を踏み出して','涙のあとに虹が出る','昨日の自分を越えてゆく'],b:['立ち止まる日があっても','その歩幅で進めばいい'],c:['大丈夫さ 君の夢は','いつかきっと花開く']},dream:{title:'星に描く未来',a:['夜空に夢を描いたら','星のかけらを集めよう','新しい扉が開く'],b:['まだ知らない世界まで','希望の羽を広げよう'],c:['きらめく未来へ飛び立とう','この歌が道しるべになる']}};
@@ -463,7 +482,7 @@ try{$('proMake').click();status.textContent='🎹 伴奏を生成中…スマホ
 </script><style>
 #cocoaReleaseBridge{margin:18px 0;padding:18px;border:2px solid #df89b9;border-radius:22px;background:linear-gradient(135deg,#fff7fd,#ffe0f2);color:#65304c;box-shadow:0 8px 24px #9e38611c}#cocoaReleaseBridge h2{margin:0 0 8px}#cocoaReleaseBridge button,#cocoaReleaseBridge .cocoa-file{display:inline-block;border:0;border-radius:12px;padding:11px 13px;background:#c93c88;color:#fff;font-weight:700;cursor:pointer;margin:5px 4px 5px 0}#cocoaReleaseBridge textarea{width:100%;min-height:190px;border:1px solid #d99abb;border-radius:12px;padding:10px;background:#fff;color:#492b3e;font-size:13px;box-sizing:border-box}#cocoaReleaseBridge audio{width:100%}#cocoaReleaseBridge .hint{font-size:12px;line-height:1.7}#cocoaReleaseBridge select{padding:9px;border-radius:9px;max-width:100%}
 </style><script>
-(()=>{const compose=document.getElementById('compose');if(!compose)return;const panel=document.createElement('section');panel.id='cocoaReleaseBridge';panel.innerHTML=`<h2>🎤 ここあの完成曲スタジオ ♡</h2><p>歌詞から曲のイメージをまとめて、高品質な音楽制作サービスに渡すための制作指示書を作るよ。</p><label>🎶 仕上がり <select id="cocoaReleaseStyle"><option value="auto">歌詞からおまかせ</option><option value="J-POP">J-POP</option><option value="ballad">バラード</option><option value="anime">アニメソング</option><option value="rock">ロック</option><option value="city pop">シティポップ</option><option value="dance pop">ダンスポップ</option></select></label><button id="cocoaMakeBrief">💕 歌詞から完成曲の指示書を作る</button><textarea id="cocoaReleaseBrief" aria-label="完成曲制作指示書" placeholder="ここに楽曲制作の指示書が表示されるよ"></textarea><div><button id="cocoaCopyBrief">📋 指示書をコピー</button><button id="cocoaSaveBrief">📄 指示書を保存</button></div><p class="hint">外部の音楽生成サービスに指示書と歌詞を渡して、歌声入りの曲を作成してね。サービスの利用規約・料金・商用利用条件を確認してね。外部サービスとの自動接続はまだありません。</p><label class="cocoa-file">🎧 完成した音源を読み込む<input id="cocoaReleaseAudioFile" type="file" accept="audio/*,.wav,.mp3,.m4a,.ogg" style="display:none"></label><audio id="cocoaReleasePlayer" controls></audio><div><button id="cocoaReleaseDownload" disabled>💿 完成曲を保存</button></div><p id="cocoaReleaseMessage" role="status" class="hint">まず歌詞を用意してね ♡</p>`;compose.insertBefore(panel,compose.firstChild.nextSibling);
+(()=>{const compose=document.getElementById('compose');if(!compose)return;const panel=document.createElement('section');panel.id='cocoaReleaseBridge';panel.innerHTML=`<h2>🎤 ここあの完成曲スタジオ ♡</h2><p>歌詞から曲のイメージをまとめて、高品質な音楽制作サービスに渡すための制作指示書を作るよ。</p><label>🎶 仕上がり <select id="cocoaReleaseStyle"><option value="auto">歌詞からおまかせ</option><option value="J-POP">J-POP</option><option value="ballad">バラード</option><option value="anime">アニメソング</option><option value="rock">ロック</option><option value="city pop">シティポップ</option><option value="dance pop">ダンスポップ</option></select></label><button id="cocoaMakeBrief">💕 歌詞から完成曲の指示書を作る</button><textarea id="cocoaReleaseBrief" aria-label="完成曲制作指示書" placeholder="ここに楽曲制作の指示書が表示されるよ"></textarea><div><button id="cocoaCopyBrief">📋 指示書をコピー</button><button id="cocoaSaveBrief">📄 指示書を保存</button></div><p class="hint">外部の音楽生成サービスに指示書と歌詞を渡して、高品質なインスト音源を作成してね。サービスの利用規約・料金・商用利用条件を確認してね。外部サービスとの自動接続はまだありません。</p><label class="cocoa-file">🎧 完成した音源を読み込む<input id="cocoaReleaseAudioFile" type="file" accept="audio/*,.wav,.mp3,.m4a,.ogg" style="display:none"></label><audio id="cocoaReleasePlayer" controls></audio><div><button id="cocoaReleaseDownload" disabled>💿 完成曲を保存</button></div><p id="cocoaReleaseMessage" role="status" class="hint">まず歌詞を用意してね ♡</p>`;compose.insertBefore(panel,compose.firstChild.nextSibling);
 const el=id=>document.getElementById(id);let audioUrl=null,audioFile=null;
 const genres=[['ballad',['涙','さよなら','切な','寂し','悲し','会いたい','別れ']],['anime',['未来','夢','希望','奇跡','魔法','翼','冒険']],['rock',['戦','叫','燃え','負けない','強く']],['city pop',['街','ネオン','夜景','都会','ドライブ']],['dance pop',['踊','ダンス','パーティ','ビート']]];
 function detect(t){for(const [name,words] of genres){if(words.some(w=>t.includes(w)))return name}return 'J-POP'}
@@ -482,45 +501,83 @@ el('cocoaReleaseDownload').onclick=()=>{if(!audioFile||!audioUrl)return;const a=
 (()=>{
 const root=document.getElementById('compose');if(!root)return;
 const panel=document.createElement('section');panel.id='cocoaInstrument';
-panel.innerHTML=`<h2>🎹 ここあの本格インスト制作 ♡</h2><p class="hint">歌声・読み上げなし。歌詞のイメージから、メロディー・コード・ベース・ドラムを重ねたインスト曲を制作するよ。スマホだけで動く無料の音源エンジンです。</p><label>📝 歌詞・曲のイメージ<textarea id="ciLyrics" placeholder="歌詞や曲のイメージを入力してね"></textarea></label><button id="ciImport">作詞から取り込む</button><label>🎶 曲調 <select id="ciStyle"><option value="auto">歌詞からおまかせ</option><option value="pop">J-POP</option><option value="ballad">ピアノバラード</option><option value="rock">ロック</option><option value="dance">ダンスポップ</option><option value="cinema">シネマティック</option></select></label><label>⏱️ テンポ <select id="ciTempo"><option value="auto">曲調におまかせ</option><option value="76">76 BPM</option><option value="96">96 BPM</option><option value="116">116 BPM</option><option value="132">132 BPM</option><option value="148">148 BPM</option></select></label><label>🎚️ アレンジの厚み <select id="ciLayers"><option value="full">フルバンド</option><option value="soft">アコースティック</option><option value="epic">壮大に</option></select></label><button id="ciMake">✨ インスト曲を制作</button><button id="ciDownload" disabled>💿 WAVを保存</button><button id="ciMidi" disabled>🎼 MIDIを保存</button><p id="ciStatus" role="status" class="hint">歌詞を入力するか、曲調を選んで制作してね ♡</p><div id="ciPlan" class="songplan" hidden></div><audio id="ciAudio" controls playsinline hidden></audio><details><summary>音質と制限について</summary><p class="hint">イントロ・Aメロ・Bメロ・サビ・間奏・2番・ラスサビ・アウトロを含む48小節のインスト曲です。音源はブラウザ内で合成するため、生楽器の録音や商用配信曲と同じ音質を保証するものではありません。MIDIを高品質な音源ソフトへ取り込んで仕上げることもできます。</p></details>`;
+panel.innerHTML=`<h2>🎼 V3.5 プロ作曲・カラオケ制作</h2><p class="hint">歌声・読み上げなし。歌詞のイメージから、メロディー・コード・ベース・ドラムを重ねたインスト曲を制作するよ。スマホだけで動く無料の音源エンジンです。</p><label>📝 歌詞・曲のイメージ<textarea id="ciLyrics" placeholder="歌詞や曲のイメージを入力してね"></textarea></label><button id="ciImport">作詞から取り込む</button><label>🎶 曲調 <select id="ciStyle"><option value="auto">歌詞からおまかせ</option><option value="pop">J-POP</option><option value="ballad">ピアノバラード</option><option value="rock">ロック</option><option value="dance">ダンスポップ</option><option value="cinema">シネマティック</option></select></label><label>⏱️ テンポ <select id="ciTempo"><option value="auto">曲調におまかせ</option><option value="76">76 BPM</option><option value="96">96 BPM</option><option value="116">116 BPM</option><option value="132">132 BPM</option><option value="148">148 BPM</option></select></label><label>🎚️ アレンジの厚み <select id="ciLayers"><option value="full">フルバンド</option><option value="soft">アコースティック</option><option value="epic">壮大に</option></select></label><label>🎹 キーの移調<select id="ciTranspose"><option value="0">原曲キー（±0）</option><option value="-5">−5 半音</option><option value="-4">−4 半音</option><option value="-3">−3 半音</option><option value="-2">−2 半音</option><option value="-1">−1 半音</option><option value="1">＋1 半音</option><option value="2">＋2 半音</option><option value="3">＋3 半音</option><option value="4">＋4 半音</option><option value="5">＋5 半音</option></select></label><div class="v3-mixer"><label>🥁 ドラム <input id="ciDrums" type="range" min="0" max="150" value="100"></label><label>🎸 ベース <input id="ciBass" type="range" min="0" max="150" value="100"></label><label>🎹 コード <input id="ciChords" type="range" min="0" max="150" value="100"></label><label>🎶 メロディー <input id="ciLead" type="range" min="0" max="150" value="100"></label></div><button id="ciMake">✨ 伴奏＋メロディーを作る</button><button id="ciDownload" disabled>💿 メロディー入りWAV</button><button id="ciKaraoke" disabled>🎤 カラオケWAV保存</button><button id="ciGoKaraoke">🎤 カラオケ画面へ</button><button id="ciMidi" disabled>🎼 全パートMIDIを保存</button><p id="ciStatus" role="status" class="hint">歌詞を入力するか、曲調を選んで制作してね ♡</p><div id="ciPlan" class="songplan" hidden></div><audio id="ciAudio" controls playsinline hidden></audio><details><summary>音質と制限について</summary><p class="hint">イントロ・Aメロ・Bメロ・サビ・間奏・2番・Cメロ・ラスサビ・アウトロを含む64小節の自動編曲です。音源はブラウザ内で合成するため、生楽器の録音や商用配信曲と同じ音質を保証するものではありません。MIDIを高品質な音源ソフトへ取り込んで仕上げることもできます。</p></details>`;
 root.insertBefore(panel,root.firstChild);
 const $=id=>document.getElementById(id),status=t=>$('ciStatus').textContent=t;
 const seedText=t=>{let h=2166136261;for(let i=0;i<t.length;i++)h=Math.imul(h^t.charCodeAt(i),16777619);return h>>>0};
-let wavUrl=null, wavBlob=null, midiBlob=null;
+let wavUrl=null, wavBlob=null, karaokeUrl=null, karaokeBlob=null, midiBlob=null;
 function infer(t){if(/涙|別れ|さよなら|寂し|切な|悲し|恋し/.test(t))return 'ballad';if(/戦|叫|走|熱|燃|強く/.test(t))return 'rock';if(/踊|パーティ|ダンス|夜の街/.test(t))return 'dance';if(/星|空|宇宙|物語|奇跡|魔法/.test(t))return 'cinema';return 'pop'}
 const presets={pop:{bpm:116,key:60,prog:[0,7,9,5],name:'J-POP'},ballad:{bpm:76,key:60,prog:[0,9,5,7],name:'ピアノバラード'},rock:{bpm:132,key:62,prog:[0,5,7,0],name:'ロック'},dance:{bpm:124,key:57,prog:[0,5,9,7],name:'ダンスポップ'},cinema:{bpm:94,key:60,prog:[9,5,0,7],name:'シネマティック'}};
 const sections=[['イントロ',4],['Aメロ1',8],['Bメロ1',4],['サビ1',8],['間奏',4],['Aメロ2',8],['ラスサビ',8],['アウトロ',4]];
 const totalBars=sections.reduce((a,b)=>a+b[1],0);
 const midiFreq=n=>440*Math.pow(2,(n-69)/12);
 function makeSong(){
-const text=$('ciLyrics').value.trim(),style=$('ciStyle').value==='auto'?infer(text):$('ciStyle').value,p=presets[style],bpm=$('ciTempo').value==='auto'?p.bpm:+$('ciTempo').value,layers=$('ciLayers').value,seed=seedText(text+style),sr=22050,beat=60/bpm,seconds=totalBars*4*beat+2,N=Math.ceil(seconds*sr),left=new Float32Array(N),right=new Float32Array(N),midiEvents=[];
+const text=$('ciLyrics').value.trim(),style=$('ciStyle').value==='auto'?infer(text):$('ciStyle').value,p=presets[style],bpm=$('ciTempo').value==='auto'?p.bpm:+$('ciTempo').value,layers=$('ciLayers').value,seed=seedText(text+style),transpose=Number($('ciTranspose').value),sr=22050,beat=60/bpm,seconds=totalBars*4*beat+2,N=Math.ceil(seconds*sr),left=new Float32Array(N),right=new Float32Array(N),leadLeft=new Float32Array(N),leadRight=new Float32Array(N),midiEvents=[],otherMidi={chords:[],bass:[],drums:[]},mix={drums:Number($('ciDrums').value)/100,bass:Number($('ciBass').value)/100,chords:Number($('ciChords').value)/100,lead:Number($('ciLead').value)/100};
 let rng=seed||1;const rnd=()=>{rng^=rng<<13;rng^=rng>>>17;rng^=rng<<5;return (rng>>>0)/4294967296};
-const note=(start,duration,n,kind,vol,pan=0)=>{const hz=midiFreq(n),startI=Math.floor(start*sr),len=Math.min(Math.floor(duration*sr),N-startI),attack=kind==='pad'?.10:kind==='lead'?.012:.008,release=kind==='pad'?.22:.14;for(let i=0;i<len;i++){const t=i/sr,env=Math.min(1,t/attack,Math.max(0,(duration-t)/release)),phase=2*Math.PI*hz*t;let v;if(kind==='bass')v=Math.sin(phase)*.78+Math.sin(2*phase)*.12;else if(kind==='pad')v=Math.sin(phase)*.7+Math.sin(2*phase)*.17+Math.sin(phase*1.005)*.13;else if(kind==='lead')v=Math.sin(phase)*.65+Math.sin(2*phase)*.20+Math.sin(3*phase)*.09;else v=(Math.sin(phase)*.65+Math.sin(2*phase)*.25+Math.sin(3*phase)*.1)*Math.exp(-t*1.5);const x=v*env*vol,ix=startI+i;left[ix]+=x*(1-pan)*.5;right[ix]+=x*(1+pan)*.5;}};
-const drum=(time,kind,vol)=>{const st=Math.floor(time*sr),dur=kind==='kick'?.32:kind==='snare'?.20:.09,len=Math.min(Math.floor(dur*sr),N-st);for(let i=0;i<len;i++){const t=i/sr,noise=rnd()*2-1;let v=kind==='kick'?Math.sin(2*Math.PI*(55*t+65*t*Math.exp(-t*28)))*Math.exp(-t*16):kind==='snare'?(noise*.85+Math.sin(2*Math.PI*180*t)*.15)*Math.exp(-t*24):noise*Math.exp(-t*62)*.35;left[st+i]+=v*vol*.48;right[st+i]+=v*vol*.48;}};
+const note=(start,duration,n,kind,vol,pan=0)=>{const track=kind==='bass'?'bass':kind==='lead'?'lead':'chords',velocity=Math.min(120,Math.max(1,Math.round(vol*310)));if(track!=='lead'&&vol>0)otherMidi[track].push({tick:Math.round(start/beat*480),dur:Math.max(1,Math.round(duration/beat*480)),n,vel:velocity});vol*=mix[track];const dstL=kind==='lead'?leadLeft:left,dstR=kind==='lead'?leadRight:right;const hz=midiFreq(n),startI=Math.floor(start*sr),len=Math.min(Math.floor(duration*sr),N-startI),attack=kind==='pad'?.10:kind==='lead'?.012:.008,release=kind==='pad'?.22:.14;for(let i=0;i<len;i++){const t=i/sr,env=Math.min(1,t/attack,Math.max(0,(duration-t)/release)),phase=2*Math.PI*hz*t;let v;if(kind==='bass')v=Math.sin(phase)*.78+Math.sin(2*phase)*.12;else if(kind==='pad')v=Math.sin(phase)*.7+Math.sin(2*phase)*.17+Math.sin(phase*1.005)*.13;else if(kind==='lead')v=Math.sin(phase)*.65+Math.sin(2*phase)*.20+Math.sin(3*phase)*.09;else v=(Math.sin(phase)*.65+Math.sin(2*phase)*.25+Math.sin(3*phase)*.1)*Math.exp(-t*1.5);const x=v*env*vol,ix=startI+i;dstL[ix]+=x*(1-pan)*.5;dstR[ix]+=x*(1+pan)*.5;}};
+const drum=(time,kind,vol)=>{if(vol>0)otherMidi.drums.push({tick:Math.round(time/beat*480),dur:Math.round(.12/beat*480)||1,n:kind==='kick'?36:kind==='snare'?38:42,vel:Math.min(127,Math.round(vol*260))});vol*=mix.drums;const st=Math.floor(time*sr),dur=kind==='kick'?.32:kind==='snare'?.20:.09,len=Math.min(Math.floor(dur*sr),N-st);for(let i=0;i<len;i++){const t=i/sr,noise=rnd()*2-1;let v=kind==='kick'?Math.sin(2*Math.PI*(55*t+65*t*Math.exp(-t*28)))*Math.exp(-t*16):kind==='snare'?(noise*.85+Math.sin(2*Math.PI*180*t)*.15)*Math.exp(-t*24):noise*Math.exp(-t*62)*.35;left[st+i]+=v*vol*.48;right[st+i]+=v*vol*.48;}};
 let bar=0,prevPhrase=[];
 for(const [name,count] of sections){const chorus=name.includes('サビ'),intro=name==='イントロ'||name==='アウトロ',energy=intro?.45:chorus?1:name.includes('Bメロ')?.78:name==='間奏'?.73:.64;for(let j=0;j<count;j++,bar++){
-const base=bar*4*beat,degree=p.prog[bar%4],rootNote=p.key+degree,minor=degree===9||degree===4,chord=[0,minor?3:4,7],bass=rootNote-24,barEnergy=energy*(j===count-1&&name==='アウトロ'?.65:1);
+const base=bar*4*beat,degree=p.prog[bar%4],rootNote=p.key+degree+transpose,minor=degree===9||degree===4,chord=[0,minor?3:4,7],bass=rootNote-24,barEnergy=energy*(j===count-1&&name==='アウトロ'?.65:1);
 for(let step=0;step<4;step++){const t=base+step*beat;if(layers!=='soft'||step===0)note(t,beat*.88,bass+(step===2?7:0),'bass',.25*barEnergy,-.12);for(let c=0;c<3;c++)note(t+(layers==='soft'?0:step*.015),beat*.9,rootNote+chord[c]+(layers==='epic'?12:0),layers==='soft'?'piano':'pad',(.09+(layers==='epic'?.035:0))*barEnergy,(c-1)*.4);
-if(!intro||j>1){if(step===0||step===2)drum(t,'kick',.32*barEnergy);if(step===1||step===3)drum(t,'snare',.23*barEnergy);for(let h=0;h<2;h++)if(layers!=='soft')drum(t+h*beat*.5,'hat',.13*barEnergy);}}
+if(!intro||j>1){if(step===0||step===2)drum(t,'kick',.32*barEnergy);if(step===1||step===3)drum(t,'snare',.23*barEnergy);for(let h=0;h<2;h++)if(layers!=='soft')drum(t+h*beat*.5,'hat',.13*barEnergy);if(j%4===3&&step===3&&!intro&&layers!=='soft'){drum(t+beat*.25,'snare',.14*barEnergy);drum(t+beat*.75,'snare',.19*barEnergy);}}}
 if(!intro||name==='間奏'){
 let phrase;if(chorus&&prevPhrase.length&&j<4)phrase=prevPhrase[j%prevPhrase.length];else {phrase=[];for(let k=0;k<8;k++){const options=[0,2,4,7,9,12],v=options[Math.floor(rnd()*options.length)];phrase.push(v)}if(name==='サビ1'&&j<4)prevPhrase.push(phrase)}
 for(let k=0;k<8;k++){if(k%4===3&&rnd()<.28)continue;const n=rootNote+12+phrase[k];const t=base+k*beat*.5;note(t,beat*(k%4===2?.82:.43),n,'lead',.21*barEnergy,0);midiEvents.push({tick:Math.round((bar*4+k*.5)*480),dur:Math.round((k%4===2?.82:.43)*480),n,vel:Math.round(70+20*barEnergy)});}
 }
 }}
-// subtle room echo for spaciousness
-const delay=Math.floor(sr*.17);for(let i=delay;i<N;i++){left[i]+=right[i-delay]*.10;right[i]+=left[i-delay]*.10;}
-let peak=0;for(let i=0;i<N;i++)peak=Math.max(peak,Math.abs(left[i]),Math.abs(right[i]));const gain=.91/Math.max(peak,.91);
-const bytes=new ArrayBuffer(44+N*4),view=new DataView(bytes);let o=0;const str=t=>{for(const c of t)view.setUint8(o++,c.charCodeAt(0))};const u32=v=>{view.setUint32(o,v,true);o+=4},u16=v=>{view.setUint16(o,v,true);o+=2};str('RIFF');u32(36+N*4);str('WAVEfmt ');u32(16);u16(1);u16(2);u32(sr);u32(sr*4);u16(4);u16(16);str('data');u32(N*4);
-for(let i=0;i<N;i++){const fade=Math.min(1,i/(sr*.4),(N-i)/(sr*1.6)),l=Math.tanh(left[i]*gain*1.15)*fade,r=Math.tanh(right[i]*gain*1.15)*fade;view.setInt16(o,Math.round(Math.max(-1,Math.min(1,l))*32767),true);o+=2;view.setInt16(o,Math.round(Math.max(-1,Math.min(1,r))*32767),true);o+=2;}
-wavBlob=new Blob([bytes],{type:'audio/wav'});if(wavUrl)URL.revokeObjectURL(wavUrl);wavUrl=URL.createObjectURL(wavBlob);$('ciAudio').src=wavUrl;$('ciAudio').hidden=false;$('ciDownload').disabled=false;
-// Type 0 standard MIDI file, melody track
-const track=[];const push=(...a)=>track.push(...a),varlen=v=>{let b=[v&127];while(v>>=7)b.unshift((v&127)|128);return b};push(0,255,81,3,...[(Math.round(60000000/bpm)>>16)&255,(Math.round(60000000/bpm)>>8)&255,Math.round(60000000/bpm)&255]);let ev=[];for(const e of midiEvents){ev.push({t:e.tick,data:[0x90,e.n,e.vel]},{t:e.tick+e.dur,data:[0x80,e.n,0]})}ev.sort((a,b)=>a.t-b.t||a.data[0]-b.data[0]);let last=0;for(const e of ev){push(...varlen(e.t-last),...e.data);last=e.t}push(0,255,47,0);const be32=n=>[(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255];midiBlob=new Blob([new Uint8Array([...Array.from('MThd').map(c=>c.charCodeAt(0)),0,0,0,6,0,0,0,1,1,224,...Array.from('MTrk').map(c=>c.charCodeAt(0)),...be32(track.length),...track])],{type:'audio/midi'});$('ciMidi').disabled=false;
-$('ciPlan').hidden=false;$('ciPlan').textContent=`曲調：${p.name} / ${bpm} BPM / ${totalBars}小節 / 約${Math.round(seconds)}秒\n構成：${sections.map(([n,c])=>n+' '+c+'小節').join(' → ')}\n楽器：メロディー・コード・ベース・ドラム（合成音源）\n※ MIDIはメロディーのみ。WAVは伴奏込み。`;
-status('インスト曲ができたよ ♡ 再生して、WAVまたはMIDIで保存してね。');
+// Render separately: accompaniment-only karaoke and demo with a synthetic melody.
+// Both share exactly the same arrangement and song timing.
+function wavEncode(withLead){
+const out=new ArrayBuffer(44+N*4),dv=new DataView(out);let at=0;
+const writeStr=s=>{for(const c of s)dv.setUint8(at++,c.charCodeAt(0))};
+const write32=v=>{dv.setUint32(at,v,true);at+=4};
+const write16=v=>{dv.setUint16(at,v,true);at+=2};
+writeStr('RIFF');write32(36+N*4);writeStr('WAVEfmt ');write32(16);write16(1);write16(2);write32(sr);write32(sr*4);write16(4);write16(16);writeStr('data');write32(N*4);
+let peak=0;
+for(let i=0;i<N;i+=8){peak=Math.max(peak,Math.abs(left[i]+(withLead?leadLeft[i]:0)),Math.abs(right[i]+(withLead?leadRight[i]:0)))}
+const gain=.78/Math.max(.78,peak);
+// soft stereo echo, limiting, and song tail fade; no external files/requests.
+const delay=Math.floor(sr*.18);
+for(let i=0;i<N;i++){
+const fade=Math.min(1,i/(sr*.28),(N-i)/(sr*1.45));
+const rawL=left[i]+(withLead?leadLeft[i]:0),rawR=right[i]+(withLead?leadRight[i]:0);
+const echoL=i>delay?(right[i-delay]+(withLead?leadRight[i-delay]:0))*.105:0;
+const echoR=i>delay?(left[i-delay]+(withLead?leadLeft[i-delay]:0))*.105:0;
+const l=Math.tanh((rawL+echoL)*gain*1.18)*fade,r=Math.tanh((rawR+echoR)*gain*1.18)*fade;
+dv.setInt16(at,Math.round(Math.max(-1,Math.min(1,l))*32767),true);at+=2;
+dv.setInt16(at,Math.round(Math.max(-1,Math.min(1,r))*32767),true);at+=2;
+}
+return new Blob([out],{type:'audio/wav'});
+}
+// Save two independently playable WAV files.
+karaokeBlob=wavEncode(false);wavBlob=wavEncode(true);
+if(wavUrl)URL.revokeObjectURL(wavUrl);if(karaokeUrl)URL.revokeObjectURL(karaokeUrl);
+wavUrl=URL.createObjectURL(wavBlob);karaokeUrl=URL.createObjectURL(karaokeBlob);
+$('ciAudio').src=wavUrl;$('ciAudio').hidden=false;$('ciDownload').disabled=false;$('ciKaraoke').disabled=false;
+// Standard MIDI Type 1: tempo + melody + chord + bass + drums. GM channel 10 for drums.
+const vlq=num=>{let a=[num&127];while(num>>=7)a.unshift((num&127)|128);return a};
+const u32=n=>[(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255];
+const utf=s=>Array.from(s).map(c=>c.charCodeAt(0));
+const chunk=data=>[...utf('MTrk'),...u32(data.length),...data];
+function mkTrack(events,channel,program){const arr=[];
+if(program!==null)arr.push(0,0xC0+channel,program);
+const queue=[];for(const e of events){queue.push({t:e.tick,on:1,n:e.n,vel:e.vel});queue.push({t:e.tick+e.dur,on:0,n:e.n,vel:0})}
+queue.sort((a,b)=>a.t-b.t||a.on-b.on);let last=0;
+for(const e of queue){arr.push(...vlq(e.t-last), (e.on?0x90:0x80)+channel,e.n,e.vel);last=e.t}
+arr.push(0,255,47,0);return chunk(arr)}
+const micro=Math.round(60000000/bpm),tempoTrack=chunk([0,255,81,3,(micro>>16)&255,(micro>>8)&255,micro&255,0,255,47,0]);
+const data=[...utf('MThd'),0,0,0,6,0,1,0,5,1,224,...tempoTrack,
+...mkTrack(midiEvents,0,80),...mkTrack(otherMidi.chords,1,layers==='soft'?0:88),
+...mkTrack(otherMidi.bass,2,33),...mkTrack(otherMidi.drums,9,null)];
+midiBlob=new Blob([new Uint8Array(data)],{type:'audio/midi'});$('ciMidi').disabled=false;
+if(window.cocoaStudioV3&&typeof window.cocoaStudioV3.ready==='function')window.cocoaStudioV3.ready({karaokeUrl,demoUrl:wavUrl,karaokeBlob,demoBlob:wavBlob,midiBlob,bpm,seconds,sections,style:p.name,transpose});
+$('ciPlan').hidden=false;$('ciPlan').textContent=`曲調：${p.name} / ${bpm} BPM / ${totalBars}小節 / 約${Math.round(seconds)}秒\n構成：${sections.map(([n,c])=>n+' '+c+'小節').join(' → ')}\n楽器：メロディー・コード・ベース・ドラム（合成音源）\n※ MIDIはメロディー・コード・ベース・ドラムの4パート。カラオケWAVはメロディーなし。`;
+status('V3の曲が完成！ メロディー入りWAV・カラオケWAV・全パートMIDIを保存できます。');
 }
 const download=(blob,name)=>{const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000)};
 $('ciMake').onclick=()=>{const b=$('ciMake');b.disabled=true;status('曲を制作中… 少し待ってね ♡');setTimeout(()=>{try{makeSong()}catch(e){console.error(e);status('制作できなかったよ。端末の空き容量を確認してね。')}finally{b.disabled=false}},40)};
-$('ciDownload').onclick=()=>{if(wavBlob)download(wavBlob,'cocoa_instrumental.wav')};$('ciMidi').onclick=()=>{if(midiBlob)download(midiBlob,'cocoa_melody.mid')};
+$('ciDownload').onclick=()=>{if(wavBlob)download(wavBlob,'cocoa_v3_demo.wav')};$('ciKaraoke').onclick=()=>{if(karaokeBlob)download(karaokeBlob,'cocoa_v3_karaoke.wav')};$('ciGoKaraoke').onclick=()=>document.querySelector('.tabs [data-tab="karaoke"]')?.click();$('ciMidi').onclick=()=>{if(midiBlob)download(midiBlob,'cocoa_v3_full_band.mid')};
 $('ciImport').onclick=()=>{for(const id of ['lyricText','lyricsResult','lyricOutput','outputLyrics','fullLyricsOutput','lyrics']){const e=$(id);if(e){const t=(e.value||e.innerText||'').trim();if(t.length>20){$('ciLyrics').value=t;status('歌詞を取り込んだよ ♡');return}}}status('歌詞が見つからなかったよ。上の欄に貼り付けてね。')};
 })();</script><script>
 (function(){
@@ -574,5 +631,1957 @@ $('rgSave').onclick=()=>{const blob=new Blob([$('rgPromptText').value||makePromp
 $('rgCancel').onclick=()=>{if(abort){abort.abort();status('通信を中止しました。')}};
 $('rgGenerate').onclick=async()=>{const endpoint=$('rgEndpoint').value.trim();let parsed;try{parsed=new URL(endpoint);if(parsed.protocol!=='https:')throw Error('HTTPSのみ対応')}catch(e){status('正しいHTTPSのAPI URLを入力してください。');return}if(abort){status('生成処理が進行中です。');return}const prompt=$('rgPromptText').value||makePrompt();const token=$('rgToken').value;abort=new AbortController();$('rgGenerate').disabled=true;status('外部エンジンに生成を依頼しています。サーバーの応答を待っています…');try{const headers={'Content-Type':'application/json'};if(token)headers.Authorization='Bearer '+token;const res=await fetch(parsed.href,{method:'POST',headers,body:JSON.stringify({prompt,duration:Number($('rgDuration').value)}),signal:abort.signal});if(!res.ok)throw Error('HTTP '+res.status);const type=(res.headers.get('content-type')||'').toLowerCase();if(!type.includes('audio/wav')&&!type.includes('audio/x-wav')&&!type.includes('audio/mpeg')&&!type.includes('audio/mp3')&&!type.includes('audio/ogg'))throw Error('接続先が音声ファイルを返しませんでした（'+type+'）');const blob=await res.blob();if(!blob.size)throw Error('空の音声ファイルです');if(url)URL.revokeObjectURL(url);url=URL.createObjectURL(blob);$('rgPlayer').src=url;const a=$('rgDownload');a.href=url;a.download=type.includes('mpeg')||type.includes('mp3')?'cocoa_generated_music.mp3':'cocoa_generated_music.wav';a.style.display='inline';status('音源を受信しました。試聴・保存できます。品質は接続先モデルに依存します。')}catch(e){status(e.name==='AbortError'?'通信を中止しました。':'生成できませんでした：'+e.message+'。CORS、サーバー稼働、GPU、認証設定を確認してください。')}finally{abort=null;$('rgGenerate').disabled=false}};
 })();
+</script>
+<style>
+/* V3: a serious, vocal-free karaoke workspace that stays compatible with GitHub Pages */
+.tabs button[data-tab="karaoke"]{display:inline-block!important;background:#236c85;color:#fff;border-color:#67bed1}
+#karaoke{display:none!important}
+#karaoke.active{display:block!important}
+#karaoke > :not(#karaokePro){display:none!important}
+#karaokePro{display:block!important;background:transparent!important;padding:0!important;border:0!important;box-shadow:none!important;color:#e7f1ff!important}
+#karaokePro h2{margin:0 0 8px;color:#f3f8ff!important}
+#karaokePro p{line-height:1.65}
+#karaokePro button,#cocoaInstrument button{min-height:44px;margin:5px 5px 5px 0}
+#karaokePro button{background:#315a86;color:#fff;border:1px solid #456987}
+#karaokePro button.primary{background:#187b99}
+#karaokePro button:disabled{opacity:.45}
+#karaokePro .v3-actions{display:flex;flex-wrap:wrap;gap:5px}
+#karaokePro .v3-card{background:#122138;border:1px solid #3d5b7c;border-radius:16px;padding:13px;margin-top:12px}
+#karaokePro .v3-current{text-align:center;min-height:140px;background:linear-gradient(125deg,#0b2440,#174764);border:1px solid #4f879f;border-radius:16px;padding:14px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+#karaokePro .v3-line{font-size:clamp(17px,4.3vw,27px);font-weight:850;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;color:#fff}
+#karaokePro .v3-next{font-size:13px;color:#c6d7e8;line-height:1.4}
+#karaokePro .v3-tag{font-weight:bold;color:#79d1e5;font-size:12px}
+#karaokePro audio{width:100%;margin-top:12px}
+#karaokePro label{display:block;margin-top:12px;font-size:14px;font-weight:700}
+#karaokePro select,#karaokePro input{margin:7px 0;background:#0c182b;color:#e6f3ff;border-color:#466284}
+#karaokePro .v3-warning{font-size:12px;color:#baccdd;line-height:1.7}
+#karaokePro .v3-meta{color:#8bd1df;font-size:12px}
+#cocoaInstrument .v3-mixer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 12px;margin:10px 0}
+#cocoaInstrument .v3-mixer label{font-size:12px;color:#dbeafd}
+#cocoaInstrument .v3-mixer input{padding:0;width:100%}
+@media(max-width:480px){#cocoaInstrument .v3-mixer{grid-template-columns:1fr 1fr}#karaokePro .v3-actions button{flex:1 1 130px}}
+</style>
+<script>
+(()=>{
+const $=id=>document.getElementById(id), kara=$('karaoke');if(!kara)return;
+const panel=document.createElement('div');panel.id='karaokePro';
+panel.innerHTML=`<h2>③ 🎤 ここあの本格カラオケルーム V3</h2>
+<p>作詞 → 作曲 → カラオケ。メロディーが入っていない伴奏を作って、歌詞を見ながら楽しめます。歌声は入りません。</p>
+<div class="v3-card">
+<label>曲調 <select id="kpGenre"><option value="auto">歌詞からおまかせ</option><option value="pop">J-POP</option><option value="ballad">ピアノバラード</option><option value="rock">ロック</option><option value="dance">ダンスポップ</option><option value="cinema">シネマティック</option></select></label>
+<label>カラオケのキー <select id="kpTranspose"><option value="0">原曲キー</option><option value="-5">−5</option><option value="-4">−4</option><option value="-3">−3</option><option value="-2">−2</option><option value="-1">−1</option><option value="1">＋1</option><option value="2">＋2</option><option value="3">＋3</option><option value="4">＋4</option><option value="5">＋5</option></select></label>
+<label>テンポ <select id="kpTempo"><option value="auto">曲調からおまかせ</option><option value="76">76 BPM</option><option value="96">96 BPM</option><option value="116">116 BPM</option><option value="132">132 BPM</option><option value="148">148 BPM</option></select></label>
+<div class="v3-actions"><button type="button" class="primary" id="kpCreate">✨ 歌詞からカラオケを制作</button><button type="button" id="kpOpenCompose">🎛️ 作曲ミキサーへ</button></div>
+<p id="kpStatus" role="status" class="v3-meta">曲を制作すると、カラオケ伴奏・歌詞表示・WAV保存が使えます。</p>
+</div>
+<div class="v3-card">
+<label>試聴モード <select id="kpMode"><option value="karaoke">🎤 カラオケ（メロディーなし）</option><option value="demo">🎶 メロディー確認用デモ</option></select></label>
+<div id="kpLyricScreen" class="v3-current" aria-live="off"><div id="kpPart" class="v3-tag">準備中</div><div id="kpLine" class="v3-line">歌詞を作って、カラオケを制作してね</div><div id="kpNext" class="v3-next"></div></div>
+<audio id="kpAudio" controls playsinline preload="none"></audio>
+<label>再生位置<input id="kpPosition" type="range" min="0" max="1000" step="1" value="0"></label>
+<div class="v3-actions"><button id="kpPlay" type="button" class="primary" disabled>▶ 再生</button><button type="button" id="kpStop" disabled>■ 停止</button></div>
+<p id="kpTiming" class="v3-meta">00:00 / 00:00</p>
+<div class="v3-actions"><button type="button" id="kpSave" disabled>📥 カラオケWAV保存</button><button type="button" id="kpSaveDemo" disabled>🎼 デモWAV保存</button><button type="button" id="kpSaveMidi" disabled>🎹 全パートMIDI保存</button></div>
+<p class="v3-warning">※ カラオケは当アプリが生成したオリジナル伴奏です。市販曲からボーカルを除去する機能ではありません。歌詞の切り替え位置は小節に基づく目安です。高品質な生成AI音源や生演奏の代替を保証するものではありません。スマホでは生成に時間がかかることがあります。</p>
+</div>`;
+kara.appendChild(panel);
+let state=null, cues=[];
+const fmt=t=>{const n=Math.max(0,Math.floor(t||0));return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0')};
+const dwn=(blob,name)=>{if(!blob)return;const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),25000)};
+const sections=['イントロ','Aメロ1','Bメロ1','サビ1','間奏','Aメロ2','ラスサビ','アウトロ'];
+function parseLyrics(t){const out={},unlabelled=[];let key=null;for(const raw of t.split(/\r?\n/)){
+const line=raw.trim();if(!line)continue;
+const m=line.match(/^[【\[（(](.+?)[】\]）)]$/);if(m){let k=m[1].replace(/\s/g,'');if(/イントロ/.test(k))key='イントロ';else if(/間奏/.test(k))key='間奏';else if(/アウトロ/.test(k))key='アウトロ';else if(/ラス|ラスト/.test(k)&&/サビ/.test(k))key='ラスサビ';else if(/サビ/.test(k))key=/2/.test(k)?'ラスサビ':'サビ1';else if(/Bメロ/.test(k))key='Bメロ1';else if(/Aメロ/.test(k))key=/2/.test(k)?'Aメロ2':'Aメロ1';else key=null;continue}
+if(/^（.*）$/.test(line))continue;
+if(key)(out[key]??=[]).push(line);else unlabelled.push(line)
+}
+if(!Object.keys(out).length){const all=unlabelled.filter(Boolean);if(all.length)for(const [i,k] of ['Aメロ1','Bメロ1','サビ1','Aメロ2','ラスサビ'].entries()){out[k]=all.slice(Math.floor(i*all.length/5),Math.max(Math.floor((i+1)*all.length/5),Math.floor(i*all.length/5)+1))}}
+if(out['サビ1']&&!out['ラスサビ'])out['ラスサビ']=out['サビ1'];
+return out}
+function makeCues(s){const lyrics=parseLyrics(($('lyricText')?.value||'').trim());cues=[];let bar=0;for(const [name,count] of s.sections){let lines=lyrics[name]||[];if(lines.length===0&&name==='Aメロ2')lines=lyrics['Aメロ1']||[];
+for(let j=0;j<count;j++){const idx=lines.length?Math.min(lines.length-1,Math.floor(j*lines.length/count)):-1;
+cues.push({time:(bar+j)*4*60/s.bpm,part:name,text:idx>=0?lines[idx]:(name==='イントロ'?'♪ イントロ':name==='間奏'?'♪ 間奏':name==='アウトロ'?'♪ アウトロ':'♪ 伴奏'),next:lines.length?lines[Math.min(lines.length-1,idx+1)]||'':''})}
+bar+=count}
+}
+function renderLyrics(time){const audio=$('kpAudio');if(!state)return;let index=Math.min(cues.length-1,Math.max(0,Math.floor(time/state.seconds*cues.length))); // robust for small rounding differences
+const barSeconds=4*60/state.bpm;index=Math.min(cues.length-1,Math.max(0,Math.floor(time/barSeconds)));
+const cue=cues[index];if(cue){$('kpPart').textContent=cue.part;$('kpLine').textContent=cue.text;$('kpNext').textContent=cue.next&&cue.next!==cue.text?'次：'+cue.next:''}
+$('kpPosition').value=String(Math.floor(time/Math.max(1,state.seconds)*1000));$('kpTiming').textContent=fmt(time)+' / '+fmt(state.seconds)}
+window.cocoaStudioV3={ready(s){state=s;makeCues(s);const player=$('kpAudio');player.pause();player.src=s.karaokeUrl;player.load();$('kpMode').value='karaoke';$('kpPlay').disabled=false;$('kpStop').disabled=false;$('kpSave').disabled=false;$('kpSaveDemo').disabled=false;$('kpSaveMidi').disabled=false;$('kpStatus').textContent=`完成：${s.style} / ${s.bpm} BPM / ${s.sections.reduce((a,v)=>a+v[1],0)}小節。キー移調 ${s.transpose>=0?'+':''}${s.transpose}。カラオケWAVとMIDIを保存できます。`;renderLyrics(0)}};
+$('kpCreate').onclick=()=>{const b=$('ciMake');if(b.disabled)return;$('ciLyrics').value=$('lyricText')?.value||$('ciLyrics').value;$('ciStyle').value=$('kpGenre').value;$('ciTranspose').value=$('kpTranspose').value;$('ciTempo').value=$('kpTempo').value;$('kpStatus').textContent='伴奏を制作中… しばらく待ってね';b.click()};
+$('kpOpenCompose').onclick=()=>document.querySelector('.tabs [data-tab="compose"]')?.click();
+$('kpMode').onchange=()=>{if(!state)return;const a=$('kpAudio'),t=a.currentTime,play=!a.paused;a.pause();a.src=$('kpMode').value==='karaoke'?state.karaokeUrl:state.demoUrl;a.load();a.currentTime=Math.min(t,state.seconds);if(play)a.play().catch(()=>{});renderLyrics(t)};
+$('kpPlay').onclick=()=>{if(state)$('kpAudio').play().catch(()=>{$('kpStatus').textContent='再生できませんでした。再生ボタンをもう一度押してね。'})};
+$('kpStop').onclick=()=>{const a=$('kpAudio');a.pause();a.currentTime=0;renderLyrics(0)};
+$('kpPosition').oninput=()=>{if(!state)return;const time=Number($('kpPosition').value)*state.seconds/1000;$('kpAudio').currentTime=time;renderLyrics(time)};
+$('kpAudio').ontimeupdate=()=>renderLyrics($('kpAudio').currentTime);
+$('kpAudio').onended=()=>renderLyrics(state?.seconds||0);
+$('kpSave').onclick=()=>dwn(state?.karaokeBlob,'cocoa_v3_karaoke.wav');
+$('kpSaveDemo').onclick=()=>dwn(state?.demoBlob,'cocoa_v3_melody_demo.wav');
+$('kpSaveMidi').onclick=()=>dwn(state?.midiBlob,'cocoa_v3_full_band.mid');
+// Shortcut: send freshly authored lyrics straight to the karaoke maker.
+const lyricActions=document.querySelector('#lyrics .lyric-actions');if(lyricActions){const b=document.createElement('button');b.type='button';b.textContent='🎤 歌詞からカラオケ';b.onclick=()=>{document.querySelector('.tabs [data-tab="karaoke"]')?.click();$('kpStatus').textContent='作詞画面の歌詞を使えるよ。「歌詞からカラオケを制作」を押してね。'};lyricActions.appendChild(b)}
+})();
+</script>
+
+<style id="cool-bg-v31">
+:root{--bg1:#0a1026;--bg2:#141b3d;--bg3:#25194d;--panel:#14203ddc;--panel2:#1a2948d8;--text:#eef4ff;--muted:#b8c7ef;--accent:#ff5fb2;--accent2:#8f7cff;--line:#31456f}
+html,body{min-height:100%}
+body{color:var(--text)!important;background:
+ radial-gradient(circle at 15% 18%, rgba(255,95,178,.25), transparent 20%),
+ radial-gradient(circle at 85% 12%, rgba(143,124,255,.22), transparent 22%),
+ radial-gradient(circle at 70% 75%, rgba(63,180,255,.14), transparent 20%),
+ linear-gradient(140deg,var(--bg1),var(--bg2) 45%,var(--bg3));background-attachment:fixed!important;}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:
+ radial-gradient(2px 2px at 18% 22%, rgba(255,255,255,.55), transparent 55%),
+ radial-gradient(1.5px 1.5px at 62% 17%, rgba(255,255,255,.5), transparent 60%),
+ radial-gradient(2px 2px at 78% 38%, rgba(255,255,255,.45), transparent 55%),
+ radial-gradient(1.5px 1.5px at 30% 70%, rgba(255,255,255,.38), transparent 55%),
+ radial-gradient(2px 2px at 88% 82%, rgba(255,255,255,.4), transparent 55%);}
+small,.context-note,#easyResult,#voiceStatus,#partNow,#fullSongInfo,#karaokeStatus,.cocoa-home-note{color:var(--muted)!important}
+.tabs{background:rgba(8,15,33,.76)!important;border:1px solid rgba(255,255,255,.08);box-shadow:0 10px 24px rgba(0,0,0,.28)!important}
+.tabs button{background:linear-gradient(140deg,#23345f,#192848)!important;color:#eef5ff!important;border:1px solid rgba(255,255,255,.06)}
+.tabs button.active,.tabs button.primary{background:linear-gradient(135deg,var(--accent),#b04dff)!important;color:#fff!important;box-shadow:0 8px 18px rgba(255,95,178,.28)}
+section,.auto-panel,.easy-studio,.proposal,.genre-card,.idol-stage{background:linear-gradient(180deg,rgba(21,33,63,.95),rgba(15,24,45,.95))!important;color:var(--text)!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:0 10px 30px rgba(2,6,23,.36)!important}
+textarea,input,select{background:rgba(7,15,32,.82)!important;color:var(--text)!important;border:1px solid var(--line)!important;box-shadow:none!important}
+textarea::placeholder,input::placeholder{color:#9cb1df}
+.cocoa-topline{background:linear-gradient(110deg,rgba(255,95,178,.32),rgba(143,124,255,.28)),linear-gradient(135deg,#0f1733,#1a2550)!important;border-color:rgba(255,255,255,.08)!important;box-shadow:0 14px 36px rgba(0,0,0,.34)!important}
+.cocoa-dashboard{background:linear-gradient(120deg,rgba(14,22,45,.94),rgba(22,33,60,.94))!important;border-color:rgba(255,255,255,.08)!important;box-shadow:0 18px 40px rgba(0,0,0,.35)!important}
+.cocoa-main-menu{background:linear-gradient(135deg,rgba(18,28,56,.96),rgba(21,31,61,.96))!important}
+.cocoa-main-menu h2,.cocoa-princess-label,.cocoa-brand-new span,.cocoa-brand-new strong,.cocoa-brand-new small,.genre-card strong,h2,h3,label{color:#f3f6ff!important}
+.cocoa-menu button{background:linear-gradient(135deg,rgba(31,46,84,.96),rgba(22,34,66,.96))!important;border:1px solid rgba(255,255,255,.08)!important;color:#edf4ff!important;box-shadow:0 10px 22px rgba(0,0,0,.25)!important}
+.cocoa-menu button:hover,.cocoa-menu button:active{background:linear-gradient(135deg,#2f4783,#223566)!important}
+.cocoa-menu button small,.genre-card small{color:#c1d0f3!important}
+button,.cocoa-enter,.auto-panel .primary,.song-buttons button,.lyric-actions button{background:linear-gradient(135deg,#2c4175,#1f315a)!important;color:#eef4ff!important;border:1px solid rgba(255,255,255,.08)}
+button.primary,.auto-panel .primary,#easyMake,#makeSong{background:linear-gradient(135deg,var(--accent),#a55cff)!important;color:#fff!important;box-shadow:0 10px 24px rgba(255,95,178,.24)!important}
+.lyric-actions button{background:linear-gradient(135deg,rgba(255,95,178,.18),rgba(143,124,255,.18))!important}
+#makeSong{color:#fff!important}
+.genre-card{border-color:rgba(255,255,255,.08)!important}
+.genre-card.chosen{border-color:var(--accent)!important;background:linear-gradient(135deg,rgba(255,95,178,.18),rgba(143,124,255,.14))!important}
+.track-list span,.part-timeline span{background:rgba(255,255,255,.08)!important;color:#ecf3ff!important}.part-timeline span.on{background:linear-gradient(135deg,var(--accent),#9f63ff)!important;color:#fff!important}
+.key{background:linear-gradient(180deg,#f6f7fb,#d8e0f3)!important;color:#223552;border-color:#91a7d4!important}.key.sharp{background:linear-gradient(180deg,#263a66,#13203d)!important;color:#fff!important}
+#karaokeScreen{background:radial-gradient(circle at 20% 15%, rgba(255,95,178,.38), transparent 18%),radial-gradient(circle at 80% 20%, rgba(143,124,255,.32), transparent 18%),linear-gradient(140deg,#0d1532,#15234b 55%,#281d52)!important;border:1px solid rgba(255,255,255,.08)}
+#karaokeScreen::after{content:"";position:absolute;inset:auto -10% -35% -10%;height:55%;background:radial-gradient(circle at 50% 0%, rgba(255,95,178,.30), transparent 50%);pointer-events:none;filter:blur(20px)}
+#karaokeLine{color:#fff!important;text-shadow:0 0 12px rgba(255,95,178,.35),0 2px 10px rgba(0,0,0,.45)!important}
+#karaokeNext{color:#d7e1ff!important}
+#karaokeScreen .lit{color:#ffe98a!important}
+.idol-stage{background:radial-gradient(circle at 50% 10%,rgba(255,95,178,.22),transparent 20%),linear-gradient(135deg,#17254a,#101a33)!important}
+.idol-stage:before{color:#f49fe0!important}
+.cocoa-princess{background:linear-gradient(135deg,#1b2a53,#121b37)!important}
+.cocoa-princess-label{background:rgba(12,20,41,.82)!important;border-color:rgba(255,255,255,.12)!important}
+.cocoa-home-note{background:rgba(14,22,45,.9)!important;border:1px solid rgba(255,255,255,.08);color:#d4dfff!important}
+a{color:#9cc9ff}
+</style>
+
+<style id="live-luxury-v32">
+:root{--lux-text:#f8f3ea;--lux-sub:#d9cfc2;--lux-gold:#e6c36a;--lux-gold2:#fff0b6;--lux-line:rgba(230,195,106,.22)}
+body{color:var(--lux-text)!important;background:
+ radial-gradient(circle at 50% -5%, rgba(255,239,182,.18), transparent 22%),
+ radial-gradient(circle at 20% 12%, rgba(217,106,166,.18), transparent 18%),
+ radial-gradient(circle at 80% 14%, rgba(125,104,255,.12), transparent 18%),
+ linear-gradient(180deg,#060814 0%, #0b1226 26%, #1a122a 62%, #2a1026 100%)!important;}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:
+ radial-gradient(ellipse at 50% 0%, rgba(255,245,212,.12), transparent 32%),
+ linear-gradient(90deg, transparent 0 10%, rgba(255,230,170,.06) 10.2%, transparent 10.8%, transparent 20%, rgba(255,230,170,.045) 20.2%, transparent 20.8%, transparent 79%, rgba(255,230,170,.045) 79.2%, transparent 79.8%, transparent 89%, rgba(255,230,170,.06) 89.2%, transparent 89.8%, transparent 100%);opacity:.8}
+body::after{content:"";position:fixed;left:0;right:0;bottom:0;height:22vh;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(0,0,0,.16) 20%,rgba(0,0,0,.38)),repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 14px,rgba(0,0,0,.03) 14px 28px);opacity:.7}
+small,.context-note,#easyResult,#voiceStatus,#partNow,#fullSongInfo,#karaokeStatus,.cocoa-home-note,.genre-card small,.cocoa-menu button small{color:var(--lux-sub)!important}
+.tabs{background:linear-gradient(180deg,rgba(17,18,28,.86),rgba(17,18,28,.68))!important;border:1px solid var(--lux-line)!important;box-shadow:0 16px 30px rgba(0,0,0,.35)!important}
+.tabs button{background:linear-gradient(180deg,#30233f,#1c1c34)!important;color:var(--lux-text)!important;border:1px solid rgba(230,195,106,.18)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.tabs button.active,.tabs button.primary{background:linear-gradient(135deg,#5c2646,#312554)!important;border-color:rgba(230,195,106,.42)!important;color:#fff9ef!important;box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,240,182,.08)!important}
+section,.auto-panel,.easy-studio,.proposal,.genre-card,.idol-stage{background:linear-gradient(180deg,rgba(18,19,34,.95),rgba(29,21,40,.94))!important;border:1px solid var(--lux-line)!important;color:var(--lux-text)!important;box-shadow:0 16px 34px rgba(0,0,0,.34)!important}
+textarea,input,select{background:linear-gradient(180deg,rgba(11,13,24,.88),rgba(17,15,29,.88))!important;color:var(--lux-text)!important;border:1px solid rgba(230,195,106,.24)!important}
+textarea::placeholder,input::placeholder{color:#bcae9e!important}
+button,.cocoa-enter,.auto-panel .primary,.song-buttons button,.lyric-actions button{background:linear-gradient(180deg,#372646,#251d39)!important;color:#fff7ee!important;border:1px solid rgba(230,195,106,.22)!important;box-shadow:0 8px 18px rgba(0,0,0,.22)}
+button.primary,.auto-panel .primary,#easyMake,#makeSong,.cocoa-enter{background:linear-gradient(135deg,#7a2852,#4f296a)!important;color:#fffdf6!important;border-color:rgba(230,195,106,.36)!important;box-shadow:0 10px 24px rgba(0,0,0,.28), inset 0 0 0 1px rgba(255,240,182,.06)!important}
+.cocoa-topline{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(32,19,38,.82),rgba(10,15,33,.86))!important;border:1px solid rgba(230,195,106,.28)!important;box-shadow:0 16px 38px rgba(0,0,0,.36)!important}
+.cocoa-topline::before{content:"";position:absolute;inset:-20% -10% auto -10%;height:90%;pointer-events:none;background:
+ radial-gradient(circle at 20% 5%, rgba(255,241,191,.18), transparent 20%),
+ radial-gradient(circle at 50% 0%, rgba(255,241,191,.18), transparent 24%),
+ radial-gradient(circle at 80% 5%, rgba(255,241,191,.18), transparent 20%);filter:blur(6px)}
+.cocoa-brand-new span,.cocoa-brand-new strong,.cocoa-main-menu h2,h2,h3,label,.genre-card strong,.cocoa-princess-label{color:var(--lux-text)!important}
+.cocoa-brand-new strong{letter-spacing:.02em;text-shadow:0 0 20px rgba(255,230,170,.09),0 2px 14px rgba(0,0,0,.4)!important}
+.cocoa-brand-new small{color:#fff0b6!important;letter-spacing:.08em}
+.cocoa-dashboard{background:linear-gradient(180deg,rgba(14,17,31,.97),rgba(29,17,38,.95))!important;border-color:rgba(230,195,106,.22)!important;box-shadow:0 20px 44px rgba(0,0,0,.38)!important}
+.cocoa-main-menu{background:linear-gradient(180deg,rgba(18,18,35,.98),rgba(31,18,42,.96))!important}
+.cocoa-menu button{background:linear-gradient(180deg,rgba(46,28,49,.95),rgba(28,28,52,.95))!important;border:1px solid rgba(230,195,106,.22)!important;color:var(--lux-text)!important;box-shadow:0 10px 24px rgba(0,0,0,.25)!important}
+.cocoa-menu button:hover,.cocoa-menu button:active{background:linear-gradient(180deg,rgba(66,35,67,.98),rgba(37,35,66,.98))!important}
+.cocoa-home-note{background:linear-gradient(180deg,rgba(21,18,30,.88),rgba(19,17,28,.82))!important;border:1px solid rgba(230,195,106,.16)!important}
+.cocoa-princess{background:radial-gradient(circle at 50% -10%, rgba(255,240,182,.16), transparent 22%),linear-gradient(180deg,#0b1021,#1b1530 55%,#291726)!important}
+.cocoa-princess::before{content:"";position:absolute;top:-8%;left:10%;width:22%;height:40%;background:radial-gradient(circle at 50% 0%, rgba(255,245,212,.34), transparent 70%);transform:rotate(-8deg);filter:blur(8px);pointer-events:none}
+.cocoa-princess::after{content:"";position:absolute;top:-8%;right:10%;width:22%;height:40%;background:radial-gradient(circle at 50% 0%, rgba(255,245,212,.34), transparent 70%);transform:rotate(8deg);filter:blur(8px);pointer-events:none}
+.cocoa-princess img{filter:saturate(1.05) contrast(1.06) brightness(.94)}
+.cocoa-floating-heart{color:#fff0b6!important;text-shadow:0 0 16px rgba(255,240,182,.28)!important}
+.cocoa-princess-label{background:linear-gradient(180deg,rgba(12,13,24,.76),rgba(20,17,28,.78))!important;border:1px solid rgba(230,195,106,.22)!important;box-shadow:0 8px 18px rgba(0,0,0,.28)}
+.genre-card.chosen{background:linear-gradient(180deg,rgba(74,31,63,.38),rgba(39,31,70,.3))!important;border-color:rgba(230,195,106,.48)!important}
+.track-list span,.part-timeline span{background:linear-gradient(180deg,rgba(56,40,56,.78),rgba(34,28,46,.8))!important;color:#fff7ed!important;border:1px solid rgba(230,195,106,.14)}
+.part-timeline span.on{background:linear-gradient(135deg,#7a2852,#4f296a)!important;border-color:rgba(230,195,106,.38)!important}
+.key{background:linear-gradient(180deg,#fffaf0,#efe4c6)!important;border-color:#d1b36a!important;color:#2d2436!important}
+.key.sharp{background:linear-gradient(180deg,#3a2b46,#181a32)!important;color:#fff7ed!important;border-color:#7c5f85!important}
+#karaokeScreen{background:
+ radial-gradient(circle at 50% 0%, rgba(255,240,182,.22), transparent 24%),
+ radial-gradient(circle at 20% 8%, rgba(217,106,166,.20), transparent 18%),
+ radial-gradient(circle at 80% 8%, rgba(143,124,255,.16), transparent 18%),
+ linear-gradient(180deg,#0a1022,#1a1430 52%,#2b1428)!important;border:1px solid rgba(230,195,106,.22)!important;box-shadow:inset 0 0 0 1px rgba(255,240,182,.04),0 18px 34px rgba(0,0,0,.32)!important}
+#karaokeScreen:before{content:'✦  ♫  ✧  ♡  ✦  ♪  ✧';color:rgba(255,239,182,.58)!important;text-shadow:0 0 12px rgba(255,240,182,.18)}
+#karaokeScreen::after{content:"";position:absolute;left:0;right:0;bottom:-4%;height:28%;background:radial-gradient(ellipse at 50% 0%, rgba(0,0,0,.45), transparent 60%);pointer-events:none}
+#karaokeLine{color:#fff9ef!important;text-shadow:0 0 18px rgba(255,240,182,.12),0 2px 10px rgba(0,0,0,.55)!important}
+#karaokeNext{color:#e3d8c8!important}
+.idol-stage{background:radial-gradient(circle at 50% 0%, rgba(255,240,182,.12), transparent 18%),linear-gradient(180deg,#16172c,#271b35)!important}
+a{color:#f0d894!important}
+</style>
+
+<style id="pro-luxury-buttons-v33">
+button,
+.cocoa-enter,
+.auto-panel .primary,
+.song-buttons button,
+.lyric-actions button,
+.cocoa-menu button,
+.tabs button,
+#easyMake,
+#makeSong {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px !important;
+  border: 1px solid rgba(233,199,110,.34) !important;
+  color: #fffaf1 !important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,0) 22%),
+    linear-gradient(180deg, #4a2b4e 0%, #2b2241 55%, #191d33 100%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.16),
+    inset 0 -1px 0 rgba(0,0,0,.26),
+    0 10px 18px rgba(0,0,0,.28),
+    0 0 0 1px rgba(255,240,182,.03) !important;
+  transform: translateY(0);
+  transition: transform .16s ease, box-shadow .16s ease, filter .16s ease, border-color .16s ease;
+}
+button::before,
+.cocoa-enter::before,
+.auto-panel .primary::before,
+.song-buttons button::before,
+.lyric-actions button::before,
+.cocoa-menu button::before,
+.tabs button::before,
+#easyMake::before,
+#makeSong::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 8%;
+  height: 42%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255,255,255,.26), rgba(255,255,255,0));
+  pointer-events: none;
+}
+button:hover,
+button:active,
+.cocoa-enter:hover,
+.cocoa-enter:active,
+.auto-panel .primary:hover,
+.auto-panel .primary:active,
+.song-buttons button:hover,
+.song-buttons button:active,
+.lyric-actions button:hover,
+.lyric-actions button:active,
+.cocoa-menu button:hover,
+.cocoa-menu button:active,
+.tabs button:hover,
+.tabs button:active,
+#easyMake:hover,
+#easyMake:active,
+#makeSong:hover,
+#makeSong:active {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.18),
+    inset 0 -1px 0 rgba(0,0,0,.28),
+    0 14px 24px rgba(0,0,0,.34),
+    0 0 18px rgba(217,106,166,.12) !important;
+  filter: brightness(1.03);
+}
+button:disabled,
+.cocoa-enter:disabled,
+.auto-panel .primary:disabled,
+.song-buttons button:disabled,
+.lyric-actions button:disabled,
+.cocoa-menu button:disabled,
+.tabs button:disabled,
+#easyMake:disabled,
+#makeSong:disabled {
+  opacity: .6;
+  filter: saturate(.7);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 6px 10px rgba(0,0,0,.18) !important;
+}
+button.primary,
+.auto-panel .primary,
+.cocoa-enter,
+#easyMake,
+#makeSong,
+.tabs button.active,
+.tabs button.primary {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,0) 22%),
+    linear-gradient(135deg, #9a3d69 0%, #6d2f66 38%, #3d295f 72%, #2a223e 100%) !important;
+  border-color: rgba(240,211,130,.5) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.2),
+    inset 0 -1px 0 rgba(0,0,0,.22),
+    0 12px 22px rgba(0,0,0,.34),
+    0 0 20px rgba(255,224,140,.08) !important;
+}
+.lyric-actions button,
+.song-buttons button {
+  min-height: 58px;
+  font-weight: 700 !important;
+  letter-spacing: .01em;
+}
+.cocoa-menu button {
+  border-radius: 20px !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+.tabs button {
+  border-radius: 16px !important;
+  font-weight: 700 !important;
+}
+button, .cocoa-enter, .auto-panel .primary, .song-buttons button, .lyric-actions button, .cocoa-menu button, .tabs button {
+  font-weight: 700 !important;
+  letter-spacing: .01em;
+}
+</style>
+
+
+<style id="v34-pro-compose-style">
+.pro-upgrade-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.pro-upgrade-grid label{font-size:13px}
+.pro-upgrade-grid input,.pro-upgrade-grid select{margin-top:5px}
+.pro-engine-note{margin-top:10px;padding:12px 14px;border-radius:16px;background:linear-gradient(180deg,rgba(255,247,226,.9),rgba(255,240,244,.92));border:1px solid rgba(222,186,110,.32);color:#4a3455}
+.pro-chip-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.pro-chip{padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(214,183,120,.38);font-size:12px}
+@media(max-width:520px){.pro-upgrade-grid{grid-template-columns:1fr}}
+</style>
+<script id="v34-pro-compose-script">
+(function(){
+  function boot(){
+    const $ = id => document.getElementById(id);
+    const makeBtn = $('ciMake');
+    if(!makeBtn || $('proInstrumentPanelV34')) return;
+    const mixer = document.querySelector('#compose .v3-mixer') || document.querySelector('.v3-mixer');
+    if(mixer){
+      const panel = document.createElement('div');
+      panel.className = 'auto-panel';
+      panel.id = 'proInstrumentPanelV34';
+      panel.innerHTML = `
+        <h3>🎹 本格アレンジ追加パネル ♡</h3>
+        <p>作曲エンジンを強化して、<b>ピアノ</b> と <b>シンセサイザー</b> を重ねられるようにしたよ。曲の質感をもっと本格的に近づけられるよ♪</p>
+        <div class="pro-upgrade-grid">
+          <label>🎹 ピアノの存在感
+            <input id="ciPiano" type="range" min="0" max="150" value="110">
+          </label>
+          <label>🌌 シンセサイザーの存在感
+            <input id="ciSynth" type="range" min="0" max="150" value="85">
+          </label>
+          <label>🎼 ピアノの弾き方
+            <select id="ciPianoStyle">
+              <option value="auto">おまかせ</option>
+              <option value="arpeggio">アルペジオ</option>
+              <option value="rhythm">リズム刻み</option>
+              <option value="ballad">バラード伴奏</option>
+            </select>
+          </label>
+          <label>✨ シンセの質感
+            <select id="ciSynthTone">
+              <option value="auto">おまかせ</option>
+              <option value="warm">ウォームパッド</option>
+              <option value="bright">ブライトリード</option>
+              <option value="wide">ワイドパッド</option>
+              <option value="retro">レトロシンセ</option>
+            </select>
+          </label>
+          <label>🎶 主旋律の音色
+            <select id="ciLeadTone">
+              <option value="hybrid">ピアノ＋シンセ</option>
+              <option value="piano">ピアノ寄り</option>
+              <option value="synth">シンセ寄り</option>
+              <option value="bell">ベル系</option>
+            </select>
+          </label>
+          <label>🚀 展開の盛り上がり
+            <select id="ciLift">
+              <option value="standard">標準</option>
+              <option value="dramatic">ドラマチック</option>
+              <option value="radio">王道ポップ</option>
+            </select>
+          </label>
+        </div>
+        <div class="pro-engine-note">
+          <div><b>強化ポイント：</b> ピアノ伴奏 / シンセパッド / シンセリード / セクションごとの盛り上がり / カラオケ書き出し</div>
+          <div class="pro-chip-row">
+            <span class="pro-chip">🎹 ピアノ追加</span>
+            <span class="pro-chip">🌌 シンセ追加</span>
+            <span class="pro-chip">🥁 ドラム継続</span>
+            <span class="pro-chip">🎸 ベース継続</span>
+            <span class="pro-chip">🎤 カラオケ保存対応</span>
+          </div>
+        </div>`;
+      mixer.insertAdjacentElement('afterend', panel);
+    }
+    if($('ciDownload')) $('ciDownload').textContent = '💿 完成デモWAV';
+    if($('ciKaraoke')) $('ciKaraoke').textContent = '🎤 カラオケWAV';
+    if($('ciMidi')) $('ciMidi').textContent = '🎼 アレンジMIDI';
+    if($('ciMake')) $('ciMake').textContent = '✨ 本格アレンジを作る';
+
+    let demoBlob=null,karaokeBlob=null,midiBlob=null,demoUrl=null,karaokeUrl=null;
+    const status = msg => { const el=$('ciStatus'); if(el) el.textContent=msg; };
+    const seedText = t => { let h=2166136261; for(let i=0;i<t.length;i++) h=Math.imul(h^t.charCodeAt(i),16777619); return h>>>0; };
+    const midiFreq = n => 440*Math.pow(2,(n-69)/12);
+    const infer = t => {
+      if(/涙|別れ|さよなら|寂し|切な|悲し|恋し/.test(t)) return 'ballad';
+      if(/戦|叫|走|熱|燃|強く|光れ/.test(t)) return 'rock';
+      if(/踊|パーティ|ダンス|夜の街|クラブ/.test(t)) return 'dance';
+      if(/星|空|宇宙|物語|奇跡|魔法|世界/.test(t)) return 'cinema';
+      return 'pop';
+    };
+    const presets = {
+      pop:{bpm:116,key:60,name:'王道J-POP',prog:[0,7,9,5],piano:'rhythm',synth:'wide'},
+      ballad:{bpm:76,key:60,name:'ピアノバラード',prog:[0,9,5,7],piano:'ballad',synth:'warm'},
+      rock:{bpm:136,key:62,name:'ロック',prog:[0,5,7,0],piano:'rhythm',synth:'bright'},
+      dance:{bpm:124,key:57,name:'ダンスポップ',prog:[0,5,9,7],piano:'arpeggio',synth:'retro'},
+      cinema:{bpm:94,key:60,name:'シネマティック',prog:[9,5,0,7],piano:'arpeggio',synth:'wide'}
+    };
+    const sections=[['イントロ',4],['Aメロ1',8],['Bメロ1',4],['サビ1',8],['間奏',4],['Aメロ2',8],['Bメロ2',4],['サビ2',8],['Cメロ',4],['ラスサビ',8],['アウトロ',4]];
+    const totalBars=sections.reduce((a,b)=>a+b[1],0);
+    const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+
+    function addMidi(track,startBeat,durBeat,n,vel){ if(vel>0) track.push({tick:Math.round(startBeat*480),dur:Math.max(1,Math.round(durBeat*480)),n,vel:clamp(Math.round(vel),1,127)}); }
+
+    function renderTone(buffers,start,duration,n,wave,vol,pan){
+      const {sr,left,right}=buffers;
+      const hz=midiFreq(n),startI=Math.floor(start*sr),len=Math.min(Math.floor(duration*sr),left.length-startI);
+      const atk = wave==='pad'||wave==='synthpad'?0.12:wave==='piano'?0.006:wave==='bell'?0.004:0.01;
+      const rel = wave==='pad'||wave==='synthpad'?0.35:wave==='piano'?0.18:wave==='bass'?0.14:0.20;
+      const detune = wave==='synthpad'||wave==='synthlead'?0.997:1;
+      const vibDepth = wave==='synthlead'?0.0025:wave==='retro'?0.0018:0;
+      for(let i=0;i<len;i++){
+        const t=i/sr;
+        const env=Math.min(1,t/atk,Math.max(0,(duration-t)/rel));
+        const vibrato = vibDepth ? Math.sin(2*Math.PI*5*t)*vibDepth : 0;
+        const ph=2*Math.PI*hz*(1+vibrato)*t, ph2=2*Math.PI*(hz*detune)*(1-vibrato)*t;
+        let v=0;
+        if(wave==='bass') v=Math.sin(ph)*0.78 + Math.sin(ph*0.5)*0.18 + Math.sin(ph*2)*0.1;
+        else if(wave==='piano') v=(Math.sin(ph)*0.70 + Math.sin(ph*2)*0.22 + Math.sin(ph*3)*0.08)*Math.exp(-t*1.8);
+        else if(wave==='bell') v=(Math.sin(ph)*0.55 + Math.sin(ph*2.01)*0.26 + Math.sin(ph*3.99)*0.12)*Math.exp(-t*2.4);
+        else if(wave==='synthpad') v=(Math.sin(ph)*0.38 + Math.sin(ph2)*0.32 + Math.sin(ph*2)*0.16 + Math.sin(ph*0.5)*0.10);
+        else if(wave==='retro') v=(Math.sign(Math.sin(ph))*0.45 + Math.sin(ph2)*0.25 + Math.sin(ph*0.5)*0.15)*0.8;
+        else if(wave==='synthlead') v=(Math.sin(ph)*0.45 + Math.sign(Math.sin(ph2))*0.26 + Math.sin(ph*2)*0.14);
+        else v=(Math.sin(ph)*0.62 + Math.sin(ph*2)*0.22 + Math.sin(ph*3)*0.08);
+        const x=v*env*vol,ix=startI+i;
+        left[ix]+=x*(1-pan)*0.5; right[ix]+=x*(1+pan)*0.5;
+      }
+    }
+
+    function renderDrum(buffers,time,kind,vol,rnd){
+      const {sr,left,right}=buffers; const st=Math.floor(time*sr);
+      const dur=kind==='kick'?0.34:kind==='snare'?0.22:0.08;
+      const len=Math.min(Math.floor(dur*sr),left.length-st);
+      for(let i=0;i<len;i++){
+        const t=i/sr; const noise=rnd()*2-1;
+        let v=0;
+        if(kind==='kick') v=Math.sin(2*Math.PI*(52*t+58*t*Math.exp(-t*26)))*Math.exp(-t*14);
+        else if(kind==='snare') v=(noise*0.82+Math.sin(2*Math.PI*180*t)*0.15)*Math.exp(-t*22);
+        else v=noise*Math.exp(-t*65)*0.28;
+        left[st+i]+=v*vol*0.46; right[st+i]+=v*vol*0.46;
+      }
+    }
+
+    function choosePianoStyle(style){
+      const el=$('ciPianoStyle');
+      if(!el || el.value==='auto') return style.piano;
+      return el.value;
+    }
+    function chooseSynthTone(style){
+      const el=$('ciSynthTone');
+      if(!el || el.value==='auto') return style.synth;
+      return el.value;
+    }
+
+    function createMotif(rnd,shape){
+      const pools = {
+        verse:[0,2,4,2,5,4,2,0],
+        chorus:[0,4,5,7,9,7,5,4],
+        bridge:[9,7,5,4,2,4,5,7]
+      };
+      const base=(pools[shape]||pools.verse).slice();
+      return base.map((v,i)=> v + ([0,0,0,0,0,0,0,0][i]) + (rnd()<0.22 ? (rnd()<0.5?2:-2) : 0));
+    }
+
+    function buildSong(){
+      const text=$('ciLyrics')?.value.trim()||'';
+      const styleKey=($('ciStyle')?.value==='auto'||!$('ciStyle'))?infer(text):$('ciStyle').value;
+      const preset=presets[styleKey]||presets.pop;
+      const bpm=($('ciTempo')?.value==='auto'||!$('ciTempo'))?preset.bpm:Number($('ciTempo').value||preset.bpm);
+      const beat=60/bpm;
+      const seconds=totalBars*4*beat+2.2;
+      const sr=24000;
+      const N=Math.ceil(seconds*sr);
+      const song={sr,left:new Float32Array(N),right:new Float32Array(N)};
+      const lead={sr,left:new Float32Array(N),right:new Float32Array(N)};
+      const transpose=Number($('ciTranspose')?.value||0);
+      const layers=$('ciLayers')?.value||'full';
+      const drumMix=(Number($('ciDrums')?.value||100)/100)*0.95;
+      const bassMix=(Number($('ciBass')?.value||100)/100)*0.9;
+      const chordMix=(Number($('ciChords')?.value||100)/100)*0.75;
+      const leadMix=(Number($('ciLead')?.value||100)/100)*0.85;
+      const pianoMix=(Number($('ciPiano')?.value||110)/100)*0.72;
+      const synthMix=(Number($('ciSynth')?.value||85)/100)*0.66;
+      const leadTone=$('ciLeadTone')?.value||'hybrid';
+      const pianoStyle=choosePianoStyle(preset);
+      const synthTone=chooseSynthTone(preset);
+      const lift=$('ciLift')?.value||'standard';
+      const seed=seedText(text + styleKey + bpm + lift);
+      let rng=seed||1; const rnd=()=>{rng^=rng<<13; rng^=rng>>>17; rng^=rng<<5; return (rng>>>0)/4294967296;};
+      const midi={lead:[],piano:[],synth:[],bass:[],drums:[]};
+      const scaleMinor=(deg)=>deg===9||deg===4;
+      const verseMotif=createMotif(rnd,'verse');
+      const chorusMotif=createMotif(rnd,'chorus');
+      const bridgeMotif=createMotif(rnd,'bridge');
+      let bar=0;
+      for(const [name,count] of sections){
+        const isChorus=/サビ/.test(name);
+        const isBridge=/Cメロ/.test(name);
+        const intro=(name==='イントロ'||name==='アウトロ');
+        const energy=intro?0.45:isChorus?1.0:isBridge?0.82:name.includes('Bメロ')?0.74:0.62;
+        const liftMul=lift==='dramatic'?(isChorus?1.18:1.05):lift==='radio'?(isChorus?1.12:1.0):1.0;
+        for(let j=0;j<count;j++,bar++){
+          const base=bar*4*beat;
+          const degree=preset.prog[bar%4];
+          const root=preset.key+degree+transpose;
+          const minor=scaleMinor(degree);
+          const chord=[0,minor?3:4,7];
+          const seventh=minor?10:11;
+          const fullChord=[root,root+chord[1],root+chord[2],root+seventh];
+          const bass=root-24;
+          const barEnergy=energy*liftMul*(name==='アウトロ'?(1-j/(count+1))*0.8+0.2:1);
+
+          // piano accompaniment
+          const pStyle=(pianoStyle==='auto'?preset.piano:pianoStyle);
+          if(pStyle==='ballad'){
+            const seq=[0,1,2,1,0,1,2,3];
+            for(let k=0;k<8;k++){
+              const noteN=fullChord[seq[k]%fullChord.length] + (k<4?0:12);
+              const t=base+k*beat*0.5;
+              renderTone(song,t,beat*0.46,noteN,'piano',0.18*barEnergy*pianoMix,-0.14);
+              addMidi(midi.piano,bar*4+k*0.5,0.46,noteN,78*barEnergy*pianoMix);
+            }
+          }else if(pStyle==='arpeggio'){
+            const seq=[0,2,1,3,0,2,1,3];
+            for(let k=0;k<8;k++){
+              const noteN=fullChord[seq[k]%fullChord.length] + ((k%4===3)?12:0);
+              const t=base+k*beat*0.5;
+              renderTone(song,t,beat*0.36,noteN,'piano',0.16*barEnergy*pianoMix,-0.18);
+              addMidi(midi.piano,bar*4+k*0.5,0.36,noteN,74*barEnergy*pianoMix);
+            }
+          }else{
+            for(let st=0;st<4;st++){
+              const t=base+st*beat;
+              const dur=(st===0||st===2)?beat*0.92:beat*0.55;
+              const spread=st%2===0?[0,1,2]:[0,2,3];
+              spread.forEach((idx,c)=>{
+                const noteN=fullChord[idx]+(c===2?12:0);
+                renderTone(song,t,dur,noteN,'piano',0.14*barEnergy*pianoMix,-0.12+c*0.08);
+                addMidi(midi.piano,bar*4+st,dur/beat,noteN,72*barEnergy*pianoMix);
+              });
+            }
+          }
+
+          // synth pad / texture
+          if(layers!=='soft' || isChorus || isBridge){
+            const synthWave=synthTone==='retro'?'retro':(synthTone==='bright'?'synthlead':'synthpad');
+            fullChord.slice(0,3).forEach((noteN,idx)=>{
+              const pan=(idx-1)*0.35;
+              const dur=(synthTone==='bright' && !isChorus)?beat*2:beat*3.8;
+              const start=base+(synthTone==='bright'?idx*beat*0.25:0);
+              renderTone(song,start,dur,noteN+12,synthWave,0.08*barEnergy*synthMix,pan);
+              addMidi(midi.synth,bar*4+(synthTone==='bright'?idx*0.25:0),dur/beat,noteN+12,60*barEnergy*synthMix);
+            });
+          }
+
+          // bass
+          for(let st=0;st<4;st++){
+            const t=base+st*beat;
+            const n = bass + (st===3 ? (degree===7?2:7) : 0);
+            renderTone(song,t,beat*0.88,n,'bass',0.24*barEnergy*bassMix,-0.05);
+            addMidi(midi.bass,bar*4+st,0.88,n,86*barEnergy*bassMix);
+          }
+
+          // drums
+          if(!intro || j>1 || isChorus){
+            for(let st=0;st<4;st++){
+              const t=base+st*beat;
+              if(st===0 || st===2 || (isChorus && st===3 && rnd()<0.5)) { renderDrum(song,t,'kick',0.34*barEnergy*drumMix,rnd); addMidi(midi.drums,bar*4+st,0.12,36,105*barEnergy*drumMix); }
+              if(st===1 || st===3) { renderDrum(song,t,'snare',0.23*barEnergy*drumMix,rnd); addMidi(midi.drums,bar*4+st,0.12,38,96*barEnergy*drumMix); }
+              const hats=(styleKey==='dance'||isChorus)?4:2;
+              for(let h=0;h<hats;h++){
+                const ht=t+h*(beat/hats);
+                renderDrum(song,ht,'hat',0.12*barEnergy*drumMix,rnd);
+                addMidi(midi.drums,bar*4+st+h*(1/hats),0.08,42,66*barEnergy*drumMix);
+              }
+            }
+          }
+
+          // melody / lead
+          const motif=isBridge?bridgeMotif:(isChorus?chorusMotif:verseMotif);
+          const phraseLift=isChorus?12:(isBridge?7:0);
+          for(let k=0;k<8;k++){
+            if(k%4===3 && !isChorus && rnd()<0.25) continue;
+            const deg=motif[k%motif.length] + (k===6 && isChorus?2:0);
+            const n=root+12+deg+phraseLift*(isBridge?0:0);
+            const t=base+k*beat*0.5;
+            const dur=beat*(k%4===2?0.78:0.42);
+            const vol=0.16*barEnergy*leadMix*(isChorus?1.1:1);
+            if(leadTone==='piano' || leadTone==='hybrid') renderTone(lead,t,dur,n,leadTone==='piano'?'piano':'piano',vol*(leadTone==='hybrid'?0.65:1),-0.02);
+            if(leadTone==='synth' || leadTone==='hybrid') renderTone(lead,t,dur,n,'synthlead',vol*(leadTone==='hybrid'?0.55:1),0.02);
+            if(leadTone==='bell') renderTone(lead,t,dur,n,'bell',vol*0.95,0);
+            addMidi(midi.lead,bar*4+k*0.5,dur/beat,n,82*barEnergy*leadMix);
+          }
+        }
+      }
+
+      function encodeWav(includeLead){
+        const total=N;
+        let peak=0;
+        for(let i=0;i<total;i+=6){
+          const l=song.left[i]+(includeLead?lead.left[i]:0), r=song.right[i]+(includeLead?lead.right[i]:0);
+          peak=Math.max(peak,Math.abs(l),Math.abs(r));
+        }
+        const gain=0.8/Math.max(0.8,peak);
+        const delay=Math.floor(sr*0.16);
+        const out=new ArrayBuffer(44+total*4),dv=new DataView(out);
+        let at=0; const str=s=>{for(const c of s) dv.setUint8(at++,c.charCodeAt(0));}; const u32=v=>{dv.setUint32(at,v,true);at+=4}; const u16=v=>{dv.setUint16(at,v,true);at+=2};
+        str('RIFF');u32(36+total*4);str('WAVEfmt ');u32(16);u16(1);u16(2);u32(sr);u32(sr*4);u16(4);u16(16);str('data');u32(total*4);
+        for(let i=0;i<total;i++){
+          const fade=Math.min(1,i/(sr*0.25),(total-i)/(sr*1.6));
+          const rawL=song.left[i]+(includeLead?lead.left[i]:0), rawR=song.right[i]+(includeLead?lead.right[i]:0);
+          const echoL=i>delay?(song.right[i-delay]+(includeLead?lead.right[i-delay]:0))*0.09:0;
+          const echoR=i>delay?(song.left[i-delay]+(includeLead?lead.left[i-delay]:0))*0.09:0;
+          const l=Math.tanh((rawL+echoL)*gain*1.15)*fade, r=Math.tanh((rawR+echoR)*gain*1.15)*fade;
+          dv.setInt16(at,Math.round(clamp(l,-1,1)*32767),true); at+=2;
+          dv.setInt16(at,Math.round(clamp(r,-1,1)*32767),true); at+=2;
+        }
+        return new Blob([out],{type:'audio/wav'});
+      }
+
+      const vlq=num=>{let a=[num&127]; while(num>>=7) a.unshift((num&127)|128); return a;};
+      const u32a=n=>[(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255];
+      const utf=s=>Array.from(s).map(c=>c.charCodeAt(0));
+      const chunk=data=>[...utf('MTrk'),...u32a(data.length),...data];
+      function mkTrack(events,channel,program){
+        const arr=[]; if(program!==null) arr.push(0,0xC0+channel,program);
+        const queue=[]; events.forEach(e=>{queue.push({t:e.tick,on:1,n:e.n,vel:e.vel}); queue.push({t:e.tick+e.dur,on:0,n:e.n,vel:0});});
+        queue.sort((a,b)=>a.t-b.t||a.on-b.on); let last=0;
+        queue.forEach(e=>{arr.push(...vlq(e.t-last),(e.on?0x90:0x80)+channel,e.n,e.vel); last=e.t;});
+        arr.push(0,255,47,0); return chunk(arr);
+      }
+
+      demoBlob=encodeWav(true); karaokeBlob=encodeWav(false);
+      if(demoUrl) URL.revokeObjectURL(demoUrl); if(karaokeUrl) URL.revokeObjectURL(karaokeUrl);
+      demoUrl=URL.createObjectURL(demoBlob); karaokeUrl=URL.createObjectURL(karaokeBlob);
+      const audio=$('ciAudio'); if(audio){ audio.src=demoUrl; audio.hidden=false; }
+      if($('ciDownload')) $('ciDownload').disabled=false;
+      if($('ciKaraoke')) $('ciKaraoke').disabled=false;
+
+      const micro=Math.round(60000000/bpm);
+      const tempoTrack=chunk([0,255,81,3,(micro>>16)&255,(micro>>8)&255,micro&255,0,255,47,0]);
+      const data=[...utf('MThd'),0,0,0,6,0,1,0,6,1,224,...tempoTrack,
+        ...mkTrack(midi.lead,0,81),
+        ...mkTrack(midi.piano,1,0),
+        ...mkTrack(midi.synth,2,88),
+        ...mkTrack(midi.bass,3,33),
+        ...mkTrack(midi.drums,9,null)
+      ];
+      midiBlob=new Blob([new Uint8Array(data)],{type:'audio/midi'});
+      if($('ciMidi')) $('ciMidi').disabled=false;
+
+      if(window.cocoaStudioV3 && typeof window.cocoaStudioV3.ready==='function'){
+        window.cocoaStudioV3.ready({karaokeUrl,demoUrl,karaokeBlob,demoBlob,midiBlob,bpm,seconds,sections,style:preset.name,transpose});
+      }
+      const plan=$('ciPlan');
+      if(plan){
+        plan.hidden=false;
+        plan.textContent=`曲調：${preset.name} / ${bpm} BPM / ${totalBars}小節 / 約${Math.round(seconds)}秒\n構成：${sections.map(([n,c])=>n+' '+c+'小節').join(' → ')}\n楽器：メロディー・ピアノ・シンセサイザー・ベース・ドラム\nピアノ：${pianoStyle==='auto'?preset.piano:pianoStyle} / シンセ：${synthTone==='auto'?preset.synth:synthTone} / 主旋律：${leadTone}\n※ 完成デモWAV・カラオケWAV・アレンジMIDIを保存できます。`;
+      }
+      status('💕 本格アレンジが完成！ ピアノとシンセ入りのデモ、カラオケ、MIDIを保存できるよ。');
+    }
+
+    const download=(blob,name)=>{ if(!blob) return; const url=URL.createObjectURL(blob), a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),30000); };
+    makeBtn.onclick=()=>{ const b=makeBtn; b.disabled=true; status('🎼 本格アレンジを制作中… 少し待ってね ♡'); setTimeout(()=>{ try{ buildSong(); } catch(e){ console.error(e); status('⚠️ 制作できなかったよ。もう一度ためしてね。'); } finally{ b.disabled=false; } },40); };
+    if($('ciDownload')) $('ciDownload').onclick=()=>download(demoBlob,'cocoa_v34_pro_demo.wav');
+    if($('ciKaraoke')) $('ciKaraoke').onclick=()=>download(karaokeBlob,'cocoa_v34_pro_karaoke.wav');
+    if($('ciMidi')) $('ciMidi').onclick=()=>download(midiBlob,'cocoa_v34_pro_arrangement.mid');
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot); else setTimeout(boot,0);
+})();
+</script>
+
+<style id="v35-chords-css">
+/* ここあ Music Studio V3.5 — luxury chord workstation */
+#proChordPanelV35{background:linear-gradient(155deg,rgba(19,20,36,.97),rgba(38,24,48,.97))!important;border:1px solid rgba(228,194,115,.38)!important;box-shadow:0 12px 38px rgba(0,0,0,.38)!important}
+#proChordPanelV35 h3{font-size:1.15rem!important;margin:0 0 8px;color:#f9e4ae!important}
+#proChordPanelV35 .v35-intro{line-height:1.75;color:#e1d9d3}
+#proChordPanelV35 label{color:#f8efd7!important;font-weight:650}
+#proChordPanelV35 select{background:#151524!important;color:#fff7e6!important;border:1px solid rgba(228,194,115,.4)!important}
+#proChordPanelV35 .v35-actions{display:flex;flex-wrap:wrap;gap:9px;margin:13px 0 10px}
+#proChordPanelV35 .v35-actions button{flex:1;min-width:150px;min-height:48px}
+#proChordPanelV35 .v35-actions button:first-child{background:linear-gradient(135deg,#9b6a27,#5b3b2c)!important;color:#fff8e8!important;border-color:#d7b878!important}
+#proChordPanelV35 .v35-note{font-size:12px;line-height:1.65;color:#d8c5ad}
+#proChordPanelV35 .v35-chart{margin-top:14px;padding:13px;background:rgba(8,10,22,.65);border:1px solid rgba(228,194,115,.32);border-radius:15px}
+#proChordPanelV35 .v35-chart[hidden]{display:none}
+#proChordPanelV35 .v35-chart-header{color:#f5da93;font-weight:800;border-bottom:1px solid rgba(228,194,115,.24);padding-bottom:12px;font-size:13px;line-height:1.7}
+#proChordPanelV35 .v35-chord-section{margin-top:13px}
+#proChordPanelV35 .v35-section-label{font-size:13px;font-weight:800;color:#efd9c4;margin-bottom:6px}
+#proChordPanelV35 .v35-chord-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+#proChordPanelV35 .v35-chord-chip{min-width:0;padding:9px 4px;border:1px solid rgba(239,203,130,.19);border-radius:8px;background:linear-gradient(180deg,rgba(74,50,74,.74),rgba(32,29,52,.74));text-align:center}
+#proChordPanelV35 .v35-chord-chip strong{display:block;color:#fff1d1;font-size:clamp(11px,3.1vw,15px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#proChordPanelV35 .v35-chord-chip small{display:block;color:#cab6dd!important;font-size:10px;margin-top:2px}
+#proInstrumentPanelV34 .pro-engine-note{background:linear-gradient(180deg,rgba(39,32,51,.93),rgba(21,25,45,.93))!important;color:#f3e9d4!important;border-color:rgba(228,194,115,.22)!important}
+#proInstrumentPanelV34 .pro-chip{background:rgba(255,255,255,.07);color:#f5e7ce;border-color:rgba(228,194,115,.2)}
+@media(max-width:520px){#proChordPanelV35{padding:13px!important}#proChordPanelV35 .v35-chord-chip{padding:8px 2px}#proChordPanelV35 .v35-chord-chip strong{font-size:12px}}
+/* An older page rule hides nested <section> elements; keep the composer visible. */
+#compose.active #cocoaInstrument{display:block!important;background:linear-gradient(155deg,#151a2d,#291a38)!important;border:1px solid rgba(230,195,106,.28)!important;color:#f9f2e5!important}
+#cocoaInstrument h2{color:#f4e2bd!important}
+#cocoaInstrument .hint,#cocoaInstrument .songplan{color:#e6d9c7!important}
+#cocoaInstrument .songplan{background:rgba(11,13,26,.8)!important;border:1px solid rgba(230,195,106,.2)}
+#cocoaInstrument > label{color:#f2e4d0!important}
+#cocoaInstrument .v3-mixer label{color:#d9d4ef!important}
+
+</style>
+<script id="v35-chords-engine">
+(function(){
+'use strict';
+const $ = id => document.getElementById(id);
+const clamp = (n,min,max)=>Math.max(min,Math.min(max,n));
+const sections=[['イントロ',4],['Aメロ1',8],['Bメロ1',4],['サビ1',8],['間奏',4],['Aメロ2',8],['Bメロ2',4],['サビ2',8],['Cメロ',4],['ラスサビ',8],['アウトロ',4]];
+const totalBars=sections.reduce((s,part)=>s+part[1],0);
+const keys=['C','D♭','D','E♭','E','F','G♭','G','A♭','A','B♭','B'];
+const scale={
+  major:{
+    I:[0,'maj'],ii:[2,'min'],iii:[4,'min'],IV:[5,'maj'],V:[7,'dom'],vi:[9,'min'],
+    'vii°':[11,'dim'],iv:[5,'min'],'♭VII':[10,'maj'],'♭VI':[8,'maj'],
+    'V/vi':[4,'dom'],'V/V':[2,'dom'],'V/ii':[9,'dom']
+  },
+  minor:{
+    i:[0,'min'],'ii°':[2,'dim'],III:[3,'maj'],iv:[5,'min'],V:[7,'dom'],
+    VI:[8,'maj'],VII:[10,'maj'],v:[7,'min'],'♭II':[1,'maj'],
+    'V/III':[10,'dom'],'V/iv':[0,'dom']
+  }
+};
+const progressions={
+  royal:{label:'王道J-POP｜I–V–vi–IV',major:['I','V','vi','IV'],minor:['i','VI','III','VII']},
+  canon:{label:'カノン進行｜I–V–vi–iii–IV–I–ii–V',major:['I','V','vi','iii','IV','I','ii','V'],minor:['i','VII','VI','III','iv','i','V','V']},
+  emotional:{label:'エモーショナル｜vi–IV–I–V',major:['vi','IV','I','V'],minor:['VI','III','VII','i']},
+  city:{label:'シティポップ｜IVmaj7–V7–iii7–vi7',major:['IV','V','iii','vi','ii','V','I','I'],minor:['iv','VII','III','VI','ii°','V','i','i']},
+  jazz:{label:'ジャジー｜ii7–V7–Imaj7',major:['ii','V','I','vi','ii','V','I','V/vi'],minor:['ii°','V','i','VI','iv','V','i','V']},
+  dramatic:{label:'ドラマティック｜IV–V–iii–vi',major:['IV','V','iii','vi','ii','V','I','V'],minor:['VI','VII','V','i','iv','V','i','V']},
+  minor:{label:'切ないマイナー進行',major:['vi','IV','I','V'],minor:['i','VI','III','VII','iv','V','i','V']}
+};
+const presets={
+  pop:{bpm:116,name:'J-POP',progression:'royal',piano:'rhythm',synth:'wide'},
+  ballad:{bpm:76,name:'ピアノバラード',progression:'emotional',piano:'ballad',synth:'warm'},
+  rock:{bpm:136,name:'ロック',progression:'royal',piano:'rhythm',synth:'bright'},
+  dance:{bpm:124,name:'ダンスポップ',progression:'canon',piano:'arpeggio',synth:'retro'},
+  cinema:{bpm:94,name:'シネマティック',progression:'dramatic',piano:'arpeggio',synth:'wide'}
+};
+function inferGenre(t){
+  if(/涙|別れ|さよなら|寂し|切な|悲し|恋し/.test(t))return 'ballad';
+  if(/戦|叫|走|熱|燃|強く|光れ/.test(t))return 'rock';
+  if(/踊|パーティ|ダンス|夜の街|クラブ/.test(t))return 'dance';
+  if(/星|空|宇宙|物語|奇跡|魔法|世界/.test(t))return 'cinema';
+  return 'pop';
+}
+const seedText=t=>{let h=2166136261;for(let i=0;i<t.length;i++)h=Math.imul(h^t.charCodeAt(i),16777619);return h>>>0;};
+function noteName(n,flat){
+  const sharp=['C','C♯','D','D♯','E','F','F♯','G','G♯','A','A♯','B'];
+  const flats=['C','D♭','D','E♭','E','F','G♭','G','A♭','A','B♭','B'];
+  return (flat?flats:sharp)[((n%12)+12)%12];
+}
+function quality(def,color,token){
+  if(color==='basic')return def==='dom'?'dom':def;
+  // Dominant chords retain their seventh, creating a clear cadence.
+  if(def==='dom')return color==='jazz'?'dom9':'dom7';
+  if(def==='dim')return color==='basic'?'dim':'halfDim';
+  if(color==='jazz')return def==='min'?'min9':'maj9';
+  if(color==='lush')return def==='min'?'min9':'maj9';
+  if(def==='min')return 'min7';
+  return token==='IV'?'maj7':'add9';
+}
+const tones={
+  maj:[0,4,7],min:[0,3,7],dom:[0,4,7,10],dim:[0,3,6],
+  maj7:[0,4,7,11],min7:[0,3,7,10],dom7:[0,4,7,10],
+  add9:[0,4,7,14],maj9:[0,4,7,11,14],min9:[0,3,7,10,14],dom9:[0,4,7,10,14],halfDim:[0,3,6,10]
+};
+const suffix={maj:'',min:'m',dom:'7',dim:'dim',maj7:'maj7',min7:'m7',dom7:'7',add9:'add9',maj9:'maj9',min9:'m9',dom9:'9',halfDim:'m7♭5'};
+function settings(){
+  const text=$('ciLyrics')?.value.trim()||'';
+  const styleKey=$('ciStyle')?.value==='auto'||!$('ciStyle')?inferGenre(text):$('ciStyle').value;
+  const p=presets[styleKey]||presets.pop;
+  const bpm=$('ciTempo')?.value==='auto'||!$('ciTempo')?p.bpm:+$('ciTempo').value;
+  const mode=$('ciModeV35')?.value||'major';
+  const key=Number($('ciKeyV35')?.value||0);
+  const transpose=Number($('ciTranspose')?.value||0);
+  const color=$('ciColorV35')?.value||'pop';
+  const sub=$('ciSubV35')?.value||'tasteful';
+  const chosen=$('ciProgressionV35')?.value||'auto';
+  const progName=chosen==='auto'?p.progression:chosen;
+  return {text,styleKey,p,bpm,mode,key,transpose,color,sub,progName,rootMidi:60+key+transpose};
+}
+function harmonicPlan(cfg){
+  const dict=scale[cfg.mode];const selected=progressions[cfg.progName]||progressions.royal;
+  const normal=selected[cfg.mode];
+  const isMinor=cfg.mode==='minor';
+  const pre=isMinor?['iv','VI','V','V']:cfg.sub==='basic'?['ii','IV','V','V']:['ii','V/V','V','V'];
+  const bridge=isMinor?['VI','iv','V','i']:cfg.sub==='basic'?['IV','ii','V','I']:['IV','iv','I','V'];
+  const ending=isMinor?['iv','V','i','i']:['IV','V','I','I'];
+  const bars=[];
+  let global=0;
+  for(const [sectionName,count] of sections){
+    for(let j=0;j<count;j++,global++){
+      let token;
+      if(sectionName.startsWith('Bメロ'))token=pre[j%pre.length];
+      else if(sectionName==='Cメロ')token=bridge[j%bridge.length];
+      else if(sectionName==='アウトロ')token=ending[j%ending.length];
+      else token=normal[j%normal.length];
+      if(!dict[token])token=isMinor?'i':'I';
+      const [offset,type]=dict[token];
+      const chordQ=quality(type,cfg.color,token);
+      const midi=cfg.rootMidi+offset;
+      const flat=cfg.mode==='minor'?[0,2,3,5,7,8,10].includes(cfg.key):[1,3,5,6,8,10].includes(cfg.key);
+      const name=noteName(midi,flat)+suffix[chordQ];
+      bars.push({section:sectionName,local:j,index:global,token,offset,type,quality:chordQ,midi,name,notes:tones[chordQ].map(v=>midi+v)});
+    }
+  }
+  return bars;
+}
+// 4-voice piano inversions with smooth movement and controlled register.
+function voiceLeading(chord,previous){
+  let degrees=tones[chord.quality];
+  if(degrees.length>4){degrees=degrees.filter((v,i)=>i!==2);}
+  if(degrees.length===3)degrees=[...degrees,12];
+  const base=chord.midi;
+  const options=[];
+  for(let inversion=0;inversion<degrees.length;inversion++){
+    const inv=degrees.slice(inversion).concat(degrees.slice(0,inversion).map(n=>n+12));
+    for(const oct of [-12,0,12]){
+      const candidate=inv.map(n=>base+n+oct);
+      const rangePenalty=candidate.reduce((s,n)=>s+Math.max(0,55-n)*5+Math.max(0,n-79)*5,0);
+      const distance=previous?candidate.reduce((s,n,i)=>s+Math.abs(n-previous[i]),0):candidate.reduce((s,n,i)=>s+Math.abs(n-[60,64,67,72][i]),0);
+      options.push({candidate,score:rangePenalty+distance});
+    }
+  }
+  options.sort((a,b)=>a.score-b.score);
+  return options[0].candidate;
+}
+function chartText(cfg,bars){
+  let out=`ここあ Music Studio V3.5｜コード進行表\nキー：${noteName(cfg.rootMidi,false)} ${cfg.mode==='minor'?'minor':'major'}｜${cfg.bpm} BPM｜進行：${progressions[cfg.progName].label}\n和音：${{basic:'基本3和音',pop:'J-POP（add9・7th）',lush:'透明感（maj9・m9）',jazz:'ジャズ/R&B（9th）'}[cfg.color]}\n\n`;
+  for(const [name] of sections){
+    out+=`【${name}】\n`;
+    const list=bars.filter(b=>b.section===name);
+    for(let i=0;i<list.length;i+=4)out+=list.slice(i,i+4).map(b=>b.name.padEnd(8,' ')).join(' | ')+'\n';
+    out+='\n';
+  }
+  out+='※ 定番のコード進行を組み合わせた自動編曲です。メロディーや楽器は曲に合わせて編集できます。\n';
+  return out;
+}
+function download(blob,name){if(!blob)return;const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}
+let demoBlob=null,karaokeBlob=null,midiBlob=null,demoUrl=null,karaokeUrl=null,lastChartText='';
+function status(s){if($('ciStatus'))$('ciStatus').textContent=s;}
+function renderChart(cfg,bars){
+  const wrap=$('ciChordChartV35');if(!wrap)return;
+  wrap.textContent='';wrap.hidden=false;
+  const title=document.createElement('div');title.className='v35-chart-header';
+  title.textContent=`${noteName(cfg.rootMidi,false)} ${cfg.mode==='minor'?'minor':'major'}　|　${cfg.bpm} BPM　|　${progressions[cfg.progName].label}`;
+  wrap.appendChild(title);
+  for(const [name] of sections){
+    const block=document.createElement('div');block.className='v35-chord-section';
+    const header=document.createElement('div');header.className='v35-section-label';header.textContent=name;block.appendChild(header);
+    const grid=document.createElement('div');grid.className='v35-chord-grid';
+    for(const chord of bars.filter(b=>b.section===name)){
+      const chip=document.createElement('div');chip.className='v35-chord-chip';
+      const strong=document.createElement('strong');strong.textContent=chord.name;
+      const small=document.createElement('small');small.textContent=chord.token;
+      chip.append(strong,small);grid.appendChild(chip);
+    }
+    block.appendChild(grid);wrap.appendChild(block);
+  }
+  lastChartText=chartText(cfg,bars);
+  if($('ciChordExportV35'))$('ciChordExportV35').disabled=false;
+}
+const midiFreq=n=>440*Math.pow(2,(n-69)/12);
+function renderTone(buffers,start,duration,n,wave,vol,pan){
+  if(vol<=0)return;
+  const {sr,left,right}=buffers,hz=midiFreq(n),startI=Math.floor(start*sr),len=Math.min(Math.floor(duration*sr),left.length-startI);
+  const atk=wave==='synthpad'?.12:wave==='piano'?.006:wave==='bell'?.004:.01;
+  const rel=wave==='synthpad'?.32:wave==='piano'?.16:wave==='bass'?.12:.2;
+  const detune=wave==='synthpad'||wave==='synthlead'?.997:1;
+  const vib=wave==='synthlead'?.0025:wave==='retro'?.0018:0;
+  for(let i=0;i<len;i++){
+    const t=i/sr,env=Math.min(1,t/atk,Math.max(0,(duration-t)/rel));
+    const ph=2*Math.PI*hz*(1+vib*Math.sin(2*Math.PI*5*t))*t, ph2=2*Math.PI*hz*detune*t;
+    let v=0;
+    if(wave==='bass')v=Math.sin(ph)*.78+Math.sin(ph*.5)*.18+Math.sin(ph*2)*.1;
+    else if(wave==='piano')v=(Math.sin(ph)*.70+Math.sin(ph*2)*.22+Math.sin(ph*3)*.08)*Math.exp(-t*1.8);
+    else if(wave==='bell')v=(Math.sin(ph)*.55+Math.sin(ph*2.01)*.26+Math.sin(ph*3.99)*.12)*Math.exp(-t*2.4);
+    else if(wave==='synthpad')v=Math.sin(ph)*.38+Math.sin(ph2)*.32+Math.sin(ph*2)*.16+Math.sin(ph*.5)*.10;
+    else if(wave==='retro')v=(Math.sign(Math.sin(ph))*.45+Math.sin(ph2)*.25+Math.sin(ph*.5)*.15)*.8;
+    else if(wave==='synthlead')v=Math.sin(ph)*.45+Math.sign(Math.sin(ph2))*.26+Math.sin(ph*2)*.14;
+    else v=Math.sin(ph)*.62+Math.sin(ph*2)*.22+Math.sin(ph*3)*.08;
+    const x=v*env*vol,ix=startI+i;left[ix]+=x*(1-pan)*.5;right[ix]+=x*(1+pan)*.5;
+  }
+}
+function renderDrum(buffers,time,kind,vol,rnd){
+  if(vol<=0)return;
+  const {sr,left,right}=buffers,st=Math.floor(time*sr),dur=kind==='kick'?.34:kind==='snare'?.22:.08,len=Math.min(Math.floor(dur*sr),left.length-st);
+  for(let i=0;i<len;i++){
+    const t=i/sr,noise=rnd()*2-1;
+    const v=kind==='kick'?Math.sin(2*Math.PI*(52*t+58*t*Math.exp(-t*26)))*Math.exp(-t*14):kind==='snare'?(noise*.82+Math.sin(2*Math.PI*180*t)*.15)*Math.exp(-t*22):noise*Math.exp(-t*65)*.28;
+    left[st+i]+=v*vol*.46;right[st+i]+=v*vol*.46;
+  }
+}
+function encodeWav(song,lead,withLead){
+  const {sr,left,right}=song,N=left.length;
+  let peak=0;
+  for(let i=0;i<N;i+=6)peak=Math.max(peak,Math.abs(left[i]+(withLead?lead.left[i]:0)),Math.abs(right[i]+(withLead?lead.right[i]:0)));
+  const gain=.8/Math.max(.8,peak),delay=Math.floor(sr*.16),buffer=new ArrayBuffer(44+N*4),dv=new DataView(buffer);
+  let at=0;
+  const str=s=>{for(const c of s)dv.setUint8(at++,c.charCodeAt(0));};
+  const u32=v=>{dv.setUint32(at,v,true);at+=4;},u16=v=>{dv.setUint16(at,v,true);at+=2;};
+  str('RIFF');u32(36+N*4);str('WAVEfmt ');u32(16);u16(1);u16(2);u32(sr);u32(sr*4);u16(4);u16(16);str('data');u32(N*4);
+  for(let i=0;i<N;i++){
+    const fade=Math.min(1,i/(sr*.25),(N-i)/(sr*1.6)),rawL=left[i]+(withLead?lead.left[i]:0),rawR=right[i]+(withLead?lead.right[i]:0);
+    const echoL=i>delay?(right[i-delay]+(withLead?lead.right[i-delay]:0))*.09:0;
+    const echoR=i>delay?(left[i-delay]+(withLead?lead.left[i-delay]:0))*.09:0;
+    const l=Math.tanh((rawL+echoL)*gain*1.15)*fade,r=Math.tanh((rawR+echoR)*gain*1.15)*fade;
+    dv.setInt16(at,Math.round(clamp(l,-1,1)*32767),true);at+=2;dv.setInt16(at,Math.round(clamp(r,-1,1)*32767),true);at+=2;
+  }
+  return new Blob([buffer],{type:'audio/wav'});
+}
+function encodeMidi(midi,bpm){
+  const vlq=num=>{let a=[num&127];while(num>>=7)a.unshift((num&127)|128);return a;};
+  const u32=n=>[(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255];
+  const bytes=s=>Array.from(s).map(c=>c.charCodeAt(0));
+  const chunk=data=>[...bytes('MTrk'),...u32(data.length),...data];
+  function track(events,channel,program){
+    const arr=[];if(program!==null)arr.push(0,0xC0+channel,program);
+    const events2=[];
+    for(const e of events){events2.push({tick:e.tick,on:1,n:e.n,v:e.vel});events2.push({tick:e.tick+e.dur,on:0,n:e.n,v:0});}
+    events2.sort((a,b)=>a.tick-b.tick||a.on-b.on);
+    let last=0;for(const e of events2){arr.push(...vlq(e.tick-last),(e.on?0x90:0x80)+channel,e.n,e.v);last=e.tick;}
+    arr.push(0,255,47,0);return chunk(arr);
+  }
+  const micro=Math.round(60000000/bpm),tempo=chunk([0,255,81,3,(micro>>16)&255,(micro>>8)&255,micro&255,0,255,47,0]);
+  const all=[...bytes('MThd'),0,0,0,6,0,1,0,6,1,224,...tempo,
+    ...track(midi.lead,0,81),...track(midi.piano,1,0),...track(midi.synth,2,88),...track(midi.bass,3,33),...track(midi.drums,9,null)];
+  return new Blob([new Uint8Array(all)],{type:'audio/midi'});
+}
+function addMidi(events,start,dur,n,velocity){
+  if(velocity<=0)return;
+  events.push({tick:Math.round(start*480),dur:Math.max(1,Math.round(dur*480)),n:clamp(Math.round(n),0,127),vel:clamp(Math.round(velocity),1,127)});
+}
+function makeSong(){
+  const cfg=settings(),bars=harmonicPlan(cfg);
+  renderChart(cfg,bars);
+  const bpm=cfg.bpm,beat=60/bpm,sr=22050,seconds=totalBars*4*beat+2.2,N=Math.ceil(seconds*sr);
+  const song={sr,left:new Float32Array(N),right:new Float32Array(N)};
+  const lead={sr,left:new Float32Array(N),right:new Float32Array(N)};
+  const layers=$('ciLayers')?.value||'full';
+  const mix={drums:+($('ciDrums')?.value||100)/100,bass:+($('ciBass')?.value||100)/100,chords:+($('ciChords')?.value||100)/100,lead:+($('ciLead')?.value||100)/100,
+    piano:+($('ciPiano')?.value||110)/100,synth:+($('ciSynth')?.value||85)/100};
+  const pianoStyle=$('ciPianoStyle')?.value==='auto'?cfg.p.piano:($('ciPianoStyle')?.value||cfg.p.piano);
+  const synthTone=$('ciSynthTone')?.value==='auto'?cfg.p.synth:($('ciSynthTone')?.value||cfg.p.synth);
+  const leadTone=$('ciLeadTone')?.value||'hybrid',lift=$('ciLift')?.value||'standard';
+  const seed=seedText(cfg.text+cfg.progName+cfg.mode+cfg.color+cfg.key);
+  let rng=seed||1;const rnd=()=>{rng^=rng<<13;rng^=rng>>>17;rng^=rng<<5;return (rng>>>0)/4294967296;};
+  const midi={lead:[],piano:[],synth:[],bass:[],drums:[]};
+  let prevVoicing=null,prevFitNote=null;
+  for(const b of bars){
+    const base=b.index*4*beat;
+    const isChorus=b.section.includes('サビ'),isBridge=b.section==='Cメロ',isIntro=b.section==='イントロ',isOutro=b.section==='アウトロ';
+    const isPre=b.section.includes('Bメロ');
+    const energy=(isIntro||isOutro)?.42:isChorus?1.0:isBridge?.76:isPre?.78:.62;
+    const liftMul=lift==='dramatic'?(isChorus?1.16:1.03):lift==='radio'?(isChorus?1.1:1):1;
+    const e=energy*liftMul*(isOutro?(1-b.local/5):1);
+    const voiced=voiceLeading(b,prevVoicing);prevVoicing=voiced;
+    const piVol=.13*e*mix.piano*mix.chords,syVol=.10*e*mix.synth*mix.chords;
+    const seq=pianoStyle==='ballad'?[0,1,2,3,2,1,3,1]:[0,2,1,3,0,2,1,3];
+    if(pianoStyle==='ballad'||pianoStyle==='arpeggio'){
+      for(let k=0;k<8;k++){
+        const n=voiced[seq[k]],t=base+k*beat*.5,dur=beat*(pianoStyle==='ballad'?.48:.39);
+        renderTone(song,t,dur,n,'piano',piVol*(pianoStyle==='ballad'?1.08:.96),-.12);
+        addMidi(midi.piano,b.index*4+k*.5,dur/beat,n,76*e*mix.piano*mix.chords);
+      }
+    }else{
+      for(let s=0;s<4;s++){
+        const t=base+s*beat,dur=beat*(s%2===0?.82:.55);
+        for(const idx of (s%2===0?[0,1,2,3]:[0,2,3])){
+          const n=voiced[idx];
+          renderTone(song,t,dur,n,'piano',piVol*.7,-.15+idx*.1);
+          addMidi(midi.piano,b.index*4+s,dur/beat,n,64*e*mix.piano*mix.chords);
+        }
+      }
+    }
+    if(layers!=='soft'||isChorus||isBridge){
+      const wave=synthTone==='retro'?'retro':synthTone==='bright'?'synthlead':'synthpad';
+      for(let idx=0;idx<3;idx++){
+        const n=voiced[idx]+(synthTone==='bright'?12:0),t=base+(synthTone==='bright'?idx*beat*.25:0);
+        const dur=beat*(synthTone==='bright'&&!isChorus?1.8:3.7);
+        renderTone(song,t,dur,n,wave,syVol*(isChorus?1.08:1),-.35+idx*.35);
+        addMidi(midi.synth,b.index*4+(synthTone==='bright'?idx*.25:0),dur/beat,n,67*e*mix.synth*mix.chords);
+      }
+    }
+    const bass=b.midi-24, next=bars[Math.min(b.index+1,bars.length-1)].midi-24;
+    for(let s=0;s<4;s++){
+      const t=base+s*beat;
+      // Approach tone on beat 4 prepares the next chord; real bass root on the downbeat.
+      const approaching=s===3 && !isOutro;
+      const n=approaching ? next+(next>=bass?-1:1) : bass+(s===2?7:0);
+      renderTone(song,t,beat*.86,n,'bass',.24*e*mix.bass,-.04);
+      addMidi(midi.bass,b.index*4+s,.86,n,85*e*mix.bass);
+    }
+    if(!isIntro || b.local>1){
+      for(let s=0;s<4;s++){
+        const t=base+s*beat;
+        if(s%2===0 || (isChorus&&s===3&&rnd()<.36)){
+          renderDrum(song,t,'kick',.33*e*mix.drums,rnd);addMidi(midi.drums,b.index*4+s,.12,36,100*e*mix.drums);
+        }
+        if(s%2===1){renderDrum(song,t,'snare',.23*e*mix.drums,rnd);addMidi(midi.drums,b.index*4+s,.12,38,91*e*mix.drums);}
+        const hats=(cfg.styleKey==='dance'||isChorus)?2:1;
+        for(let h=0;h<hats;h++){
+          const ht=t+h*beat/hats;
+          renderDrum(song,ht,'hat',.12*e*mix.drums,rnd);addMidi(midi.drums,b.index*4+s+h/hats,.08,42,64*e*mix.drums);
+        }
+      }
+    }
+    // Melody emphasizes chord tones. Lifts the register in choruses.
+    if(!isIntro&&!isOutro){
+      const pitchClasses=tones[b.quality].filter(x=>x<12);
+      for(let k=0;k<8;k++){
+        if(k===7&&!isChorus&&rnd()<.34)continue;
+        // Strong beats use the chord's 1st/3rd/5th; weaker beats may add a 2nd as a passing tone.
+        const pattern=isChorus?[0,2,1,2,3,2,1,0]:isBridge?[2,1,0,1,2,1,0,1]:[0,1,2,1,0,2,1,0];
+        let degree=pitchClasses[pattern[k]%pitchClasses.length];
+        if(k===5 && !isChorus && cfg.color!=='basic')degree+=2;
+        let n=b.midi+12+degree+(isChorus?5:0);
+        if(n>87)n-=12;
+        // V3.6 optional singer-fit: octave-place each melody note within the
+        // user-declared comfortable range, keeping chord tones and smooth motion.
+        const fitLowEl=$('vfComposeLow'),fitHighEl=$('vfComposeHigh');
+        const fitLow=fitLowEl?.value!==''?Number(fitLowEl?.value):NaN;
+        const fitHigh=fitHighEl?.value!==''?Number(fitHighEl?.value):NaN;
+        if(Number.isFinite(fitLow)&&Number.isFinite(fitHigh)&&fitHigh-fitLow>=7){
+          const nearby=[];
+          for(let octave=-4;octave<=2;octave++){
+            const cand=n+12*octave;
+            if(cand>=fitLow&&cand<=fitHigh)nearby.push(cand);
+          }
+          const target=prevFitNote===null?(fitLow+fitHigh)/2:prevFitNote;
+          if(nearby.length){
+            nearby.sort((a,b)=>(Math.abs(a-target)*0.7+Math.abs(a-n)*0.15)-(Math.abs(b-target)*0.7+Math.abs(b-n)*0.15));
+            n=nearby[0];
+          }else{
+            const tonesInRange=[];
+            for(let candidate=fitLow;candidate<=fitHigh;candidate++){
+              if(pitchClasses.some(d=>((b.midi+d-candidate)%12+12)%12===0))tonesInRange.push(candidate);
+            }
+            if(tonesInRange.length){
+              tonesInRange.sort((a,b)=>Math.abs(a-target)-Math.abs(b-target));
+              n=tonesInRange[0];
+            }else n=clamp(Math.round(target),fitLow,fitHigh);
+          }
+          prevFitNote=n;
+        }
+        const t=base+k*beat*.5,dur=beat*(k%4===2?.76:.42),vol=.18*e*mix.lead;
+        if(leadTone==='piano'||leadTone==='hybrid')renderTone(lead,t,dur,n,'piano',vol*(leadTone==='hybrid'?.62:1),-.03);
+        if(leadTone==='synth'||leadTone==='hybrid')renderTone(lead,t,dur,n,'synthlead',vol*(leadTone==='hybrid'?.57:1),.03);
+        if(leadTone==='bell')renderTone(lead,t,dur,n,'bell',vol,0);
+        addMidi(midi.lead,b.index*4+k*.5,dur/beat,n,83*e*mix.lead);
+      }
+    }
+  }
+  const dBlob=encodeWav(song,lead,true),kBlob=encodeWav(song,lead,false),mBlob=encodeMidi(midi,bpm);
+  // Revoke the previous URLs only after all new audio is rendered.
+  if(demoUrl)URL.revokeObjectURL(demoUrl);if(karaokeUrl)URL.revokeObjectURL(karaokeUrl);
+  demoBlob=dBlob;karaokeBlob=kBlob;midiBlob=mBlob;
+  demoUrl=URL.createObjectURL(dBlob);karaokeUrl=URL.createObjectURL(kBlob);
+  const audio=$('ciAudio');if(audio){audio.src=demoUrl;audio.hidden=false;}
+  for(const id of ['ciDownload','ciKaraoke','ciMidi'])if($(id))$(id).disabled=false;
+  if(window.cocoaStudioV3&&typeof window.cocoaStudioV3.ready==='function'){
+    window.cocoaStudioV3.ready({karaokeUrl,demoUrl,karaokeBlob:kBlob,demoBlob:dBlob,midiBlob:mBlob,bpm,seconds,sections,style:cfg.p.name,transpose:cfg.key+cfg.transpose});
+  }
+  const info=$('ciPlan');if(info){info.hidden=false;info.textContent=`${cfg.p.name} / ${noteName(cfg.rootMidi,false)} ${cfg.mode} / ${bpm} BPM / ${totalBars}小節 / 約${Math.round(seconds)}秒\n${progressions[cfg.progName].label}\nピアノ・シンセ・ベース・ドラム・メロディー（合成音）／コード進行表も保存できます。`;}
+  status('🎼 コード進行と本格アレンジが完成！ WAV・カラオケ・MIDI・コード譜を保存できるよ。');
+}
+function boot(){
+  const makeBtn=$('ciMake'),mixer=document.querySelector('#compose .v3-mixer')||document.querySelector('.v3-mixer');
+  if(!makeBtn||!mixer||$('proChordPanelV35'))return;
+  const upgrade=document.createElement('div');upgrade.className='auto-panel';upgrade.id='proChordPanelV35';
+  upgrade.innerHTML=`<h3>🎼 プロ・コード進行 V3.5</h3>
+    <p class="v35-intro">定番J-POP進行・7th・add9・9th・転回形・セカンダリードミナントを使い、セクションごとに響きを変えるよ。選んだ進行をピアノとシンセにも反映するよ。</p>
+    <div class="pro-upgrade-grid">
+      <label>🎵 キー（主音）<select id="ciKeyV35">${keys.map((k,i)=>`<option value="${i}" ${i===0?'selected':''}>${k}</option>`).join('')}</select></label>
+      <label>🎼 調性<select id="ciModeV35"><option value="major">メジャー（明るい）</option><option value="minor">マイナー（切ない）</option></select></label>
+      <label>💎 コード進行<select id="ciProgressionV35">
+        <option value="auto">ジャンルからおまかせ</option>
+        ${Object.keys(progressions).map(k=>`<option value="${k}">${progressions[k].label}</option>`).join('')}
+      </select></label>
+      <label>✨ コードの響き<select id="ciColorV35"><option value="pop">J-POP：add9・7th</option><option value="lush">透明感：maj9・m9</option><option value="jazz">R&amp;B：7th・9th</option><option value="basic">シンプル：三和音中心</option></select></label>
+      <label>🎹 進行のアレンジ<select id="ciSubV35"><option value="tasteful">プロ風：経過コード＋借用和音</option><option value="basic">定番を大切に</option></select></label>
+    </div>
+    <div class="v35-actions"><button id="ciChordPreviewV35" type="button">🎼 コード進行を確認</button><button id="ciChordExportV35" type="button" disabled>📄 コード譜を保存</button></div>
+    <p class="v35-note">キー変更と「キーの移調」は加算されるよ。コード譜は伴奏と同じ内容。まずは「コード進行を確認」で試せるよ。</p>
+    <div id="ciChordChartV35" class="v35-chart" hidden aria-live="polite"></div>`;
+  mixer.insertAdjacentElement('afterend',upgrade);
+  const note=$('proInstrumentPanelV34')?.querySelector('h3');if(note)note.textContent='🎹 ピアノ＆シンセ・アレンジ';
+  makeBtn.textContent='✨ コード進行から曲を完成させる';
+  const preview=()=>{const cfg=settings();renderChart(cfg,harmonicPlan(cfg));status('コード進行表を表示したよ。気に入ったら「曲を完成させる」を押してね。');};
+  $('ciChordPreviewV35').onclick=preview;
+  $('ciChordExportV35').onclick=()=>download(new Blob([lastChartText],{type:'text/plain;charset=utf-8'}),'cocoa_v35_chord_chart.txt');
+  const audio=$('ciAudio');if(audio)audio.hidden=true;
+  makeBtn.onclick=()=>{
+    makeBtn.disabled=true;status('🎹 コード進行と編曲を制作中… スマホでは少し時間がかかるよ。');
+    setTimeout(()=>{try{makeSong();}catch(e){console.error('V3.5 render failed:',e);status('制作中にエラーが発生したよ。ページを再読み込みしてもう一度試してね。');}finally{makeBtn.disabled=false;}},30);
+  };
+  $('ciDownload').onclick=()=>download(demoBlob,'cocoa_v35_full_song.wav');
+  $('ciKaraoke').onclick=()=>download(karaokeBlob,'cocoa_v35_karaoke.wav');
+  $('ciMidi').onclick=()=>download(midiBlob,'cocoa_v35_full_arrangement.mid');
+  // Provide a quick harmonic preview without the expensive audio render.
+  $('ciProgressionV35').addEventListener('change',preview);
+  $('ciColorV35').addEventListener('change',preview);
+  $('ciModeV35').addEventListener('change',preview);
+  $('ciKeyV35').addEventListener('change',preview);
+  $('ciSubV35').addEventListener('change',preview);
+  preview();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+})();
+
+</script>
+
+<style id="v36-voice-fit-css">
+#vocalfit{background:linear-gradient(160deg,rgba(13,19,36,.97),rgba(36,24,48,.96))!important;border:1px solid rgba(237,207,140,.34)!important;color:#f8f1e6!important}
+#vocalfit h2{color:#ffe2a8!important;margin-top:0}
+#vocalfit .vf-sublead,#vocalfit .vf-help{line-height:1.75;color:#e1dce5!important}
+#vocalfit label{display:block;color:#f8ecd9!important;font-weight:700;font-size:13px}
+#vocalfit select{margin:6px 0 0;background:#141625!important;border:1px solid rgba(232,198,123,.4)!important;color:#fcf2e2!important}
+#vocalfit .vf-control-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0}
+#vocalfit .vf-range-edit{display:grid;grid-template-columns:1fr auto 1fr auto;gap:8px;align-items:end;background:rgba(6,12,26,.56);border:1px solid rgba(232,198,123,.2);padding:12px;border-radius:16px}
+#vocalfit .vf-range-edit button{font-size:12px;padding:12px 10px;white-space:nowrap}
+#vocalfit .vf-actions{display:flex;flex-wrap:wrap;gap:9px;margin:17px 0}
+#vocalfit .vf-actions button{flex:1;min-width:170px}
+#vocalfit .vf-alert{background:rgba(255,230,165,.12);color:#fff0cb;border:1px solid rgba(240,198,106,.42);padding:13px;border-radius:14px;line-height:1.75;margin-bottom:13px}
+#vocalfit .vf-alert[hidden]{display:none}
+#vocalfit .vf-card{background:linear-gradient(155deg,rgba(60,35,62,.72),rgba(20,27,49,.86));border:1px solid rgba(233,202,124,.32);padding:14px;border-radius:17px;margin:11px 0;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+#vocalfit .vf-card h3{margin:2px 0 8px;color:#ffe9b7!important}
+#vocalfit .vf-card p{margin:5px 0;color:#ede2de!important;line-height:1.65}
+#vocalfit .vf-card .vf-tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+#vocalfit .vf-card .vf-tag{font-size:11px;border:1px solid rgba(233,202,124,.24);color:#fbecc9;padding:5px 8px;border-radius:30px;background:rgba(255,255,255,.06)}
+#vocalfit .vf-card button{background:linear-gradient(140deg,#86532c,#442c4c)!important;border-color:rgba(233,202,124,.48)!important;color:#fff9eb!important}
+#vocalfit .vf-safety{border:1px solid rgba(233,202,124,.2);border-radius:16px;padding:14px;background:rgba(3,8,20,.4);margin-top:20px;color:#e4d8d3;line-height:1.7;font-size:13px}
+#vocalfit .vf-safety p{margin:8px 0}
+#vocalfit .vf-safety strong{color:#ffe1a5}
+#vocalfit .vf-safety a{color:#f7d894}
+@media(max-width:640px){#vocalfit .vf-control-grid{grid-template-columns:1fr}#vocalfit .vf-range-edit{grid-template-columns:1fr 1fr}#vocalfit .vf-range-edit button{width:100%;white-space:normal}#vocalfit .vf-actions button{width:100%}}
+</style>
+
+<script id="v36-voice-fit-engine">
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+const midiNames=['C','C♯','D','D♯','E','F','F♯','G','G♯','A','A♯','B'];
+const noteName=n=>midiNames[n%12]+(Math.floor(n/12)-1);
+const rangePresets={low:[45,64],lower:[48,67],middle:[55,74],upper:[60,79],high:[64,84]};
+const songs=[
+{title:'月明かりのピアノレター',style:'ballad',tempo:76,progression:'emotional',color:'lush',sound:'piano',vibes:['soft','clear','warm'],moods:['calm','emotional'],description:'静かなピアノを中心に、息を急がず歌える余白を意識したバラード。'},
+{title:'夜景のシティラウンジ',style:'pop',tempo:96,progression:'city',color:'jazz',sound:'hybrid',vibes:['husky','warm','clear'],moods:['cool','calm'],description:'落ち着いたテンポとジャズ系コード。低〜中音域の表情を生かすアレンジ。'},
+{title:'やさしい灯りの帰り道',style:'ballad',tempo:76,progression:'jazz',color:'lush',sound:'piano',vibes:['soft','warm','husky','clear'],moods:['calm','emotional'],description:'サビも張り上げず、語りかけるように歌うアコースティックな楽曲。'},
+{title:'君と迎える朝',style:'pop',tempo:96,progression:'royal',color:'pop',sound:'hybrid',vibes:['bright','soft','clear'],moods:['bright','calm'],description:'軽やかで明るいポップス。歌詞が伝わる中くらいのテンポ。'},
+{title:'星空のシネマ',style:'cinema',tempo:96,progression:'dramatic',color:'lush',sound:'hybrid',vibes:['clear','soft','power'],moods:['emotional','dramatic'],description:'透明感のあるピアノとシンセを重ね、声量よりも抑揚を生かす曲。'},
+{title:'笑顔のアンコール',style:'pop',tempo:116,progression:'canon',color:'pop',sound:'hybrid',vibes:['bright','power','clear'],moods:['bright','dramatic'],description:'観客と一緒に楽しめる王道ポップ。高音の連続を控えるキーで制作。'},
+{title:'未来へ続くステージ',style:'rock',tempo:132,progression:'royal',color:'pop',sound:'synth',vibes:['power','bright'],moods:['dramatic','bright'],description:'勢いのあるバンドサウンド。調子の良い日の短い歌唱向け。',intense:true},
+{title:'雨上がりのメロディー',style:'cinema',tempo:96,progression:'emotional',color:'lush',sound:'bell',vibes:['husky','clear','soft','warm'],moods:['cool','emotional'],description:'静かなシンセとピアノに包まれるミドルテンポの曲。'}
+];
+let recommended=[];
+function selectedRange(){
+  const preset=$('vfRange').value;
+  if(preset==='unknown')return null;
+  const low=Number($('vfLow').value),high=Number($('vfHigh').value);
+  return low<high?{low,high}:null;
+}
+function updateRange(){
+  const p=$('vfRange').value;
+  if(rangePresets[p]){$('vfLow').value=rangePresets[p][0];$('vfHigh').value=rangePresets[p][1];}
+  const unknown=p==='unknown';
+  $('vfLow').disabled=unknown;
+  $('vfHigh').disabled=unknown;
+  $('vfHearLow').disabled=unknown;
+  $('vfHearHigh').disabled=unknown;
+  // Range changes take effect only when the user chooses a song again.
+  $('vfComposeLow').value='';$('vfComposeHigh').value='';
+  $('vfRangeHint').textContent=unknown?'音域が未設定なので、曲調だけを提案するよ。楽に出せる音が分かったら設定してね。':'現在の設定：'+noteName(Number($('vfLow').value))+'〜'+noteName(Number($('vfHigh').value))+'。苦しい音は試さないで、楽に歌える範囲を選んでね。';
+}
+function playReference(n){
+  try{
+    const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+    const a=new AC(),o=a.createOscillator(),g=a.createGain(),start=a.currentTime+.01;
+    o.type='sine';o.frequency.value=440*Math.pow(2,(n-69)/12);
+    g.gain.setValueAtTime(.0001,start);g.gain.linearRampToValueAtTime(.045,start+.06);g.gain.exponentialRampToValueAtTime(.0001,start+.65);
+    o.connect(g);g.connect(a.destination);o.start(start);o.stop(start+.67);o.onended=()=>{a.close().catch(()=>{});};
+  }catch(e){console.warn('reference tone unavailable',e)}
+}
+function warn(text){const el=$('vfAlert');el.textContent=text;el.hidden=false;}
+function clearWarning(){$('vfAlert').textContent='';$('vfAlert').hidden=true;}
+function rankedSongs(){
+  const v=$('vfVoice').value,m=$('vfMood').value,c=$('vfCondition').value,session=$('vfSession').value;
+  const candidates=songs.map(song=>{
+    let score=0;
+    if(song.vibes.includes(v))score+=5;
+    if(song.moods.includes(m))score+=5;
+    if(song.style==='ballad'&&(c==='tired'||session==='long'))score+=4;
+    if(song.tempo<=96 && (c==='tired'||session==='long'))score+=4;
+    if(song.intense && (c==='tired'||session==='long'))score-=30;
+    if(song.style==='rock'&&m==='dramatic'&&c==='fine'&&session==='short')score+=4;
+    return {...song,score};
+  });
+  candidates.sort((a,b)=>b.score-a.score||a.tempo-b.tempo);
+  return candidates.slice(0,3);
+}
+function previewKey(rng){
+  if(!rng)return {shift:0,description:'音域未設定：キーは作曲画面で調整'};
+  // Approximate the original V3.5 melody register. The composer also folds
+  // generated notes into the declared range, so key is a starting estimate.
+  const samples=[72,74,76,79,80,82,84,86];
+  const middle=(rng.low+rng.high)/2;
+  let best={shift:0,score:Infinity};
+  for(let shift=-12;shift<=12;shift++){
+    let cost=Math.abs(shift)*0.065;
+    for(const n of samples){
+      const shifted=n+shift;
+      const candidates=[];
+      for(let o=-3;o<=1;o++){
+        const p=shifted+12*o;
+        if(p>=rng.low&&p<=rng.high)candidates.push(p);
+      }
+      if(candidates.length){
+        cost+=Math.min(...candidates.map(p=>Math.abs(p-middle)*0.08+Math.abs(octaveDistance(shifted,p))*0.12));
+      }else cost+=5;
+    }
+    if(cost<best.score)best={shift,score:cost};
+  }
+  return {shift:best.shift,description:`おすすめ移調 ${best.shift>0?'+':''}${best.shift}半音 ／ 目標音域 ${noteName(rng.low)}〜${noteName(rng.high)}`};
+}
+function octaveDistance(a,b){return (a-b)/12;}
+function showRecommendations(){
+  clearWarning();
+  const state=$('vfCondition').value;
+  const results=$('vfResults');results.replaceChildren();
+  // Vocal pain/hoarseness should trigger rest guidance, not a singing plan.
+  if(state==='hoarse'){
+    $('vfComposeLow').value='';$('vfComposeHigh').value='';
+    warn('今日は無理な歌唱を提案しないよ。声がかすれる・痛む・歌うのがつらいときは休んでね。症状が続いたり悪化する場合は耳鼻咽喉科へ相談してね。');
+    return;
+  }
+  const range=selectedRange();
+  if($('vfRange').value!=='unknown'&&(!range||range.high-range.low<7)){
+    warn('最低音と最高音の差を7半音以上に設定してね。無理に音域を広げず、普段楽に歌える範囲だけを選んでね。');return;
+  }
+  if(state==='tired')warn('今は少し疲れている設定だよ。歌うより声を休めることを優先して、歌う場合も短め・小さめの声量を意識してね。');
+  if($('vfSession').value==='long'&&state!=='tired')warn('長時間配信では、曲の合間に声を休め、水分補給をしよう。歌い続ける前提の提案ではないよ。');
+  recommended=rankedSongs();
+  const keyInfo=previewKey(range);
+  const intro=document.createElement('p');intro.className='vf-sublead';
+  intro.textContent=`あなた向けのオリジナル曲案（3曲） ／ ${keyInfo.description}。※ 歌いやすさの目安で、実際の歌唱に無理がないか自分で確認してね。`;
+  results.appendChild(intro);
+  for(const [i,song] of recommended.entries()){
+    const card=document.createElement('article');card.className='vf-card';
+    const h=document.createElement('h3');h.textContent=`${i+1}. ${song.title}`;card.appendChild(h);
+    const p=document.createElement('p');p.textContent=song.description;card.appendChild(p);
+    const tags=document.createElement('div');tags.className='vf-tags';
+    for(const tag of [`${song.tempo} BPM`,song.style==='ballad'?'ピアノ中心':song.style==='cinema'?'シネマティック':song.style==='rock'?'ロック':'J-POP','歌声なしの伴奏制作',song.intense?'元気な日に':'音域調整に対応']){
+      const span=document.createElement('span');span.className='vf-tag';span.textContent=tag;tags.appendChild(span);
+    }
+    card.appendChild(tags);
+    const btn=document.createElement('button');btn.type='button';btn.textContent='🎼 この曲調を作曲・カラオケに反映';btn.onclick=()=>applySong(song,range);
+    card.appendChild(btn);results.appendChild(card);
+  }
+}
+function applySong(song,range){
+  if($('vfCondition').value==='hoarse'){showRecommendations();return;}
+  // Leave a little room inside the self-reported limits; this is only
+  // a musical guideline, not a promise of medically safe vocal use.
+  const margin=range?(range.high-range.low>=12?2:1):0;
+  const targetRange=range?{low:range.low+margin,high:range.high-margin}:null;
+  const key=previewKey(targetRange);
+  const ciTranspose=$('ciTranspose');
+  if(ciTranspose){
+    if(![...ciTranspose.options].some(o=>Number(o.value)===key.shift)){
+      const option=document.createElement('option');option.value=String(key.shift);option.textContent=`${key.shift>0?'+':''}${key.shift}半音`;ciTranspose.appendChild(option);
+    }
+    ciTranspose.value=String(key.shift);
+  }
+  if($('ciKeyV35'))$('ciKeyV35').value='0';
+  if($('ciModeV35'))$('ciModeV35').value='major';
+  if($('ciStyle'))$('ciStyle').value=song.style;
+  if($('ciTempo'))$('ciTempo').value=String(song.tempo);
+  if($('ciProgressionV35'))$('ciProgressionV35').value=song.progression;
+  if($('ciColorV35'))$('ciColorV35').value=song.color;
+  if($('ciLeadTone'))$('ciLeadTone').value=song.sound;
+  if($('ciLift'))$('ciLift').value='standard';
+  if($('ciLayers'))$('ciLayers').value=song.style==='ballad'?'soft':'full';
+  const lyrics=$('lyricText')?.value.trim()||'';
+  if($('ciLyrics')&&!$('ciLyrics').value.trim())$('ciLyrics').value=lyrics||`${song.title}。${song.description}。ライバーさんが無理せず歌えるメロディーを意識したオリジナル曲。`;
+  $('vfComposeLow').value=targetRange?String(targetRange.low):'';
+  $('vfComposeHigh').value=targetRange?String(targetRange.high):'';
+  // When settings change, refresh the chord preview so it matches the new key.
+  $('ciChordPreviewV35')?.click();
+  const tab=document.querySelector('.tabs [data-tab="compose"]');
+  if(tab)tab.click();
+  setTimeout(()=>{
+    const panel=$('cocoaInstrument')||$('proChordPanelV35');
+    panel?.scrollIntoView({behavior:'smooth',block:'start'});
+    if($('ciStatus'))$('ciStatus').textContent=`🎙️ 「${song.title}」向けに設定したよ。${range?key.description+'。メロディーを指定音域へ収める処理を使うよ。':'音域が未設定なので歌いやすいキーは各自で確認してね。'} 「コード進行から曲を完成させる」を押してね。`;
+  },80);
+}
+function boot(){
+  if(!$('vocalfit')||!$('vfVoice'))return;
+  for(const id of ['vfLow','vfHigh']){
+    const el=$(id);
+    for(let n=40;n<=88;n++){
+      const opt=document.createElement('option');opt.value=String(n);opt.textContent=`${noteName(n)}（MIDI ${n}）`;el.appendChild(opt);
+    }
+  }
+  $('vfRange').addEventListener('change',updateRange);
+  for(const id of ['vfLow','vfHigh'])$(id).addEventListener('change',()=>{
+    $('vfRange').value='custom';updateRange();
+  });
+  $('vfHearLow').addEventListener('click',()=>playReference(Number($('vfLow').value)));
+  $('vfHearHigh').addEventListener('click',()=>playReference(Number($('vfHigh').value)));
+  $('vfSuggest').addEventListener('click',showRecommendations);
+  $('vfGoCompose').addEventListener('click',()=>document.querySelector('.tabs [data-tab="compose"]')?.click());
+  $('vfCondition').addEventListener('change',()=>{if($('vfCondition').value==='hoarse')showRecommendations();});
+  updateRange();
+  // Show the main feature immediately; no microphone, no account or data upload.
+  showRecommendations();
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+})();
+</script>
+<style id="cocoaV4CSS">
+/* V4 mobile composer. Entirely local; no font/CDN/network dependencies. */
+#cocoaV4Studio{position:relative;isolation:isolate;border:1px solid rgba(238,204,127,.48);border-radius:23px;background:linear-gradient(158deg,#10172c,#1b203b 52%,#271728);padding:16px;color:#f9f4eb;box-shadow:0 18px 44px rgba(0,0,0,.4);margin:0 0 20px}
+#cocoaV4Studio:before{content:"";position:absolute;inset:0 0 auto;height:115px;pointer-events:none;background:radial-gradient(ellipse at 45% 0,rgba(248,216,141,.22),transparent 65%);z-index:-1}
+#cocoaV4Studio h2{color:#ffdf93!important;font-size:clamp(21px,4.5vw,31px);line-height:1.3;margin:0 0 8px}
+#cocoaV4Studio h3{color:#ffe3a7!important;margin:15px 0 8px}
+#cocoaV4Studio p{color:#e2dce4;line-height:1.65}
+#cocoaV4Studio .v4-eyebrow{letter-spacing:.15em;font-size:11px;font-weight:800;color:#e9c56d}
+#cocoaV4Studio .v4-lead{margin:7px 0 17px;font-size:14px}
+#cocoaV4Studio .v4-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#cocoaV4Studio label{color:#f5e8d7!important;display:block;font-size:13px;font-weight:700}
+#cocoaV4Studio textarea,#cocoaV4Studio input,#cocoaV4Studio select{display:block;width:100%;font-size:15px;margin:6px 0 0;border:1px solid rgba(232,196,119,.37)!important;border-radius:11px;background:#0c1428!important;color:#fffaf0!important;padding:12px}
+#cocoaV4Studio textarea{min-height:100px;resize:vertical}
+#cocoaV4Studio input[type=range]{height:25px;padding:0;accent-color:#e9c46f;cursor:pointer}
+#cocoaV4Studio .v4-full{grid-column:1/-1}
+#cocoaV4Studio .v4-choices{display:flex;gap:9px;flex-wrap:wrap;margin:11px 0}
+#cocoaV4Studio button{border:1px solid rgba(232,196,119,.37)!important;background:linear-gradient(160deg,#4c324a,#292641)!important;color:#fff6e9!important;box-shadow:0 5px 12px rgba(0,0,0,.3)!important;font-size:14px;padding:12px 15px}
+#cocoaV4Studio button.v4-primary{background:linear-gradient(140deg,#a25e48,#79365a 54%,#4a2c67)!important;border:1px solid #dfb971!important;font-size:16px;min-height:53px;box-shadow:0 12px 24px rgba(0,0,0,.34)!important}
+#cocoaV4Studio button:disabled{opacity:.47;cursor:not-allowed}
+#cocoaV4Studio button:focus-visible,#cocoaV4Studio input:focus-visible,#cocoaV4Studio select:focus-visible{outline:3px solid #f1ca78;outline-offset:2px}
+#cocoaV4Studio .v4-mixer{padding:14px;border:1px solid rgba(238,204,127,.24);border-radius:17px;background:rgba(0,0,0,.17);margin-top:16px}
+#cocoaV4Studio .v4-mixer .v4-grid{gap:10px 15px}
+#cocoaV4Studio .v4-actions{display:flex;flex-wrap:wrap;gap:10px;margin:17px 0}
+#cocoaV4Studio .v4-actions button{flex:1;min-width:130px}
+#cocoaV4Studio .v4-status{padding:13px 15px;border:1px solid rgba(229,196,124,.28);background:#0b1427;border-radius:13px;color:#f0dcae;line-height:1.55;min-height:45px;font-size:13px;white-space:pre-wrap}
+#cocoaV4Studio .v4-structure{background:#0b1428;border:1px solid rgba(230,197,121,.2);border-radius:15px;padding:13px;margin:12px 0}
+#cocoaV4Studio .v4-part{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0;padding:10px;border-radius:10px;border:1px solid rgba(237,199,123,.15)}
+#cocoaV4Studio .v4-part-name{display:inline-block;min-width:88px;font-size:12px;font-weight:800;color:#ffdf91}
+#cocoaV4Studio .v4-chord{font-size:12px;color:#f9f2e8;border-radius:7px;padding:5px 7px;background:#333048;border:1px solid rgba(255,224,163,.14)}
+#cocoaV4Studio .v4-summary{font-size:12px;line-height:1.6;color:#d7cdd3}
+#cocoaV4Studio .v4-dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#cocoaV4Studio .v4-dl button{width:100%}
+#cocoaV4Studio audio{width:100%;margin:13px 0 5px}
+#cocoaV4Studio .v4-note{color:#bfb7c5;font-size:12px;line-height:1.65;margin-top:12px}
+#cocoaV4Studio .v4-separator{border:0;border-top:1px solid rgba(234,202,127,.2);margin:18px 0}
+#cocoaV4Studio .v4-slidernum{font-variant-numeric:tabular-nums;color:#ffdf91;font-weight:700}
+#cocoaV4Studio .v4-footnote{margin:13px 0 0;background:rgba(242,213,136,.06);border:1px solid rgba(242,213,136,.18);padding:10px 12px;border-radius:12px;font-size:12px;line-height:1.65}
+#cocoaV4Legacy{margin:15px 0;padding:10px;border:1px solid rgba(242,213,136,.22);border-radius:16px;background:rgba(18,20,36,.92)}
+#cocoaV4Legacy>summary{cursor:pointer;color:#f0d28e;font-weight:800;padding:6px}
+#cocoaV4Legacy>*{margin-top:12px}
+/* V4 instrumental studio intentionally removes the legacy princess/idol showcase while keeping composition and lyric data. */
+.idol-stage,.cocoa-princess,.tabs [data-tab="vocal"],.cocoa-menu [data-home-tab="vocal"]{display:none!important}
+.cocoa-dashboard{display:block!important}.cocoa-main-menu{width:100%!important}
+.tabs{scroll-margin-top:6px}
+@media(max-width:540px){#cocoaV4Studio{padding:12px}#cocoaV4Studio .v4-grid{grid-template-columns:1fr}#cocoaV4Studio .v4-dl{grid-template-columns:1fr}#cocoaV4Studio .v4-actions button{min-width:100%}#cocoaV4Studio .v4-full{grid-column:1}}
+@media(prefers-reduced-motion:reduce){#cocoaV4Studio *{animation:none!important;transition:none!important}}
+
+</style>
+<script id="cocoaV4Engine">
+/* ここあ Music Studio V4.0 / Fully offline algorithmic music composer (not a neural model). */
+(() => {
+'use strict';
+const $ = id => document.getElementById(id);
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const pcs=['C','C♯','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];
+const rootLabel=n=>pcs[((n%12)+12)%12];
+const majorScale=[0,2,4,5,7,9,11],minorScale=[0,2,3,5,7,8,10];
+const genres={
+  auto:{label:'おまかせ',tempo:112,template:'royal'},
+  pop:{label:'王道J-POP',tempo:116,template:'royal'},
+  ballad:{label:'ピアノバラード',tempo:76,template:'emotional'},
+  city:{label:'シティポップ',tempo:104,template:'city'},
+  dance:{label:'ダンスポップ',tempo:124,template:'royal'},
+  rock:{label:'ロック',tempo:136,template:'royal'},
+  cinema:{label:'シネマティック',tempo:94,template:'emotional'},
+  lofi:{label:'ローファイ',tempo:88,template:'jazz'}
+};
+const progressions={
+  royal:{label:'王道 I–V–vi–IV',major:['I','V','vi','IV'],minor:['i','bVII','bVI','bVII']},
+  canon:{label:'カノン I–V–vi–iii–IV–I–IV–V',major:['I','V','vi','iii','IV','I','IV','V'],minor:['i','bVII','bVI','bIII','iv','i','bVI','V']},
+  emotional:{label:'感動系 vi–IV–I–V',major:['vi','IV','I','V'],minor:['i','bVI','bIII','bVII']},
+  city:{label:'シティ ii–V–iii–vi',major:['ii','V','iii','vi'],minor:['iv','bVII','bIII','bVI']},
+  jazz:{label:'ジャズ ii–V–I–vi',major:['ii','V','I','vi'],minor:['iv','V','i','bVI']},
+  minor:{label:'マイナー i–♭VI–♭III–♭VII',major:['vi','IV','I','V'],minor:['i','bVI','bIII','bVII']}
+};
+// Every chord has an explicit quality and root relative to the chosen key. No major-only transposition assumptions.
+const chordDict={
+  major:{I:[0,'maj'],ii:[2,'min'],iii:[4,'min'],IV:[5,'maj'],V:[7,'maj'],vi:[9,'min'],
+    bVI:[8,'maj'],bVII:[10,'maj'],Vvi:[4,'dom'],Vii:[9,'dom']},
+  minor:{i:[0,'min'],iv:[5,'min'],V:[7,'dom'],bIII:[3,'maj'],bVI:[8,'maj'],bVII:[10,'maj'],
+    ii:[2,'dim'],Vvi:[7,'dom'],Vii:[2,'dom']}
+};
+const sectionLayouts={
+  32:[['イントロ',4,'intro'],['Aメロ1',8,'verse'],['Bメロ1',4,'pre'],['サビ1',8,'chorus'],['間奏',4,'interlude'],['アウトロ',4,'outro']],
+  48:[['イントロ',4,'intro'],['Aメロ1',8,'verse'],['Bメロ1',4,'pre'],['サビ1',8,'chorus'],['Aメロ2',8,'verse2'],['ラスサビ',8,'final'],['アウトロ',8,'outro']],
+  64:[['イントロ',4,'intro'],['Aメロ1',8,'verse'],['Bメロ1',4,'pre'],['サビ1',8,'chorus'],['間奏',4,'interlude'],['Aメロ2',8,'verse2'],['Bメロ2',4,'pre'],['サビ2',8,'chorus2'],['Cメロ',4,'bridge'],['ラスサビ',8,'final'],['アウトロ',4,'outro']]
+};
+const toneIntervals={maj:[0,4,7],min:[0,3,7],dim:[0,3,6],dom:[0,4,7]};
+const hash=t=>{let h=2166136261; for(const c of t)h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0;};
+function rngFrom(t){let x=hash(t)||1;return ()=>{x^=x<<13;x^=x>>>17;x^=x<<5;return (x>>>0)/4294967296;};}
+function inferGenre(text){if(/寂し|涙|切な|失恋|さよなら|別れ/.test(text))return 'ballad';if(/踊|ダンス|パーティ|クラブ/.test(text))return 'dance';if(/夜景|都会|ネオン|街角/.test(text))return 'city';if(/走れ|燃え|叫|戦い|疾走/.test(text))return 'rock';if(/映画|宇宙|奇跡|冒険|物語/.test(text))return 'cinema';return 'pop';}
+function settings(){
+  const text=$('v4Idea').value.trim();
+  let genre=$('v4Genre').value;if(genre==='auto')genre=inferGenre(text);
+  const preset=genres[genre];const key=Number($('v4Key').value);const mode=$('v4Mode').value;
+  let prog=$('v4Progression').value;if(prog==='auto')prog=preset.template;
+  let bpm=Number($('v4Bpm').value);if(!Number.isFinite(bpm)||bpm<55||bpm>180)bpm=preset.tempo;
+  let low=Number($('vfComposeLow')?.value||NaN),high=Number($('vfComposeHigh')?.value||NaN);
+  if(!Number.isFinite(low)||!Number.isFinite(high)||high-low<8){low=NaN;high=NaN;}
+  return {text,genre,key,mode,prog,bpm,bars:Number($('v4Bars').value),color:$('v4Color').value,
+    piano:$('v4PianoTone').value,synth:$('v4SynthTone').value,pattern:$('v4PianoPattern').value,
+    dynamic:$('v4Dynamics').value,quality:Number($('v4Quality').value),
+    mix:{piano:Number($('v4Piano').value)/100,synth:Number($('v4Synth').value)/100,bass:Number($('v4Bass').value)/100,
+      drums:Number($('v4Drums').value)/100,lead:Number($('v4Lead').value)/100},
+    fitLow:low,fitHigh:high};
+}
+function chordFor(symbol,s,part){
+  const modeDict=chordDict[s.mode];let [offset,q]=modeDict[symbol]||modeDict[s.mode==='minor'?'i':'I'];
+  const pc=(s.key+offset)%12;
+  const ints=toneIntervals[q].slice();
+  let extension='';
+  if(s.color==='basic'){}
+  else if(q==='dom'){ints.push(10);extension='7';}
+  else if(q==='dim'){ints.push(10);extension='m7♭5';}
+  else if(s.color==='lush'||s.color==='jazz'){
+    ints.push(q==='maj'?11:10,14);
+    extension=q==='maj'?'maj9':'m9';
+  }else if(q==='maj'){
+    if(part==='intro'||part==='outro'){ints.push(14);extension='add9';}
+    else{ints.push(11);extension='maj7';}
+  }else{ints.push(10);extension='m7';}
+  let suffix=extension||(q==='min'?'m':q==='dim'?'dim':'');
+  return {symbol,rootPc:pc,q,intervals:ints,name:rootLabel(pc)+suffix};
+}
+function voiceChord(chord,prev){
+  // Keep the triad's upper voices close through successive chord changes.
+  const upper=chord.intervals.slice(0,3).map(i=>48+chord.rootPc+i);
+  if(chord.intervals.length>3)upper.push(48+chord.rootPc+chord.intervals[3]);
+  const candidates=[];
+  for(let inversion=0;inversion<3;inversion++){
+    const base=upper.slice().sort((a,b)=>a-b);
+    for(let i=0;i<inversion;i++)base[i]+=12;
+    base.sort((a,b)=>a-b);
+    for(const shift of [-12,0,12]){
+      const notes=base.map(n=>n+shift);
+      if(notes[0]<49||notes[notes.length-1]>81)continue;
+      let score=notes.reduce((acc,n)=>acc+Math.abs(n-65)*0.14,0);
+      if(prev){for(let i=0;i<Math.min(prev.length,notes.length);i++)score+=Math.abs(prev[i]-notes[i]);}
+      candidates.push({notes,score});
+    }
+  }
+  if(!candidates.length)return upper;
+  candidates.sort((a,b)=>a.score-b.score);
+  return candidates[0].notes;
+}
+function progressionForPart(s,part){
+  const base=progressions[s.prog][s.mode];
+  const canon=base.length>=8;
+  if(part==='pre')return s.mode==='major'?['ii','IV','V','Vvi']:['iv','bVI','V','V'];
+  if(part==='bridge')return s.mode==='major'?['vi','IV','ii','V']:['bVI','bIII','iv','V'];
+  if(part==='interlude')return s.mode==='major'?['IV','V','I','vi']:['bVI','bVII','i','V'];
+  if(part==='outro')return s.mode==='major'?['IV','V','I','I']:['bVI','V','i','i'];
+  if(canon)return base;
+  if(part==='verse'||part==='verse2')return s.mode==='major'?['I','vi','IV','V']:['i','bVI','iv','V'];
+  return base;
+}
+function harmonicPlan(s){
+  const layout=sectionLayouts[s.bars]||sectionLayouts[64];const out=[];
+  const sections=[];let idx=0,prevVoicing=null;
+  for(const [label,count,type] of layout){
+    const symbols=progressionForPart(s,type);
+    const start=idx;
+    for(let j=0;j<count;j++){
+      let symbol=symbols[j%symbols.length];
+      // Controlled dominant tension before a big chorus; last chorus has a clear tonic resolution.
+      if(type==='pre'&&j===count-1)symbol='V';
+      if(type==='final'&&j===count-1)symbol=s.mode==='major'?'I':'i';
+      if(type==='outro'&&j===count-1)symbol=s.mode==='major'?'I':'i';
+      const chord=chordFor(symbol,s,type),voicing=voiceChord(chord,prevVoicing);
+      prevVoicing=voicing;
+      out.push({index:idx++,label,type,local:j,chord,voicing});
+    }
+    sections.push({label,type,start,bars:count});
+  }
+  return {bars:out,sections};
+}
+function formatChart(s,plan){
+  let result=`ここあ Music Studio V4.0｜オリジナル作曲コード譜\nジャンル：${genres[s.genre].label}\nキー：${rootLabel(s.key)} ${s.mode==='minor'?'マイナー':'メジャー'} ／ ${s.bpm} BPM ／ ${s.bars}小節\nコード：${progressions[s.prog].label} ／ 響き：${s.color}\n\n`;
+  for(const sec of plan.sections){result+=`【${sec.label}｜${sec.bars}小節】\n`;
+    const bars=plan.bars.slice(sec.start,sec.start+sec.bars);
+    for(let i=0;i<bars.length;i+=4)result+=bars.slice(i,i+4).map(b=>String(b.index+1).padStart(2,'0')+': '+b.chord.name).join(' | ')+'\n';
+    result+='\n';
+  }
+  return result+'※ 自動作曲のコード進行です。各楽器のMIDIを編集して自由に編曲できます。\n';
+}
+const energyFor=type=>({intro:.38,verse:.57,verse2:.67,pre:.77,chorus:1.0,chorus2:1.05,interlude:.68,bridge:.61,final:1.18,outro:.37})[type]||.7;
+const midiFreq=n=>440*Math.pow(2,(n-69)/12);
+const midiName=n=>rootLabel(n)+(Math.floor(n/12)-1);
+function noteInRegister(pc,preferred,low,high,prev){
+  const candidates=[];
+  for(let oct=2;oct<=7;oct++){
+    const note=pc+12*oct;
+    if(note<low||note>high)continue;
+    const dist=Math.abs(note-preferred)*0.4+(prev===null?0:Math.abs(prev-note)*0.6);
+    candidates.push({note,dist});
+  }
+  if(!candidates.length)return clamp(pc+60,low,high);
+  candidates.sort((a,b)=>a.dist-b.dist);
+  return candidates[0].note;
+}
+function durationFromPattern(onsets,index){
+  const next=onsets[index+1]??4;
+  return Math.min(1.12,Math.max(.22,(next-onsets[index])*.88));
+}
+function melodyPattern(type,j){
+  if(type==='bridge')return j%2? [0,1.5,2.5]:[0,1,2.2,3.2];
+  if(type==='intro'||type==='outro')return [];
+  if(type==='pre')return j%2?[0,.5,1.5,2.5,3.5]:[0,1,1.5,2.5,3];
+  if(type==='chorus'||type==='chorus2'||type==='final')return j%2?[0,1,1.75,2.5,3.5]:[0,.75,1.5,2.25,3];
+  return j%2?[0,1.0,1.75,3]:[0,.5,1.5,2.5,3.25];
+}
+function makeMelody(s,plan,rnd){
+  const output=[];
+  const scale=(s.mode==='minor'?minorScale:majorScale).map(pc=>(pc+s.key)%12);
+  const useFit=Number.isFinite(s.fitLow)&&Number.isFinite(s.fitHigh);
+  const low=useFit?s.fitLow:57,high=useFit?s.fitHigh:88;
+  const safeLow=clamp(low,40,88),safeHigh=clamp(high,48,96);
+  const motif=[0,2,1,2,4,3,2,1];
+  const chorusMotif=[0,2,4,3,5,4,2,3];
+  let prev=null;
+  for(const b of plan.bars){
+    const ons=melodyPattern(b.type,b.local);
+    const isChorus=/chorus|final/.test(b.type);
+    const isPre=b.type==='pre';
+    const ideal=useFit?(safeLow+safeHigh)/2+(isChorus?2:-1):isChorus?79:isPre?76:b.type==='bridge'?73:70;
+    for(let j=0;j<ons.length;j++){
+      // Motif reuse: first two bars of each phrase are related; last two change toward a cadence.
+      const k=b.local%4;
+      const pattern=isChorus?chorusMotif:motif;
+      const offset=pattern[(j+(k%2)*3)%pattern.length];
+      const chordIndex=(offset+(k===3?1:0))%3;
+      let pc=(b.chord.rootPc+b.chord.intervals[chordIndex])%12;
+      const strong=Math.abs(ons[j]-Math.round(ons[j]))<.001;
+      if(!strong&&j%3===1){
+        // Passing notes on weak beats, from the current scale.
+        let best=scale[0],distance=99;
+        for(const p of scale){const d=Math.min((pc-p+12)%12,(p-pc+12)%12);if(d<distance&&d>0){distance=d;best=p;}}
+        if(distance<3)pc=best;
+      }
+      const preferred=ideal+(isChorus&&j===2?2:0)+(k===3&&j===ons.length-1?-3:0);
+      const n=noteInRegister(pc,preferred,safeLow,safeHigh,prev);
+      const dur=durationFromPattern(ons,j);
+      // A little phrasing gap ahead of the snare / end of a bar.
+      const velocity=Math.round(clamp(75+energyFor(b.type)*14+(rnd()-.5)*11,51,110));
+      output.push({bar:b.index,atBeat:b.index*4+ons[j],durBeat:dur,n,velocity,type:b.type});
+      prev=n;
+    }
+  }
+  return output;
+}
+function makeSignal(sr,seconds){const count=Math.ceil(sr*seconds);return {sr,count,L:new Float32Array(count),R:new Float32Array(count)};}
+function oscillator(wave,phase,time){
+  if(wave==='piano')return (Math.sin(phase)*.71+Math.sin(phase*2.003)*.20+Math.sin(phase*3.01)*.075+Math.sin(phase*4.011)*.015)*Math.exp(-time*.85);
+  if(wave==='electric')return (Math.sin(phase)*.55+Math.sin(phase*2.005)*.22+Math.sin(phase*3.995)*.1)*Math.exp(-time*.55);
+  if(wave==='pad')return Math.sin(phase)*.44+Math.sin(phase*.996)*.32+Math.sin(phase*2.002)*.11;
+  if(wave==='glassy')return (Math.sin(phase)*.43+Math.sin(phase*2.008)*.24+Math.sin(phase*3.987)*.18)*Math.exp(-time*.22);
+  if(wave==='analog')return Math.sin(phase)*.40+Math.sin(phase*2)*.22+Math.sin(phase*3)*.13+Math.sin(phase*4)*.07;
+  if(wave==='bass')return Math.sin(phase)*.78+Math.sin(phase*.50)*.1+Math.sin(phase*2)*.07;
+  if(wave==='lead')return Math.sin(phase)*.55+Math.sin(phase*2.003)*.27+Math.sin(phase*3.99)*.10;
+  return Math.sin(phase);
+}
+function tone(sig,start,seconds,n,wave,volume,pan){
+  if(!(volume>0)||seconds<=0)return;
+  const sr=sig.sr,st=Math.max(0,Math.floor(start*sr)),len=Math.min(Math.floor(seconds*sr),sig.count-st);
+  if(len<=0)return;
+  const f=midiFreq(n),att=wave==='pad'?0.19:wave==='lead'?0.025:0.008;
+  const rel=wave==='pad'?.4:wave==='lead'?.19:.16;
+  const lf=(1-clamp(pan,-1,1))*.5,rf=(1+clamp(pan,-1,1))*.5;
+  for(let i=0;i<len;i++){
+    const t=i/sr;
+    const env=Math.min(1,t/att,Math.max(0,(seconds-t)/rel));
+    const v=oscillator(wave,2*Math.PI*f*t,t)*env*volume;
+    sig.L[st+i]+=v*lf;sig.R[st+i]+=v*rf;
+  }
+}
+function drum(sig,start,kind,vol,rnd){
+  if(!(vol>0))return;
+  const sr=sig.sr,st=Math.max(0,Math.floor(start*sr));
+  const duration=kind==='kick'?.29:kind==='snare'?.21:kind==='crash'?.55:.075;
+  const len=Math.min(Math.floor(duration*sr),sig.count-st);
+  if(len<=0)return;
+  const pan=kind==='hat'?.12:0,lf=(1-pan)*.5,rf=(1+pan)*.5;
+  for(let i=0;i<len;i++){
+    const t=i/sr,noise=rnd()*2-1;
+    let v;
+    if(kind==='kick')v=Math.sin(2*Math.PI*(56*t+60*t*Math.exp(-t*22)))*Math.exp(-t*15);
+    else if(kind==='snare')v=(noise*.73+Math.sin(2*Math.PI*180*t)*.21)*Math.exp(-t*22);
+    else if(kind==='crash')v=(noise*.7+Math.sin(2*Math.PI*460*t)*.1)*Math.exp(-t*7.5);
+    else v=noise*Math.exp(-t*71)*.4;
+    sig.L[st+i]+=v*vol*lf;sig.R[st+i]+=v*vol*rf;
+  }
+}
+const midiEvent=(events,atBeat,durBeat,n,velocity)=>{if(velocity>0)events.push({tick:Math.max(0,Math.round(atBeat*480)),dur:Math.max(1,Math.round(durBeat*480)),n:clamp(Math.round(n),0,127),vel:clamp(Math.round(velocity),1,127)});};
+function barsWithNotes(s,plan,leadNotes){
+  const fullBarMap=new Map();
+  for(const note of leadNotes){if(!fullBarMap.has(note.bar))fullBarMap.set(note.bar,[]);fullBarMap.get(note.bar).push(note);}
+  return fullBarMap;
+}
+const vlq=num=>{num=Math.max(0,Math.floor(num));let a=[num&127];while(num>>=7)a.unshift((num&127)|128);return a;};
+const u32=n=>[(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255];
+const strBytes=s=>Array.from(s).map(c=>c.charCodeAt(0)&255);
+function trackChunk(data){return [...strBytes('MTrk'),...u32(data.length),...data];}
+function midiFile(s,tracks){
+  function track(events,channel,program){
+    const a=[];if(program!==null)a.push(0,0xC0+channel,program);
+    const queue=[];
+    for(const e of events){queue.push({t:e.tick,on:1,n:e.n,vel:e.vel});queue.push({t:e.tick+e.dur,on:0,n:e.n,vel:0});}
+    queue.sort((a,b)=>a.t-b.t||a.on-b.on);
+    let last=0;
+    for(const e of queue){a.push(...vlq(e.t-last),(e.on?0x90:0x80)+channel,e.n,e.vel);last=e.t;}
+    a.push(0,255,47,0);return trackChunk(a);
+  }
+  const micro=Math.round(60000000/s.bpm);
+  const tempo=trackChunk([0,255,81,3,(micro>>16)&255,(micro>>8)&255,micro&255,0,255,47,0]);
+  const chunks=[tempo,track(tracks.lead,0,80),track(tracks.piano,1,s.piano==='electric'?2:0),track(tracks.synth,2,88),track(tracks.bass,3,33),track(tracks.drums,9,null)];
+  const header=[...strBytes('MThd'),0,0,0,6,0,1,0,chunks.length,1,224];
+  return new Blob([new Uint8Array(header.concat(...chunks))],{type:'audio/midi'});
+}
+async function encodeWav(song,lead,includeLead,onTick){
+  const N=song.count,sr=song.sr,out=new ArrayBuffer(44+N*4),dv=new DataView(out);
+  let k=0; const write=s=>{for(const c of s)dv.setUint8(k++,c.charCodeAt(0));};
+  const write32=n=>{dv.setUint32(k,n,true);k+=4;};const write16=n=>{dv.setUint16(k,n,true);k+=2;};
+  write('RIFF');write32(36+N*4);write('WAVEfmt ');write32(16);write16(1);write16(2);write32(sr);write32(sr*4);write16(4);write16(16);write('data');write32(N*4);
+  // Bounded normalization and soft limiting preserve dynamics without clipped PCM samples.
+  let peak=0;
+  for(let i=0;i<N;i+=8)peak=Math.max(peak,Math.abs(song.L[i]+(includeLead?lead.L[i]:0)),Math.abs(song.R[i]+(includeLead?lead.R[i]:0)));
+  const gain=Math.min(1.6,.78/Math.max(.78,peak));const d1=Math.round(sr*.14),d2=Math.round(sr*.29);
+  let prevInL=0,prevOutL=0,prevInR=0,prevOutR=0;
+  for(let i=0;i<N;i++){
+    const rawL=song.L[i]+(includeLead?lead.L[i]:0),rawR=song.R[i]+(includeLead?lead.R[i]:0);
+    const echoL=i>d1?(song.R[i-d1]+(includeLead?lead.R[i-d1]:0))*.075:0;
+    const echoR=i>d2?(song.L[i-d2]+(includeLead?lead.L[i-d2]:0))*.07:0;
+    const hpL=rawL+echoL-prevInL+.996*prevOutL,hpR=rawR+echoR-prevInR+.996*prevOutR;
+    prevInL=rawL+echoL;prevInR=rawR+echoR;prevOutL=hpL;prevOutR=hpR;
+    const fade=Math.min(1,i/(sr*.20),(N-1-i)/(sr*1.45));
+    const L=Math.tanh(hpL*gain*1.12)*fade,R=Math.tanh(hpR*gain*1.12)*fade;
+    dv.setInt16(k,Math.round(clamp(L,-1,1)*32767),true);k+=2;
+    dv.setInt16(k,Math.round(clamp(R,-1,1)*32767),true);k+=2;
+    if(i%180000===0&&i>0){if(onTick)onTick(i/N);await new Promise(resolve=>setTimeout(resolve,0));}
+  }
+  return new Blob([out],{type:'audio/wav'});
+}
+async function renderSong(s,plan,notify,stillCurrent){
+  const beat=60/s.bpm,seconds=plan.bars.length*4*beat+2.2;
+  const base=makeSignal(s.quality,seconds),lead=makeSignal(s.quality,seconds);
+  const rnd=rngFrom(s.text+s.genre+s.key+s.prog+s.bars+s.mode+s.piano+s.synth);
+  const melody=makeMelody(s,plan,rnd),melodies=barsWithNotes(s,plan,melody);
+  const tracks={lead:[],piano:[],synth:[],bass:[],drums:[]};
+  for(const b of plan.bars){
+    if(!stillCurrent())throw new Error('作曲を中止しました');
+    const firstBeat=b.index*4,t0=firstBeat*beat,type=b.type;
+    const e=energyFor(type)*(s.dynamic==='dramatic'&&/chorus|final/.test(type)?1.16:1);
+    const isChorus=/chorus|final/.test(type),intro=type==='intro',outro=type==='outro';
+    const fade=outro?clamp(1-(b.local/5)*.6,.3,1):1;
+    const vel=(v,m)=>clamp(Math.round(v*e*fade*m),1,120);
+    const pianoVolume=.21*s.mix.piano*e*fade;
+    const padVolume=.115*s.mix.synth*e*fade;
+    const pattern=s.pattern==='auto'?(s.genre==='ballad'?'ballad':s.genre==='city'||s.genre==='lofi'?'arp':'rhythm'):s.pattern;
+    const pianoWave=s.piano==='electric'?'electric':'piano';
+    const voicing=b.voicing;
+    const padWave=s.synth==='analog'?'analog':s.synth==='glassy'?'glassy':'pad';
+    // Pianistic patterns: sparse verse, stronger chorus, smooth inverted voices.
+    if(pattern==='arp'||pattern==='ballad'){
+      const steps=pattern==='ballad'?[0,2,1,2,3,2,1,2]:[0,1,2,3,2,1,3,2];
+      for(let j=0;j<8;j++){
+        const at=firstBeat+j*.5,n=voicing[steps[j]%voicing.length]+(isChorus&&j===7?12:0);
+        const secondsNote=beat*(pattern==='ballad'?.47:.39);
+        tone(base,at*beat,secondsNote,n,pianoWave,pianoVolume*(j%4===0?1.1:.72),j%2?.15:-.15);
+        midiEvent(tracks.piano,at,secondsNote/beat,n,vel(68,s.mix.piano));
+      }
+    }else{
+      const hits=pattern==='sustain'?[0,2]:[0,1.5,2,3.5];
+      for(const hit of hits){
+        for(let j=0;j<voicing.length;j++){
+          const n=voicing[j],dur=beat*(pattern==='sustain'?1.75:.65),t=t0+(hit+j*.025)*beat;
+          tone(base,t,dur,n,pianoWave,pianoVolume*(pattern==='sustain'?.56:.46),((j/(voicing.length-1||1))-.5)*.4);
+          midiEvent(tracks.piano,firstBeat+hit+j*.025,dur/beat,n,vel(76,s.mix.piano));
+        }
+      }
+    }
+    // Synth pads / plucks are independent of piano; entering higher energy sections increases width.
+    if(s.mix.synth>0 && (!intro||b.local>1)){
+      const nVoices=(isChorus||s.dynamic==='cinematic')?voicing.length:Math.min(3,voicing.length);
+      for(let j=0;j<nVoices;j++){
+        const n=voicing[j]+(isChorus&&j===0?12:0),at=t0+(.02*j)*beat;
+        tone(base,at,beat*3.85,n,padWave,padVolume*(isChorus?1.05:.7),((j/(nVoices-1||1))-.5)*.85);
+        midiEvent(tracks.synth,firstBeat+j*.02,3.85,n,vel(69,s.mix.synth));
+      }
+      if((s.synth==='glassy'||s.synth==='analog')&&isChorus){
+        const n=voicing[1%voicing.length]+12;
+        for(const hit of [1.5,3.5]){
+          tone(base,t0+hit*beat,beat*.37,n,s.synth==='glassy'?'glassy':'analog',padVolume*.6,.42);
+          midiEvent(tracks.synth,firstBeat+hit,.37,n,vel(58,s.mix.synth));
+        }
+      }
+    }
+    // Walking bass notes use the actual chord root and fifth; the last eighth anticipates the next bar.
+    const bassRoot=36+b.chord.rootPc;
+    const bassHits=s.genre==='dance'?[0,.75,1.5,2.25,3]:[0,1,2,3];
+    bassHits.forEach((pos,j)=>{
+      let n=bassRoot+(j===bassHits.length-1?7:0);
+      if(s.genre==='city'&&j===2)n+=12;
+      const d=Math.min(.85,(bassHits[j+1]??4)-pos-.09);
+      tone(base,t0+pos*beat,d*beat,n,'bass',.30*s.mix.bass*e*fade*(pos===0?1.1:.8),-.02);
+      midiEvent(tracks.bass,firstBeat+pos,d,n,vel(91,s.mix.bass));
+    });
+    // Different drum densities for verse/chorus, with a short lead-in fill to new sections.
+    const hasDrums=!intro&&!outro||b.local>=2&&intro;
+    if(hasDrums){
+      let kicks=s.genre==='dance'?[0,1,2,3]:isChorus?[0,1.75,2,3.5]:[0,2];
+      if(s.genre==='lofi')kicks=[0,2.5];
+      for(const pos of kicks){drum(base,t0+pos*beat,'kick',.37*s.mix.drums*e*fade,rnd);midiEvent(tracks.drums,firstBeat+pos,.12,36,vel(104,s.mix.drums));}
+      for(const pos of [1,3]){drum(base,t0+pos*beat,'snare',.26*s.mix.drums*e*fade,rnd);midiEvent(tracks.drums,firstBeat+pos,.10,38,vel(97,s.mix.drums));}
+      const hatSteps=(isChorus||s.genre==='dance')?8:4;
+      for(let k=0;k<hatSteps;k++){
+        const pos=k*4/hatSteps+(s.genre==='lofi'&&k%2?.07:0);
+        drum(base,t0+pos*beat,'hat',.11*s.mix.drums*e*fade*(k%2?.7:1.1),rnd);
+        midiEvent(tracks.drums,firstBeat+pos,.07,42,vel(66,s.mix.drums));
+      }
+      if(b.local===0&&(isChorus||type==='final')){
+        drum(base,t0,'crash',.26*s.mix.drums*e,rnd);midiEvent(tracks.drums,firstBeat,.37,49,vel(93,s.mix.drums));
+      }
+      // Subtle snare fill ahead of a section change, without saturating every bar.
+      const next=plan.bars[b.index+1];
+      if(next&&next.type!==b.type){for(const pos of [3.25,3.5,3.75]){
+        drum(base,t0+pos*beat,'snare',.13*s.mix.drums*e,rnd);
+        midiEvent(tracks.drums,firstBeat+pos,.08,38,vel(53,s.mix.drums));
+      }}
+    }
+    // Main synthetic melody: not sung vocals. Karaoke has the exact same arrangement with lead omitted.
+    for(const m of (melodies.get(b.index)||[])){
+      const v=.22*s.mix.lead*e*fade*(m.velocity/86);
+      const start=m.atBeat*beat,dur=m.durBeat*beat;
+      if(s.piano==='grand'&&s.synth==='warm'){
+        tone(lead,start,dur,m.n,'piano',v*.75,-.09);
+        tone(lead,start,dur,m.n,'lead',v*.40,.10);
+      }else if(s.synth==='glassy')tone(lead,start,dur,m.n,'glassy',v,0);
+      else if(s.piano==='electric')tone(lead,start,dur,m.n,'electric',v,0);
+      else tone(lead,start,dur,m.n,'lead',v,0);
+      midiEvent(tracks.lead,m.atBeat,m.durBeat,m.n,Math.round(m.velocity*s.mix.lead));
+    }
+    if(b.index%4===3){notify(`🎼 編曲中… ${b.index+1}/${plan.bars.length}小節`);await new Promise(r=>setTimeout(r,0));}
+  }
+  notify('🎚️ ミックス・WAVを書き出しています…');
+  const demo=await encodeWav(base,lead,true,p=>notify(`🎚️ 完成デモ：${Math.round(p*100)}%`));
+  if(!stillCurrent())throw new Error('作曲を中止しました');
+  notify('🎚️ カラオケ伴奏を仕上げています…');
+  const karaoke=await encodeWav(base,lead,false,p=>notify(`🎚️ カラオケ：${Math.round(p*100)}%`));
+  const midi=midiFile(s,tracks);
+  return {demo,karaoke,midi,seconds,melody,trackCounts:Object.fromEntries(Object.entries(tracks).map(([k,v])=>[k,v.length]))};
+}
+
+function html(){return `
+  <div class="v4-eyebrow">COCOA MUSIC STUDIO • VERSION 4.0</div>
+  <h2>🎛️ 本格自動作曲スタジオ V4.0</h2>
+  <p class="v4-lead">歌詞やイメージから、<strong>コード進行・メロディー・ピアノ・シンセ・ベース・ドラム</strong>を自動編曲。スマホ内だけで完成デモとカラオケを作れるよ。</p>
+  <label for="v4Idea">📝 曲のイメージ・歌詞</label>
+  <textarea id="v4Idea" placeholder="例：夜明けに向かって走り出す、切なくも希望に満ちたJ-POP。サビで大きく盛り上がる。"></textarea>
+  <div class="v4-choices"><button type="button" id="v4Import">📝 作詞から取り込む</button><button type="button" id="v4Example">✨ 例文を入力</button></div>
+  <div class="v4-grid">
+    <label>🎶 ジャンル<select id="v4Genre"><option value="auto">おまかせ（歌詞から判定）</option><option value="pop">王道J-POP</option><option value="ballad">ピアノバラード</option><option value="city">シティポップ</option><option value="dance">ダンスポップ</option><option value="rock">ロック</option><option value="cinema">シネマティック</option><option value="lofi">ローファイ</option></select></label>
+    <label>⏱️ テンポ（BPM）<input id="v4Bpm" type="number" min="55" max="180" value="116"></label>
+    <label>🎹 キー<select id="v4Key">${pcs.map((k,i)=>`<option value="${i}">${k}</option>`).join('')}</select></label>
+    <label>🎼 調性<select id="v4Mode"><option value="major">メジャー</option><option value="minor">マイナー</option></select></label>
+    <label>💎 コード進行<select id="v4Progression"><option value="auto">ジャンルにおまかせ</option>${Object.entries(progressions).map(([id,x])=>`<option value="${id}">${x.label}</option>`).join('')}</select></label>
+    <label>✨ コードの響き<select id="v4Color"><option value="pop">J-POP：7th / add9</option><option value="lush">透明感：maj9 / m9</option><option value="jazz">シティ系：7th / 9th</option><option value="basic">シンプルな三和音</option></select></label>
+    <label>🎼 曲の長さ<select id="v4Bars"><option value="32">32小節・短め</option><option value="48" selected>48小節・標準</option><option value="64">64小節・フル構成</option></select></label>
+    <label>🔊 WAV音質<select id="v4Quality"><option value="22050">22.05kHz・軽量</option><option value="32000" selected>32kHz・標準</option></select></label>
+    <label>🎹 ピアノ音色<select id="v4PianoTone"><option value="grand">グランドピアノ風</option><option value="electric">エレクトリックピアノ</option></select></label>
+    <label>🌌 シンセサイザー<select id="v4SynthTone"><option value="warm">あたたかいパッド</option><option value="glassy">透明感のあるシンセ</option><option value="analog">アナログ風</option></select></label>
+    <label>🎹 ピアノの奏法<select id="v4PianoPattern"><option value="auto">曲調におまかせ</option><option value="arp">アルペジオ</option><option value="ballad">バラードの分散和音</option><option value="rhythm">ポップスのコード刻み</option><option value="sustain">ゆったり長めの和音</option></select></label>
+    <label>🌟 曲の展開<select id="v4Dynamics"><option value="standard">自然な展開</option><option value="dramatic">ラスサビを壮大に</option><option value="cinematic">音の広がり重視</option></select></label>
+  </div>
+  <div class="v4-mixer"><h3>🎚️ 楽器ミキサー</h3><div class="v4-grid">
+    ${[['v4Piano','🎹 ピアノ',110],['v4Synth','🌌 シンセ',82],['v4Bass','🎸 ベース',92],['v4Drums','🥁 ドラム',88],['v4Lead','🎶 主旋律',100]].map(([id,title,val])=>`<label>${title} <span class="v4-slidernum" id="${id}Num">${val}%</span><input id="${id}" type="range" min="0" max="150" value="${val}" step="5"></label>`).join('')}
+    <label>🎙️ ライバーの音域<span style="display:block;font-size:12px;color:#d6cdd8;font-weight:400">ライバー選曲で設定した音域を参照できるよ</span><select id="v4VoiceFit"><option value="yes">設定があれば使う</option><option value="no">音域制限なし（インスト向け）</option></select></label>
+  </div></div>
+  <div class="v4-actions"><button id="v4Preview" type="button">🎼 曲構成・コードを提案</button><button id="v4Create" class="v4-primary" type="button">✨ V4で自動作曲する</button></div>
+  <div id="v4Status" class="v4-status" role="status" aria-live="polite">設定を選んで「V4で自動作曲する」を押してね。外部通信なし・無料で作成できるよ。</div>
+  <div id="v4Structure" class="v4-structure" hidden></div>
+  <div id="v4Outputs" hidden><hr class="v4-separator"><h3>🎧 完成音源を聴く</h3><div class="v4-grid"><label>再生モード<select id="v4PlayMode"><option value="demo">メロディー入り完成デモ</option><option value="karaoke">カラオケ（主旋律なし）</option></select></label></div>
+    <audio id="v4Audio" controls playsinline preload="metadata"></audio>
+    <h3>💾 書き出し</h3><div class="v4-dl"><button id="v4SaveDemo" type="button">🎶 完成デモ WAV</button><button id="v4SaveKaraoke" type="button">🎤 カラオケ WAV</button><button id="v4SaveMidi" type="button">🎼 5楽器 MIDI</button><button id="v4SaveChart" type="button">📄 コード譜 TXT</button></div>
+  </div>
+  <div class="v4-footnote">🎧 <b>音質について：</b>V4.0は端末内で動く音楽理論ベースの自動作曲で、クラウドの音楽生成AIではありません。ピアノ・シンセは電子合成音です。市販曲と同等の生楽器音質やマスタリングを保証するものではなく、MIDIを別の音源ソフトに取り込んで仕上げると、さらに品質を高められます。</div>`;}
+function boot(){
+  const compose=$('compose');
+  if(!compose||$('cocoaV4Studio'))return;
+  const studio=document.createElement('div');studio.id='cocoaV4Studio';studio.innerHTML=html();
+  const legacy=document.createElement('details');legacy.id='cocoaV4Legacy';
+  const summary=document.createElement('summary');summary.textContent='以前の作曲機能も使う（V3.6）';legacy.appendChild(summary);
+  for(const node of [...compose.children])legacy.appendChild(node);
+  compose.prepend(studio);compose.appendChild(legacy);
+  const topTab=document.querySelector('.tabs [data-tab="compose"]');if(topTab)topTab.textContent='② 🎛️ 本格作曲 V4';
+  const setStatus=t=>{$('v4Status').textContent=t;};
+  let activeGen=0,latest=null,activeDemoUrl=null,activeKaraokeUrl=null;
+  const clearOutput=()=>{
+    if(latest){latest=null;$('v4Outputs').hidden=true;}
+  };
+  const controls=studio.querySelectorAll('input, select, textarea');
+  controls.forEach(input=>{input.addEventListener(input.type==='range'?'input':'change',()=>{
+    if(input.type==='range'){$(input.id+'Num').textContent=input.value+'%';}
+    if(input.id==='v4PlayMode')return;
+    clearOutput();
+  });});
+  $('v4Genre').addEventListener('change',()=>{
+    if($('v4Genre').value!=='auto')$('v4Bpm').value=genres[$('v4Genre').value].tempo;
+  });
+  $('v4Import').onclick=()=>{
+    const lyric=$('lyricText')?.value.trim()||'';
+    if(!lyric){setStatus('先に作詞ルームで歌詞を作るか、ここに曲のイメージを入力してね。');return;}
+    $('v4Idea').value=lyric;clearOutput();setStatus('📝 作詞ルームから歌詞を取り込んだよ。曲調を選んでね。');
+  };
+  $('v4Example').onclick=()=>{$('v4Idea').value='夜明けの街を駆け抜ける、切ないけれど前向きなJ-POP。Aメロは静かに始まり、サビで壮大に広がる。歌声は不要。';clearOutput();setStatus('例文を入力したよ。キーやコード進行を選べるよ。');};
+  // Legacy lyrics-to-song button now opens the V4 composer instead of a hidden V3 workflow.
+  const lyricToMusic=$('makeSong');
+  if(lyricToMusic) lyricToMusic.onclick=()=>{const t=$('lyricText')?.value.trim()||'';if(!t){$('lyricStatus').textContent='まず歌詞を書いてね。';return;}$('v4Idea').value=t;topTab?.click();setStatus('📝 歌詞を受け取ったよ。「V4で自動作曲する」へ進んでね。');studio.scrollIntoView({behavior:'smooth',block:'start'});};
+  function makePreview(){
+    const s=settings();if($('v4VoiceFit').value==='no'){s.fitLow=NaN;s.fitHigh=NaN;}
+    const plan=harmonicPlan(s);
+    const holder=$('v4Structure');holder.replaceChildren();
+    const h=document.createElement('h3');h.textContent='🎼 セクションとコード進行';holder.appendChild(h);
+    const sub=document.createElement('div');sub.className='v4-summary';
+    sub.textContent=`${genres[s.genre].label} ／ ${rootLabel(s.key)} ${s.mode==='minor'?'minor':'major'} ／ ${s.bpm} BPM ／ ${s.bars}小節 ／ 約${Math.round(s.bars*4*60/s.bpm)}秒`+(Number.isFinite(s.fitLow)?` ／ ライバー音域 ${midiName(s.fitLow)}〜${midiName(s.fitHigh)}`:'');
+    holder.appendChild(sub);
+    for(const sec of plan.sections){
+      const row=document.createElement('div');row.className='v4-part';
+      const name=document.createElement('strong');name.className='v4-part-name';name.textContent=sec.label;
+      row.appendChild(name);
+      const maxShow=sec.bars>=8?4:sec.bars;
+      for(const b of plan.bars.slice(sec.start,sec.start+maxShow)){
+        const chip=document.createElement('span');chip.className='v4-chord';chip.textContent=b.chord.name;row.appendChild(chip);
+      }
+      if(sec.bars>maxShow){const note=document.createElement('span');note.className='v4-chord';note.textContent='×2 / 展開あり';row.appendChild(note);}
+      holder.appendChild(row);
+    }
+    holder.hidden=false;
+    return {s,plan};
+  }
+  $('v4Preview').onclick=()=>{const {s}=makePreview();setStatus(`コード進行と曲の構成を提案したよ。${genres[s.genre].label}、${s.bars}小節。「V4で自動作曲する」で音を作ろう。`);};
+  const save=(blob,name)=>{
+    if(!blob)return;
+    const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),15000);
+  };
+  const nameStem=()=>{const title=($('songTitle')?.value||'').trim().replace(/[\\/:*?"<>|]/g,'_').slice(0,28);return 'cocoa_v4_'+(title||'original');};
+  $('v4Create').onclick=async()=>{
+    if($('v4Create').disabled)return;
+    const {s,plan}=makePreview();
+    clearOutput();
+    const my=++activeGen;
+    $('v4Create').disabled=true;$('v4Preview').disabled=true;
+    const still=()=>my===activeGen;
+    try{
+      setStatus('🎹 作曲開始：コード進行・メロディー・各楽器を制作します…');
+      const result=await renderSong(s,plan,setStatus,still);
+      if(!still())return;
+      if(activeDemoUrl)URL.revokeObjectURL(activeDemoUrl);
+      if(activeKaraokeUrl)URL.revokeObjectURL(activeKaraokeUrl);
+      activeDemoUrl=URL.createObjectURL(result.demo);
+      activeKaraokeUrl=URL.createObjectURL(result.karaoke);
+      latest={...result,plan,s,chart:formatChart(s,plan)};
+      $('v4PlayMode').value='demo';$('v4Audio').src=activeDemoUrl;$('v4Outputs').hidden=false;
+      $('v4Status').textContent=`✅ 曲が完成したよ！ ${s.bars}小節、約${Math.round(result.seconds)}秒。\n完成デモWAV・カラオケWAV・5楽器MIDI・コード譜を保存できるよ。`;
+      if(window.cocoaStudioV3&&typeof window.cocoaStudioV3.ready==='function'){
+        window.cocoaStudioV3.ready({karaokeUrl:activeKaraokeUrl,demoUrl:activeDemoUrl,
+          karaokeBlob:result.karaoke,demoBlob:result.demo,midiBlob:result.midi,bpm:s.bpm,
+          seconds:result.seconds,sections:plan.sections.map(q=>[q.label==='サビ2'?'サビ1':q.label==='Bメロ2'?'Bメロ1':q.label==='Cメロ'?'間奏':q.label,q.bars]),style:genres[s.genre].label,transpose:s.key});
+      }
+    }catch(err){console.error('Cocoa V4 composer:',err);setStatus('⚠️ 作曲に失敗したよ。小節数を32、音質を軽量にして再度試してね。詳細：'+String(err?.message||err));}
+    finally{$('v4Create').disabled=false;$('v4Preview').disabled=false;}
+  };
+  $('v4PlayMode').onchange=()=>{
+    if(!latest)return;
+    const audio=$('v4Audio');audio.pause();audio.src=$('v4PlayMode').value==='demo'?activeDemoUrl:activeKaraokeUrl;
+    audio.load();
+  };
+  $('v4SaveDemo').onclick=()=>save(latest?.demo,nameStem()+'_demo.wav');
+  $('v4SaveKaraoke').onclick=()=>save(latest?.karaoke,nameStem()+'_karaoke.wav');
+  $('v4SaveMidi').onclick=()=>save(latest?.midi,nameStem()+'_5tracks.mid');
+  $('v4SaveChart').onclick=()=>save(latest?new Blob([latest.chart],{type:'text/plain;charset=utf-8'}):null,nameStem()+'_chords.txt');
+  // When the old liver selection helper is used, reflect its settings in V4 too.
+  const voicePanel=$('vocalfit');
+  if(voicePanel)voicePanel.addEventListener('click',e=>{
+    if(e.target instanceof HTMLElement&&e.target.closest('.vf-card button')){
+      setTimeout(()=>{
+        if($('ciStyle')&&$('v4Genre')){
+          const style=$('ciStyle').value;
+          $('v4Genre').value=genres[style]?style:'pop';
+          const tempo=Number($('ciTempo')?.value);
+          if(Number.isFinite(tempo)&&tempo>=55&&tempo<=180)$('v4Bpm').value=String(tempo);
+        }
+        $('v4VoiceFit').value='yes';
+        if($('ciProgressionV35')){$('v4Progression').value=progressions[$('ciProgressionV35').value]?$('ciProgressionV35').value:'auto';}
+        if($('ciColorV35'))$('v4Color').value=$('ciColorV35').value==='basic'?'basic':$('ciColorV35').value==='pop'?'pop':'lush';
+        $('v4Idea').value=$('ciLyrics')?.value||$('v4Idea').value;
+        setStatus('🎙️ ライバー選曲の設定をV4に反映したよ。声の出しやすい範囲は本人が確認してね。');
+        studio.scrollIntoView({block:'start',behavior:'smooth'});
+      },140);
+    }
+  });
+  // Useful for automated verification; no external service or secret data.
+  window.cocoaV4={preview:makePreview,settings,plan:harmonicPlan,getResult:()=>latest};
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);
+else boot();
+})();
+
 </script>
 </body></html>
